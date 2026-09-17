@@ -26,6 +26,7 @@ from src.medical_knowledge_graph import obtener_grafo_medico
 from src.ollama_client import (
     verificar_conexion_ollama,
     stream_chat_ollama,
+    stream_fallback_grafo,
     construir_prompt_sistema_graph_rag,
     generar_respuesta_fallback_grafo,
     DEFAULT_OLLAMA_URL,
@@ -448,9 +449,10 @@ with tab_chatbot:
     """)
 
     # Verificación silenciosa de conexión en segundo plano
-    is_connected, available_models, _ = verificar_conexion_ollama(st.session_state.ollama_server_url)
-    if is_connected and available_models:
-        if st.session_state.ollama_model not in available_models:
+    is_connected, available_models, active_url = verificar_conexion_ollama(st.session_state.ollama_server_url)
+    if is_connected:
+        st.session_state.ollama_server_url = active_url
+        if available_models and st.session_state.ollama_model not in available_models:
             st.session_state.ollama_model = available_models[0]
 
     # 2. Contexto de Triaje y Evidencia de Graph RAG
@@ -481,10 +483,11 @@ with tab_chatbot:
         if st.button("¿Qué manejo farmacológico y dieta sugiere el grafo?", use_container_width=True):
             pregunta_sugerida = "¿Qué medicamentos y pautas de hidratación están registrados en el grafo para esta severidad?"
 
-    # 4. Historial del Chat
+    # 4. Historial del Chat (se omiten mensajes vacíos previos)
     for msg in st.session_state.chat_messages:
-        with st.chat_message(msg['role']):
-            st.markdown(msg['content'])
+        if msg.get('content') and msg['content'].strip():
+            with st.chat_message(msg['role']):
+                st.markdown(msg['content'])
 
     # Entrada del Chat
     chat_input = st.chat_input("Escribe una consulta sobre el paciente, su severidad o precauciones...")
@@ -500,10 +503,10 @@ with tab_chatbot:
         system_prompt = construir_prompt_sistema_graph_rag(graph_ctx, paciente)
 
         with st.chat_message('assistant'):
-            # Si el servidor Ollama está conectado, generar con streaming
+            # Si el servidor Ollama está conectado, generar con streaming inmediato
             if is_connected:
                 historial_para_ollama = [
-                    m for m in st.session_state.chat_messages if m['role'] in ['user', 'assistant']
+                    m for m in st.session_state.chat_messages if m['role'] in ['user', 'assistant'] and m.get('content')
                 ]
                 stream_generator = stream_chat_ollama(
                     mensajes=historial_para_ollama,
@@ -513,11 +516,12 @@ with tab_chatbot:
                 )
                 respuesta_completa = st.write_stream(stream_generator)
             else:
-                # Modo de respaldo directo desde el grafo de conocimiento
-                respuesta_completa = generar_respuesta_fallback_grafo(graph_ctx, paciente, prompt_usuario)
-                st.markdown(respuesta_completa)
+                # Modo de respaldo en stream directo desde el grafo de conocimiento
+                stream_generator = stream_fallback_grafo(graph_ctx, paciente, prompt_usuario)
+                respuesta_completa = st.write_stream(stream_generator)
 
-        st.session_state.chat_messages.append({'role': 'assistant', 'content': respuesta_completa})
+        if respuesta_completa and respuesta_completa.strip():
+            st.session_state.chat_messages.append({'role': 'assistant', 'content': respuesta_completa})
 
     if len(st.session_state.chat_messages) > 2:
         if st.button("Limpiar Conversación"):

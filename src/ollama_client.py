@@ -11,8 +11,9 @@ import requests
 from typing import Dict, List, Any, Generator, Tuple
 
 # URL primaria configurada por el usuario (túnel para despliegue remoto)
-DEFAULT_OLLAMA_URL = os.getenv("OLLAMA_SERVER_URL", "https://icy-dogs-sin.loca.lt")
+DEFAULT_OLLAMA_URL = os.getenv("OLLAMA_SERVER_URL", "http://localhost:11434")
 FALLBACK_LOCAL_URL = "http://localhost:11434"
+REMOTE_TUNNEL_URL = "https://icy-dogs-sin.loca.lt"
 DEFAULT_MODEL = "qwen3.5:9b"
 
 TUNNEL_HEADERS = {
@@ -20,29 +21,38 @@ TUNNEL_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
 }
 
-def verificar_conexion_ollama(base_url: str = DEFAULT_OLLAMA_URL, timeout: float = 3.5) -> Tuple[bool, List[str], str]:
+def verificar_conexion_ollama(base_url: str = DEFAULT_OLLAMA_URL, timeout: float = 2.0) -> Tuple[bool, List[str], str]:
     """
     Comprueba si el servidor de Ollama responde en la URL indicada y recupera
-    la lista de modelos instalados en la máquina. Si la URL de túnel no responde
-    o está protegida, intenta automáticamente conectar al host local.
+    la lista de modelos instalados en la máquina.
+    Prioriza localhost para latencia cero. Si no está en localhost o no responde,
+    prueba la URL del túnel.
+    Retorna: (is_connected, list_of_models, active_url)
     """
-    urls_to_try = [base_url]
-    if base_url != FALLBACK_LOCAL_URL:
-        urls_to_try.append(FALLBACK_LOCAL_URL)
+    candidate_urls = []
+    # Siempre probar primero localhost si está accesible en el equipo
+    candidate_urls.append(FALLBACK_LOCAL_URL)
+    if base_url and base_url not in candidate_urls:
+        candidate_urls.append(base_url)
+    if REMOTE_TUNNEL_URL not in candidate_urls:
+        candidate_urls.append(REMOTE_TUNNEL_URL)
         
-    for target_url in urls_to_try:
+    for target_url in candidate_urls:
         url_limpia = target_url.rstrip('/')
         endpoint = f"{url_limpia}/api/tags"
         try:
-            r = requests.get(endpoint, headers=TUNNEL_HEADERS, timeout=timeout)
+            # Timeout super rápido de 0.8s para localhost, y timeout configurado para remotos
+            t = 0.8 if ("localhost" in target_url or "127.0.0.1" in target_url) else timeout
+            r = requests.get(endpoint, headers=TUNNEL_HEADERS, timeout=t)
             if r.status_code == 200:
                 data = r.json()
                 modelos = [m['name'] for m in data.get('models', [])]
-                return True, modelos, f"Conexión exitosa con el servidor Ollama ({target_url})."
+                if modelos:
+                    return True, modelos, target_url
         except Exception:
             continue
             
-    return False, [], f"No se pudo conectar al servidor Ollama en {base_url}."
+    return False, [], base_url
 
 def construir_prompt_sistema_graph_rag(graph_context: Dict[str, Any], patient_summary: Dict[str, Any]) -> str:
     """
@@ -88,58 +98,64 @@ def stream_chat_ollama(
 ) -> Generator[str, None, None]:
     """
     Genera la respuesta del LLM en streaming (token por token) usando la API de Ollama (/api/chat).
+    Configurado con think=False para que modelos con razonamiento integrado (como Qwen 3.5 / DeepSeek R1)
+    emitan la respuesta clínica de forma instantánea sin latencias de pensamiento en segundo plano.
     """
-    url_limpia = base_url.rstrip('/')
-    endpoint = f"{url_limpia}/api/chat"
-    
     payload_messages = []
     if system_prompt:
         payload_messages.append({'role': 'system', 'content': system_prompt})
     
     for m in mensajes:
-        payload_messages.append({'role': m['role'], 'content': m['content']})
+        if m.get('content'):
+            payload_messages.append({'role': m['role'], 'content': m['content']})
         
     payload = {
         'model': model,
         'messages': payload_messages,
         'stream': True,
+        'think': False,  # Desactiva buffer de pensamiento para streaming inmediato
         'options': {
             'temperature': 0.3,  # Baja temperatura para respuestas deterministas y seguras
             'top_p': 0.9
         }
     }
     
-    try:
-        response = requests.post(endpoint, json=payload, headers=TUNNEL_HEADERS, stream=True, timeout=90)
-        response.raise_for_status()
+    candidate_urls = []
+    if base_url:
+        candidate_urls.append(base_url.rstrip('/'))
+    if FALLBACK_LOCAL_URL not in candidate_urls:
+        candidate_urls.append(FALLBACK_LOCAL_URL)
         
-        for line in response.iter_lines(decode_unicode=True):
-            if line:
-                try:
-                    chunk = json.loads(line)
-                    content = chunk.get('message', {}).get('content', '')
-                    if content:
-                        yield content
-                except json.JSONDecodeError:
-                    continue
-                    
-    except requests.exceptions.RequestException as e:
-        # Si falló la URL remota y estamos en local, intentar con FALLBACK_LOCAL_URL
-        if base_url != FALLBACK_LOCAL_URL:
-            try:
-                local_endpoint = f"{FALLBACK_LOCAL_URL}/api/chat"
-                local_resp = requests.post(local_endpoint, json=payload, stream=True, timeout=90)
-                local_resp.raise_for_status()
-                for line in local_resp.iter_lines(decode_unicode=True):
-                    if line:
+    streamed_any = False
+    last_err = None
+    
+    for target_url in candidate_urls:
+        endpoint = f"{target_url}/api/chat"
+        # Timeout corto de conexión (3s) para no congelar la UI si el túnel está muerto
+        try:
+            response = requests.post(endpoint, json=payload, headers=TUNNEL_HEADERS, stream=True, timeout=(3.0, 90.0))
+            if response.status_code != 200:
+                continue
+                
+            for line in response.iter_lines(decode_unicode=True):
+                if line:
+                    try:
                         chunk = json.loads(line)
                         content = chunk.get('message', {}).get('content', '')
                         if content:
+                            streamed_any = True
                             yield content
+                    except json.JSONDecodeError:
+                        continue
+                        
+            if streamed_any:
                 return
-            except Exception:
-                pass
-        yield f"\n\n[Error de comunicación con el servidor Ollama ({base_url})]: {str(e)}"
+        except Exception as e:
+            last_err = e
+            continue
+            
+    if not streamed_any:
+        yield f"\n\n*(Aviso: No se pudo recibir respuesta del modelo `{model}` en {base_url}. Error: {last_err or 'Servidor no disponible'}).*"
 
 def generar_respuesta_fallback_grafo(graph_context: Dict[str, Any], patient_summary: Dict[str, Any], query: str) -> str:
     """
@@ -172,5 +188,18 @@ def generar_respuesta_fallback_grafo(graph_context: Dict[str, Any], patient_summ
 **Pautas de hidratación y dieta:**
 • {diet}
 
-*(Nota: Para interacción conversacional en lenguaje natural con el LLM, asegúrese de que su servidor Ollama local esté activo en la URL configurada).*"""
+*(Nota: Grafo de conocimiento ontológico activo. Para interacción con el LLM generativo, asegúrese de que el servidor Ollama esté disponible).*"""
     return res
+
+def stream_fallback_grafo(graph_context: Dict[str, Any], patient_summary: Dict[str, Any], query: str) -> Generator[str, None, None]:
+    """
+    Genera la respuesta del grafo en streaming token por token con un efecto fluido
+    cuando Ollama no está disponible, garantizando que siempre se vea en streaming.
+    """
+    import time
+    respuesta_completa = generar_respuesta_fallback_grafo(graph_context, patient_summary, query)
+    tokens = respuesta_completa.split(" ")
+    for tok in tokens:
+        yield tok + " "
+        time.sleep(0.012)
+
