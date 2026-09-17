@@ -39,19 +39,28 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Estilos CSS profesionales para estética clínica sobria
+# Estilos CSS profesionales adaptables a Modo Claro y Modo Oscuro
 st.markdown("""
 <style>
     .main-header {
         font-size: 2.0rem;
         font-weight: 700;
-        color: #1a2e40;
         margin-bottom: 0.15rem;
     }
     .sub-header {
         font-size: 1.0rem;
-        color: #4b5563;
+        opacity: 0.82;
         margin-bottom: 1.2rem;
+    }
+    .patient-context-card {
+        background-color: rgba(148, 163, 184, 0.12);
+        border: 1px solid rgba(148, 163, 184, 0.28);
+        border-left: 4px solid #38bdf8;
+        border-radius: 8px;
+        padding: 0.9rem 1.2rem;
+        margin-bottom: 1rem;
+        font-size: 0.92rem;
+        line-height: 1.55;
     }
     .triage-card {
         padding: 1.4rem;
@@ -61,19 +70,19 @@ st.markdown("""
         box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     .triage-severe {
-        background-color: #fef2f2;
-        border-left: 6px solid #b91c1c;
-        border: 1px solid #fecaca;
+        background-color: rgba(239, 68, 68, 0.12);
+        border-left: 6px solid #ef4444;
+        border: 1px solid rgba(239, 68, 68, 0.35);
     }
     .triage-moderate {
-        background-color: #fffbeb;
-        border-left: 6px solid #d97706;
-        border: 1px solid #fde68a;
+        background-color: rgba(245, 158, 11, 0.12);
+        border-left: 6px solid #f59e0b;
+        border: 1px solid rgba(245, 158, 11, 0.35);
     }
     .triage-mild {
-        background-color: #f0fdf4;
-        border-left: 6px solid #15803d;
-        border: 1px solid #bbf7d0;
+        background-color: rgba(34, 197, 94, 0.12);
+        border-left: 6px solid #22c55e;
+        border: 1px solid rgba(34, 197, 94, 0.35);
     }
     .metric-badge {
         display: inline-block;
@@ -84,18 +93,10 @@ st.markdown("""
         margin-right: 6px;
         margin-bottom: 6px;
     }
-    .badge-danger { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
-    .badge-warning { background-color: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
-    .badge-success { background-color: #dcfce7; color: #166534; border: 1px solid #86efac; }
-    .badge-info { background-color: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
-    .graph-evidence-box {
-        background-color: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        font-size: 0.9rem;
-    }
+    .badge-danger { background-color: rgba(239, 68, 68, 0.18); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+    .badge-warning { background-color: rgba(245, 158, 11, 0.18); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); }
+    .badge-success { background-color: rgba(34, 197, 94, 0.18); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.4); }
+    .badge-info { background-color: rgba(14, 165, 233, 0.18); color: #0284c7; border: 1px solid rgba(14, 165, 233, 0.4); }
 </style>
 """, unsafe_allow_html=True)
 
@@ -331,11 +332,11 @@ with tab_triaje:
         if pred_class == 'Severe':
             st.markdown(f"""
             <div class="triage-card triage-severe">
-                <h2 style="margin:0; color:#b91c1c; font-size:1.6rem;">SEVERO (Severe)</h2>
-                <p style="margin:6px 0 2px 0; font-size:1.05rem; font-weight:600; color:#991b1b;">
+                <h2 style="margin:0; color:#ef4444; font-size:1.6rem;">SEVERO (Severe)</h2>
+                <p style="margin:6px 0 2px 0; font-size:1.05rem; font-weight:600;">
                     Atención Médica Inmediata / Box de Vitales
                 </p>
-                <p style="margin:0; font-size:0.95rem; color:#7f1d1d;">
+                <p style="margin:0; font-size:0.95rem; opacity:0.88;">
                     Certeza del modelo: <b>{confianza_ganadora:.1f}%</b> | Alto riesgo de descompensación ventilatoria o hemodinámica.
                 </p>
             </div>
@@ -345,11 +346,11 @@ with tab_triaje:
         elif pred_class == 'Moderate':
             st.markdown(f"""
             <div class="triage-card triage-moderate">
-                <h2 style="margin:0; color:#b45309; font-size:1.6rem;">MODERADO (Moderate)</h2>
-                <p style="margin:6px 0 2px 0; font-size:1.05rem; font-weight:600; color:#92400e;">
+                <h2 style="margin:0; color:#f59e0b; font-size:1.6rem;">MODERADO (Moderate)</h2>
+                <p style="margin:6px 0 2px 0; font-size:1.05rem; font-weight:600;">
                     Atención Prioritaria (< 60 minutos)
                 </p>
-                <p style="margin:0; font-size:0.95rem; color:#78350f;">
+                <p style="margin:0; font-size:0.95rem; opacity:0.88;">
                     Certeza del modelo: <b>{confianza_ganadora:.1f}%</b> | Cuadro agudo febril/sistémico sin compromiso vital inminente.
                 </p>
             </div>
@@ -359,11 +360,11 @@ with tab_triaje:
         else: # Mild
             st.markdown(f"""
             <div class="triage-card triage-mild">
-                <h2 style="margin:0; color:#15803d; font-size:1.6rem;">LEVE (Mild)</h2>
-                <p style="margin:6px 0 2px 0; font-size:1.05rem; font-weight:600; color:#166534;">
+                <h2 style="margin:0; color:#22c55e; font-size:1.6rem;">LEVE (Mild)</h2>
+                <p style="margin:6px 0 2px 0; font-size:1.05rem; font-weight:600;">
                     Atención Estándar Ambulatoria
                 </p>
-                <p style="margin:0; font-size:0.95rem; color:#14532d;">
+                <p style="margin:0; font-size:0.95rem; opacity:0.88;">
                     Certeza del modelo: <b>{confianza_ganadora:.1f}%</b> | Constantes fisiológicas preservadas. Puede aguardar en sala de espera.
                 </p>
             </div>
@@ -460,8 +461,8 @@ with tab_chatbot:
     )
 
     st.markdown(f"""
-    <div style="background-color:#f1f5f9; padding:0.9rem 1.2rem; border-radius:8px; border:1px solid #cbd5e1; font-size:0.9rem; margin-bottom:1rem;">
-        <b>Caso Clínico Vinculado al Asistente:</b><br>
+    <div class="patient-context-card">
+        <b style="color: #38bdf8; font-size: 0.95rem;">Caso Clínico Vinculado al Asistente:</b><br>
         • <b>Paciente:</b> {paciente.get('Edad')} años, {paciente.get('Sexo')} | <b>Constantes:</b> FC {paciente.get('FC')} lpm, Temp {paciente.get('Temp')} °C, PA {paciente.get('PA')} mmHg, SatO₂ {paciente.get('SatO2')}%<br>
         • <b>Síntomas Referidos:</b> {paciente.get('Sintomas')} | <b>Severidad de Triaje:</b> <b>{paciente.get('Triaje')}</b> (Certeza: {paciente.get('Confianza')})
     </div>
