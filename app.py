@@ -157,7 +157,7 @@ if 'ultimo_paciente_evaluado' not in st.session_state:
 # SIDEBAR: Información del Modelo y Disclaimer
 with st.sidebar:
     st.title("Triaje Predictivo")
-    st.caption("Sistema de Apoyo Clínico con Graph RAG & Ollama")
+    st.caption("Sistema de Apoyo Clínico con Graph RAG")
     
     st.divider()
     st.markdown("### Especificaciones del Sistema")
@@ -165,7 +165,7 @@ with st.sidebar:
     - **Clasificador:** Random Forest (200 estimadores)
     - **Validación ML:** 5-Fold Stratified CV (100% Macro F1)
     - **Grafo de Conocimiento:** {medical_graph.graph.number_of_nodes()} nodos, {medical_graph.graph.number_of_edges()} aristas
-    - **Motor LLM:** Ollama Local / Servidor Remoto
+    - **Motor de Razonamiento:** LLM Asistente Clínico (Graph RAG)
     """)
     
     st.divider()
@@ -184,12 +184,12 @@ with st.sidebar:
 
 # HEADER PRINCIPAL
 st.markdown('<div class="main-header">Sistema de Triaje Predictivo & Asistente Clínico Graph RAG</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Clasificación asistida de gravedad clínica y razonamiento conversacional anclado a ontología médica con LLM local/servidor.</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Clasificación asistida de gravedad clínica y razonamiento conversacional anclado a ontología médica con LLM.</div>', unsafe_allow_html=True)
 
 # Pestañas Principales
 tab_triaje, tab_chatbot, tab_analitica = st.tabs([
     "Triaje en Vivo",
-    "Chatbot Clínico (Graph RAG & Ollama)",
+    "Chatbot Clínico",
     "Análisis Estadístico y Modelos"
 ])
 
@@ -437,55 +437,20 @@ with tab_triaje:
         st.info("Presione 'Registrar Paciente en Bitácora de Triaje' para archivar pacientes evaluados en esta sesión.")
 
 # ==============================================================================
-# PESTAÑA 2: CHATBOT CLÍNICO (GRAPH RAG & OLLAMA)
+# PESTAÑA 2: CHATBOT CLÍNICO
 # ==============================================================================
 with tab_chatbot:
-    st.subheader("Asistente Clínico Inteligente (Graph RAG & Ollama Local / Servidor)")
+    st.subheader("Asistente Clínico Inteligente")
     st.markdown("""
-    Este agente combina **Razonamiento con LLMs (Ollama)** anclado a un **Grafo de Conocimiento Médico (Graph RAG)**. 
-    Las respuestas no son inventadas por el modelo de lenguaje: están respaldadas en la ontología estructurada de síntomas, precauciones y terapias.
+    Este agente combina **Razonamiento con Modelos de Lenguaje** anclado a un **Grafo de Conocimiento Médico (Graph RAG)**. 
+    Las respuestas no son inventadas: están respaldadas en la ontología estructurada de síntomas, precauciones y terapias.
     """)
 
-    # 1. Panel de Configuración de Conexión a Ollama
-    with st.expander("Configuración del Servidor Ollama (Local o Remoto en tu Computador)", expanded=False):
-        c_srv1, c_srv2, c_srv3 = st.columns([1.8, 1.2, 0.8])
-        with c_srv1:
-            ollama_url_input = st.text_input(
-                "URL del Servidor Ollama:",
-                value=st.session_state.ollama_server_url,
-                help="Por defecto 'http://localhost:11434'. Si la app corre en Streamlit Cloud, ingrese aquí la URL pública de su túnel (Ngrok o Cloudflare) apuntando a su computador."
-            )
-        with c_srv2:
-            # Comprobación de modelos disponibles
-            is_connected, available_models, status_msg = verificar_conexion_ollama(ollama_url_input)
-            model_options = available_models if available_models else ["qwen3.5:9b", "deepseek-r1:8b", "qwen3.8:latest"]
-            selected_model = st.selectbox(
-                "Modelo LLM en el Servidor:",
-                options=model_options,
-                index=0 if st.session_state.ollama_model not in model_options else model_options.index(st.session_state.ollama_model)
-            )
-            st.session_state.ollama_model = selected_model
-        with c_srv3:
-            st.write("")
-            st.write("")
-            test_conn_btn = st.button("Probar Conexión", use_container_width=True)
-
-        st.session_state.ollama_server_url = ollama_url_input
-
-        if is_connected:
-            st.success(f"Conectado exitosamente al servidor Ollama ({ollama_url_input}). Modelos detectados: {', '.join(available_models)}")
-        else:
-            st.warning(f"{status_msg} (El chatbot operará en modo de respaldo estructurado con el Grafo de Conocimiento).")
-
-        st.markdown("""
-        **¿Cómo conectar esta app desde internet a tu computador como servidor Ollama?**
-        1. Asegúrate de tener Ollama corriendo en tu terminal: `ollama serve`
-        2. En otra terminal de tu Mac, abre un túnel gratuito hacia el puerto 11434:
-           - **Con Cloudflare:** `brew install cloudflared && cloudflared tunnel --url http://localhost:11434`
-           - **O con Ngrok:** `ngrok http 11434`
-           - **O con LocalTunnel:** `npx localtunnel --port 11434`
-        3. Copia la URL pública generada (ej: `https://xxxx.trycloudflare.com`) y pégala en el campo **URL del Servidor Ollama** arriba.
-        """)
+    # Verificación silenciosa de conexión en segundo plano
+    is_connected, available_models, _ = verificar_conexion_ollama(st.session_state.ollama_server_url)
+    if is_connected and available_models:
+        if st.session_state.ollama_model not in available_models:
+            st.session_state.ollama_model = available_models[0]
 
     # 2. Contexto de Triaje y Evidencia de Graph RAG
     paciente = st.session_state.ultimo_paciente_evaluado
