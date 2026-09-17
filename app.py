@@ -513,31 +513,6 @@ with tab_chatbot:
             st.markdown(f"**Fármacos Asociados en el Grafo:** {', '.join(graph_ctx['farmacos_ontologia'])}")
             st.markdown(f"**Dietas y Cuidados:** {', '.join(graph_ctx['dietas_ontologia'])}")
             st.caption(f"Grafo de referencia: {graph_ctx['resumen_grafo']['total_nodos']} nodos y {graph_ctx['resumen_grafo']['total_aristas']} aristas ontológicas.")
-            
-            st.markdown("---")
-            st.markdown("<b>Exportar Grafo de Conocimiento a Disco:</b>", unsafe_allow_html=True)
-            cg1, cg2 = st.columns(2)
-            graphml_file = os.path.join(BASE_DIR, 'data', 'knowledge_graph', 'medical_knowledge_graph.graphml')
-            json_file = os.path.join(BASE_DIR, 'data', 'knowledge_graph', 'medical_knowledge_graph.json')
-            
-            if os.path.exists(graphml_file):
-                with open(graphml_file, 'rb') as f:
-                    cg1.download_button(
-                        label="Descargar GraphML (Gephi)",
-                        data=f.read(),
-                        file_name="medical_knowledge_graph.graphml",
-                        mime="application/xml",
-                        use_container_width=True
-                    )
-            if os.path.exists(json_file):
-                with open(json_file, 'rb') as f:
-                    cg2.download_button(
-                        label="Descargar JSON (D3.js)",
-                        data=f.read(),
-                        file_name="medical_knowledge_graph.json",
-                        mime="application/json",
-                        use_container_width=True
-                    )
 
     st.divider()
 
@@ -672,3 +647,24 @@ with tab_analitica:
     st.markdown("""
     Las variables clínicas generadas por ingeniería de características (`flag_hypoxia`, `flag_fever`, `flag_tachycardia`, `shock_index` y `map_pressure`) explican más del **27% del poder predictivo del modelo**, demostrando el impacto positivo de modelar conocimiento del dominio de urgencias.
     """)
+    
+    st.divider()
+    
+    # 5. Topología del Grafo de Conocimiento Médico (Graph RAG)
+    st.subheader("5. Topología del Grafo de Conocimiento Médico (Graph RAG)")
+    st.markdown("""
+    La base de conocimiento ontológico contiene **347 nodos clínicos** (Enfermedades, Niveles de Triaje, Precauciones, Fármacos y Dietas) y **575 aristas**.
+    A continuación se presenta la visualización topológica generada mediante el algoritmo **Fruchterman-Reingold** (disposición de fuerzas elásticas) y la simulación física interactiva **ForceAtlas2**.
+    """)
+    
+    kg_fig_path = os.path.join(BASE_DIR, 'data', 'knowledge_graph', 'medical_knowledge_graph_fruchterman_reingold.png')
+    if os.path.exists(kg_fig_path):
+        st.image(kg_fig_path, caption="Figura 7: Disposición de fuerzas Fruchterman-Reingold de la ontología médica (347 nodos, 575 aristas).", use_container_width=True)
+
+    kg_html_path = os.path.join(BASE_DIR, 'data', 'knowledge_graph', 'medical_knowledge_graph_interactive.html')
+    if os.path.exists(kg_html_path):
+        with st.expander("Explorar Visualizador Interactivo ForceAtlas2 en Vivo (Vis.js)", expanded=False):
+            with open(kg_html_path, 'r', encoding='utf-8') as f:
+                html_data = f.read()
+            import streamlit.components.v1 as components
+            components.html(html_data, height=650, scrolling=True)
