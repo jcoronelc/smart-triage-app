@@ -1,0 +1,188 @@
+{
+  "model_name": "Random Forest Classifier (Triage Clinical Pipeline)",
+  "target_classes": [
+    "Mild",
+    "Moderate",
+    "Severe"
+  ],
+  "feature_names": [
+    "Age",
+    "is_male",
+    "Heart_Rate_bpm",
+    "Body_Temperature_C",
+    "BP_Systolic",
+    "BP_Diastolic",
+    "Oxygen_Saturation_%",
+    "shock_index",
+    "map_pressure",
+    "flag_hypoxia",
+    "flag_fever",
+    "flag_tachycardia",
+    "flag_elderly",
+    "symptom_count",
+    "sym_body_ache",
+    "sym_cough",
+    "sym_fatigue",
+    "sym_fever",
+    "sym_headache",
+    "sym_runny_nose",
+    "sym_shortness_of_breath",
+    "sym_sore_throat"
+  ],
+  "test_metrics": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "severe_recall": 1.0,
+    "severe_f1": 1.0,
+    "classification_report": {
+      "Mild": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 266.0
+      },
+      "Moderate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 58.0
+      },
+      "Severe": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 76.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 400.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "Mild",
+        "Moderate",
+        "Severe"
+      ],
+      "matrix": [
+        [
+          266,
+          0,
+          0
+        ],
+        [
+          0,
+          58,
+          0
+        ],
+        [
+          0,
+          0,
+          76
+        ]
+      ]
+    }
+  },
+  "benchmark_cv_5fold": [
+    {
+      "Modelo": "XGBoost Classifier",
+      "Accuracy Media": 1.0,
+      "Accuracy Std": 0.0,
+      "Balanced Accuracy": 1.0,
+      "Macro F1-Score": 1.0,
+      "Weighted F1-Score": 1.0
+    },
+    {
+      "Modelo": "Random Forest Classifier",
+      "Accuracy Media": 0.999375,
+      "Accuracy Std": 0.0012500000000000178,
+      "Balanced Accuracy": 0.9989071038251366,
+      "Macro F1-Score": 0.9987472814267072,
+      "Weighted F1-Score": 0.9993757068290561
+    },
+    {
+      "Modelo": "Support Vector Machine (RBF)",
+      "Accuracy Media": 0.991875,
+      "Accuracy Std": 0.004238956239453287,
+      "Balanced Accuracy": 0.9927736076561787,
+      "Macro F1-Score": 0.9879208979287221,
+      "Weighted F1-Score": 0.9919622528103968
+    },
+    {
+      "Modelo": "Multilayer Perceptron (MLP)",
+      "Accuracy Media": 0.9868750000000001,
+      "Accuracy Std": 0.003061862178478962,
+      "Balanced Accuracy": 0.9817207978211242,
+      "Macro F1-Score": 0.9797145552347676,
+      "Weighted F1-Score": 0.986927651555596
+    },
+    {
+      "Modelo": "Logistic Regression (Multinomial)",
+      "Accuracy Media": 0.9875,
+      "Accuracy Std": 0.004419417382415938,
+      "Balanced Accuracy": 0.9859956317357021,
+      "Macro F1-Score": 0.9796311317728529,
+      "Weighted F1-Score": 0.9876489031455739
+    },
+    {
+      "Modelo": "K-Nearest Neighbors (k-NN)",
+      "Accuracy Media": 0.9268750000000001,
+      "Accuracy Std": 0.008052561704203187,
+      "Balanced Accuracy": 0.8715655530522373,
+      "Macro F1-Score": 0.8976457013403936,
+      "Weighted F1-Score": 0.9248462119475775
+    }
+  ],
+  "feature_importance_top10": [
+    {
+      "feature": "sym_fever",
+      "importance": 0.2033
+    },
+    {
+      "feature": "sym_cough",
+      "importance": 0.1742
+    },
+    {
+      "feature": "Body_Temperature_C",
+      "importance": 0.1269
+    },
+    {
+      "feature": "flag_hypoxia",
+      "importance": 0.1109
+    },
+    {
+      "feature": "Oxygen_Saturation_%",
+      "importance": 0.1082
+    },
+    {
+      "feature": "flag_fever",
+      "importance": 0.1025
+    },
+    {
+      "feature": "Heart_Rate_bpm",
+      "importance": 0.0299
+    },
+    {
+      "feature": "flag_tachycardia",
+      "importance": 0.021
+    },
+    {
+      "feature": "shock_index",
+      "importance": 0.0189
+    },
+    {
+      "feature": "map_pressure",
+      "importance": 0.0166
+    }
+  ]
+}

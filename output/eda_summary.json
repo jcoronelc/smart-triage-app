@@ -1,0 +1,243 @@
+{
+  "total_registros": 2000,
+  "total_columnas": 15,
+  "distribucion_severidad": {
+    "conteo": {
+      "Mild": 1330,
+      "Severe": 378,
+      "Moderate": 292
+    },
+    "porcentaje": {
+      "Mild": 66.5,
+      "Severe": 18.9,
+      "Moderate": 14.6
+    }
+  },
+  "pruebas_sintomas": {
+    "Body ache": {
+      "chi2": 38.846,
+      "p_value": 3.671e-09,
+      "cramers_v": 0.1358,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 41.578947368421055,
+        "Moderate": 25.0,
+        "Severe": 29.629629629629626
+      }
+    },
+    "Cough": {
+      "chi2": 556.476,
+      "p_value": 1.455e-121,
+      "cramers_v": 0.5267,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 25.6390977443609,
+        "Moderate": 29.10958904109589,
+        "Severe": 91.7989417989418
+      }
+    },
+    "Fatigue": {
+      "chi2": 40.237,
+      "p_value": 1.831e-09,
+      "cramers_v": 0.1383,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 42.63157894736842,
+        "Moderate": 30.136986301369863,
+        "Severe": 26.71957671957672
+      }
+    },
+    "Fever": {
+      "chi2": 548.7,
+      "p_value": 7.1e-120,
+      "cramers_v": 0.523,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 26.842105263157894,
+        "Moderate": 100.0,
+        "Severe": 32.27513227513227
+      }
+    },
+    "Headache": {
+      "chi2": 13.551,
+      "p_value": 0.001141,
+      "cramers_v": 0.076,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 40.45112781954887,
+        "Moderate": 33.21917808219178,
+        "Severe": 31.216931216931215
+      }
+    },
+    "Runny nose": {
+      "chi2": 20.887,
+      "p_value": 2.914e-05,
+      "cramers_v": 0.0972,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 41.278195488721806,
+        "Moderate": 29.45205479452055,
+        "Severe": 32.01058201058201
+      }
+    },
+    "Shortness of breath": {
+      "chi2": 47.979,
+      "p_value": 3.816e-11,
+      "cramers_v": 0.1517,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 43.0827067669173,
+        "Moderate": 25.34246575342466,
+        "Severe": 28.835978835978835
+      }
+    },
+    "Sore throat": {
+      "chi2": 23.251,
+      "p_value": 8.933e-06,
+      "cramers_v": 0.1031,
+      "prevalencia_por_severidad_pct": {
+        "Mild": 38.496240601503764,
+        "Moderate": 27.73972602739726,
+        "Severe": 27.513227513227513
+      }
+    }
+  },
+  "pruebas_signos_vitales": {
+    "Age": {
+      "global_mean": 48.28,
+      "global_std": 17.42,
+      "by_severity": {
+        "Mild": {
+          "mean": 48.29,
+          "median": 49.0,
+          "std": 17.31
+        },
+        "Moderate": {
+          "mean": 49.18,
+          "median": 49.5,
+          "std": 17.48
+        },
+        "Severe": {
+          "mean": 47.57,
+          "median": 48.0,
+          "std": 17.73
+        }
+      },
+      "kruskal_wallis_h": 1.377,
+      "p_value": 0.5023
+    },
+    "Heart_Rate_bpm": {
+      "global_mean": 89.44,
+      "global_std": 17.14,
+      "by_severity": {
+        "Mild": {
+          "mean": 89.78,
+          "median": 90.0,
+          "std": 16.99
+        },
+        "Moderate": {
+          "mean": 85.67,
+          "median": 84.0,
+          "std": 16.44
+        },
+        "Severe": {
+          "mean": 91.15,
+          "median": 92.0,
+          "std": 17.73
+        }
+      },
+      "kruskal_wallis_h": 18.361,
+      "p_value": 0.000103
+    },
+    "Body_Temperature_C": {
+      "global_mean": 37.74,
+      "global_std": 1.31,
+      "by_severity": {
+        "Mild": {
+          "mean": 37.46,
+          "median": 37.3,
+          "std": 1.26
+        },
+        "Moderate": {
+          "mean": 39.0,
+          "median": 39.1,
+          "std": 0.56
+        },
+        "Severe": {
+          "mean": 37.74,
+          "median": 37.7,
+          "std": 1.33
+        }
+      },
+      "kruskal_wallis_h": 325.018,
+      "p_value": 2.65e-71
+    },
+    "BP_Systolic": {
+      "global_mean": 135.73,
+      "global_std": 25.98,
+      "by_severity": {
+        "Mild": {
+          "mean": 135.61,
+          "median": 136.0,
+          "std": 26.02
+        },
+        "Moderate": {
+          "mean": 136.0,
+          "median": 135.0,
+          "std": 25.1
+        },
+        "Severe": {
+          "mean": 135.94,
+          "median": 137.0,
+          "std": 26.48
+        }
+      },
+      "kruskal_wallis_h": 0.075,
+      "p_value": 0.9634
+    },
+    "BP_Diastolic": {
+      "global_mean": 89.34,
+      "global_std": 17.3,
+      "by_severity": {
+        "Mild": {
+          "mean": 89.54,
+          "median": 90.0,
+          "std": 17.1
+        },
+        "Moderate": {
+          "mean": 89.02,
+          "median": 90.0,
+          "std": 17.43
+        },
+        "Severe": {
+          "mean": 88.88,
+          "median": 89.0,
+          "std": 17.82
+        }
+      },
+      "kruskal_wallis_h": 0.521,
+      "p_value": 0.7706
+    },
+    "Oxygen_Saturation_%": {
+      "global_mean": 94.49,
+      "global_std": 2.86,
+      "by_severity": {
+        "Mild": {
+          "mean": 95.12,
+          "median": 95.0,
+          "std": 2.8
+        },
+        "Moderate": {
+          "mean": 94.94,
+          "median": 95.0,
+          "std": 2.74
+        },
+        "Severe": {
+          "mean": 91.94,
+          "median": 92.0,
+          "std": 1.37
+        }
+      },
+      "kruskal_wallis_h": 371.956,
+      "p_value": 1.701e-81
+    }
+  },
+  "genero_vs_severidad": {
+    "chi2": 3.759,
+    "p_value": 0.1527,
+    "cramers_v": 0.0297
+  }
+}
