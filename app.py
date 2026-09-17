@@ -1,7 +1,6 @@
 """
-Aplicación Web de Triaje Predictivo en Urgencias
-Desarrollada con Streamlit y Scikit-Learn
-Proyecto: Sistema de Apoyo a la Clasificación de Prioridad Clínica
+Aplicación Web de Triaje Predictivo en Urgencias con Asistente Graph RAG y Ollama
+Desarrollada con Streamlit, Scikit-Learn, NetworkX y Ollama
 """
 
 import os
@@ -23,10 +22,19 @@ from src.data_preprocessing import (
     TRADUCCION_SINTOMAS,
     TRADUCCION_INVERSA_SINTOMAS
 )
+from src.medical_knowledge_graph import obtener_grafo_medico
+from src.ollama_client import (
+    verificar_conexion_ollama,
+    stream_chat_ollama,
+    construir_prompt_sistema_graph_rag,
+    generar_respuesta_fallback_grafo,
+    DEFAULT_OLLAMA_URL,
+    DEFAULT_MODEL
+)
 
 # Configuración de página
 st.set_page_config(
-    page_title="Triaje Predictivo | Urgencias",
+    page_title="Triaje Predictivo | Urgencias & Graph RAG",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -80,25 +88,49 @@ st.markdown("""
     .badge-warning { background-color: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
     .badge-success { background-color: #dcfce7; color: #166534; border: 1px solid #86efac; }
     .badge-info { background-color: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
+    .graph-evidence-box {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
-# 1. Carga del Modelo en Caché
-@st.cache_resource(show_spinner="Cargando pipeline del modelo...")
-def cargar_pipeline_triaje():
+# 1. Carga del Modelo y Grafo en Caché
+@st.cache_resource(show_spinner="Cargando pipeline de triaje y grafo ontológico...")
+def cargar_recursos():
     model_path = os.path.join(BASE_DIR, 'models', 'triaje_model.joblib')
     if not os.path.exists(model_path):
         st.error(f"Archivo de modelo no encontrado en: {model_path}. Ejecute src/train_and_evaluate.py primero.")
         st.stop()
-    return joblib.load(model_path)
+    pipeline_model = joblib.load(model_path)
+    grafo = obtener_grafo_medico()
+    return pipeline_model, grafo
 
-pipeline = cargar_pipeline_triaje()
+pipeline, medical_graph = cargar_recursos()
 
-# Inicialización de historial en sesión
+# Inicialización de estado en sesión
 if 'historial_triaje' not in st.session_state:
     st.session_state.historial_triaje = []
 
-# Inicialización reactiva de variables de entrada para sincronización con widgets
+if 'chat_messages' not in st.session_state:
+    st.session_state.chat_messages = [
+        {
+            'role': 'assistant',
+            'content': 'Hola, soy el Asistente Clínico de Triaje con Graph RAG. Puedo responder tus dudas sobre el caso clínico actual, consultar precauciones de la ontología médica y verificar signos de alarma. ¿En qué puedo orientarte?'
+        }
+    ]
+
+if 'ollama_server_url' not in st.session_state:
+    st.session_state.ollama_server_url = DEFAULT_OLLAMA_URL
+
+if 'ollama_model' not in st.session_state:
+    st.session_state.ollama_model = DEFAULT_MODEL
+
+# Variables de sincronización de widgets
 if 'age_key' not in st.session_state: st.session_state['age_key'] = 45
 if 'gender_key' not in st.session_state: st.session_state['gender_key'] = "Femenino"
 if 'hr_key' not in st.session_state: st.session_state['hr_key'] = 80
@@ -108,45 +140,63 @@ if 'dia_key' not in st.session_state: st.session_state['dia_key'] = 80
 if 'sat_key' not in st.session_state: st.session_state['sat_key'] = 98
 if 'symptoms_key' not in st.session_state: st.session_state['symptoms_key'] = ["Dolor de garganta", "Congestión / Rinorrea"]
 
+# Estado del paciente activo para Graph RAG
+if 'ultimo_paciente_evaluado' not in st.session_state:
+    st.session_state.ultimo_paciente_evaluado = {
+        'Edad': 45,
+        'Sexo': 'Femenino',
+        'FC': 80,
+        'Temp': 36.8,
+        'PA': '120/80',
+        'SatO2': 98,
+        'Sintomas': 'Dolor de garganta, Congestión / Rinorrea',
+        'Triaje': 'Mild',
+        'Confianza': '95.0%'
+    }
+
 # SIDEBAR: Información del Modelo y Disclaimer
 with st.sidebar:
     st.title("Triaje Predictivo")
-    st.caption("Sistema de Apoyo a la Decisión Clínica (CDSS)")
+    st.caption("Sistema de Apoyo Clínico con Graph RAG & Ollama")
     
     st.divider()
-    st.markdown("### Especificaciones del Modelo")
-    st.markdown("""
-    - **Algoritmo:** Random Forest Classifier (200 estimadores)
-    - **Clases del Dataset:** `Mild`, `Moderate`, `Severe`
-    - **Validación:** 5-Fold Stratified CV + Hold-out Test ($N=400$)
-    - **Macro F1-Score:** 100.0%
-    - **Sensibilidad (Severe):** 100.0%
-    - **Variables analizadas:** 22 (signos vitales, síntomas, PAM, Shock Index)
+    st.markdown("### Especificaciones del Sistema")
+    st.markdown(f"""
+    - **Clasificador:** Random Forest (200 estimadores)
+    - **Validación ML:** 5-Fold Stratified CV (100% Macro F1)
+    - **Grafo de Conocimiento:** {medical_graph.graph.number_of_nodes()} nodos, {medical_graph.graph.number_of_edges()} aristas
+    - **Motor LLM:** Ollama Local / Servidor Remoto
     """)
     
     st.divider()
     st.markdown("### Clasificación de Severidad")
     st.markdown("""
-    - **Severe (Severo):** Atención médica inmediata. Riesgo de descompensación hemodinámica o respiratoria.
-    - **Moderate (Moderado):** Atención prioritaria sugerida en menos de 60 min. Cuadro agudo febril/sistémico.
-    - **Mild (Leve):** Atención ambulatoria estándar / sala de espera general.
+    - **Severe (Severo):** Atención médica inmediata en box de soporte vital / reanimación.
+    - **Moderate (Moderado):** Atención prioritaria sugerida en < 60 min.
+    - **Mild (Leve):** Manejo ambulatorio estándar / sala de espera.
     """)
     
     st.divider()
     st.info("""
     **Descargo de Responsabilidad:**  
-    Herramienta prototipo desarrollada con fines estrictamente académicos e investigativos. No reemplaza el juicio clínico médico profesional ni la evaluación presencial de enfermería.
+    Prototipo desarrollado con fines académicos. No reemplaza el juicio clínico médico profesional ni la evaluación presencial de enfermería.
     """)
 
 # HEADER PRINCIPAL
-st.markdown('<div class="main-header">Sistema de Triaje Predictivo en Urgencias</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Clasificación asistida de gravedad clínica basada en anamnesis inmediata, constantes vitales y perfiles hemodinámicos.</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">Sistema de Triaje Predictivo & Asistente Clínico Graph RAG</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Clasificación asistida de gravedad clínica y razonamiento conversacional anclado a ontología médica con LLM local/servidor.</div>', unsafe_allow_html=True)
 
 # Pestañas Principales
-tab_triaje, tab_analitica = st.tabs(["Triaje en Vivo", "Análisis Estadístico y Modelos"])
+tab_triaje, tab_chatbot, tab_analitica = st.tabs([
+    "Triaje en Vivo",
+    "Chatbot Clínico (Graph RAG & Ollama)",
+    "Análisis Estadístico y Modelos"
+])
 
+# ==============================================================================
+# PESTAÑA 1: TRIAJE EN VIVO
+# ==============================================================================
 with tab_triaje:
-    # Función callback para actualizar los widgets inmediatamente
     def cargar_caso(caso):
         if caso == "severe":
             st.session_state['age_key'] = 68
@@ -263,8 +313,21 @@ with tab_triaje:
         prob_mod = prob_dict.get('Moderate', 0.0) * 100
         prob_sev = prob_dict.get('Severe', 0.0) * 100
         confianza_ganadora = max(prob_mild, prob_mod, prob_sev)
+
+        # Actualizar paciente activo en sesión
+        st.session_state.ultimo_paciente_evaluado = {
+            'Edad': age,
+            'Sexo': gender,
+            'FC': hr,
+            'Temp': temp,
+            'PA': f"{sys_bp}/{dia_bp}",
+            'SatO2': sat,
+            'Sintomas': ", ".join(selected_symptoms_es) if selected_symptoms_es else "Ninguno",
+            'Triaje': pred_class,
+            'Confianza': f"{confianza_ganadora:.1f}%"
+        }
         
-        # Renderizado de Tarjeta Principal sobria y fiel a las clases Mild / Moderate / Severe
+        # Renderizado de Tarjeta Principal
         if pred_class == 'Severe':
             st.markdown(f"""
             <div class="triage-card triage-severe">
@@ -318,7 +381,6 @@ with tab_triaje:
         c_pb2.metric("Moderate (Moderado)", f"{prob_mod:.1f}%")
         c_pb3.metric("Severe (Severo)", f"{prob_sev:.1f}%")
 
-        # Barra de progreso que refleja la confianza de la clase ganadora
         st.progress(confianza_ganadora / 100.0, text=f"Certeza de la predicción [{pred_class}]: {confianza_ganadora:.1f}%")
 
         # Banderas Clínicas de Riesgo Detectadas
@@ -374,7 +436,145 @@ with tab_triaje:
     else:
         st.info("Presione 'Registrar Paciente en Bitácora de Triaje' para archivar pacientes evaluados en esta sesión.")
 
-# PESTAÑA 2: ANÁLISIS ESTADÍSTICO, AUDITORÍA DE OUTLIERS Y MODELOS
+# ==============================================================================
+# PESTAÑA 2: CHATBOT CLÍNICO (GRAPH RAG & OLLAMA)
+# ==============================================================================
+with tab_chatbot:
+    st.subheader("Asistente Clínico Inteligente (Graph RAG & Ollama Local / Servidor)")
+    st.markdown("""
+    Este agente combina **Razonamiento con LLMs (Ollama)** anclado a un **Grafo de Conocimiento Médico (Graph RAG)**. 
+    Las respuestas no son inventadas por el modelo de lenguaje: están respaldadas en la ontología estructurada de síntomas, precauciones y terapias.
+    """)
+
+    # 1. Panel de Configuración de Conexión a Ollama
+    with st.expander("Configuración del Servidor Ollama (Local o Remoto en tu Computador)", expanded=False):
+        c_srv1, c_srv2, c_srv3 = st.columns([1.8, 1.2, 0.8])
+        with c_srv1:
+            ollama_url_input = st.text_input(
+                "URL del Servidor Ollama:",
+                value=st.session_state.ollama_server_url,
+                help="Por defecto 'http://localhost:11434'. Si la app corre en Streamlit Cloud, ingrese aquí la URL pública de su túnel (Ngrok o Cloudflare) apuntando a su computador."
+            )
+        with c_srv2:
+            # Comprobación de modelos disponibles
+            is_connected, available_models, status_msg = verificar_conexion_ollama(ollama_url_input)
+            model_options = available_models if available_models else ["qwen3.5:9b", "deepseek-r1:8b", "qwen3.8:latest"]
+            selected_model = st.selectbox(
+                "Modelo LLM en el Servidor:",
+                options=model_options,
+                index=0 if st.session_state.ollama_model not in model_options else model_options.index(st.session_state.ollama_model)
+            )
+            st.session_state.ollama_model = selected_model
+        with c_srv3:
+            st.write("")
+            st.write("")
+            test_conn_btn = st.button("Probar Conexión", use_container_width=True)
+
+        st.session_state.ollama_server_url = ollama_url_input
+
+        if is_connected:
+            st.success(f"Conectado exitosamente al servidor Ollama ({ollama_url_input}). Modelos detectados: {', '.join(available_models)}")
+        else:
+            st.warning(f"{status_msg} (El chatbot operará en modo de respaldo estructurado con el Grafo de Conocimiento).")
+
+        st.markdown("""
+        **¿Cómo conectar esta app desde internet a tu computador como servidor Ollama?**
+        1. Asegúrate de tener Ollama corriendo en tu terminal: `ollama serve`
+        2. En otra terminal de tu Mac, abre un túnel gratuito hacia el puerto 11434:
+           - **Con Cloudflare:** `brew install cloudflared && cloudflared tunnel --url http://localhost:11434`
+           - **O con Ngrok:** `ngrok http 11434`
+           - **O con LocalTunnel:** `npx localtunnel --port 11434`
+        3. Copia la URL pública generada (ej: `https://xxxx.trycloudflare.com`) y pégala en el campo **URL del Servidor Ollama** arriba.
+        """)
+
+    # 2. Contexto de Triaje y Evidencia de Graph RAG
+    paciente = st.session_state.ultimo_paciente_evaluado
+    graph_ctx = medical_graph.retrieve_clinical_context(
+        severity=paciente.get('Triaje', 'Mild'),
+        symptoms=[s.strip() for s in paciente.get('Sintomas', '').split(',') if s.strip()]
+    )
+
+    col_ctx1, col_ctx2 = st.columns([1.1, 1.3])
+    with col_ctx1:
+        st.markdown(f"""
+        <div style="background-color:#f1f5f9; padding:0.9rem; border-radius:8px; border:1px solid #cbd5e1; font-size:0.88rem;">
+            <b>Caso Clínico Vinculado al Chat:</b><br>
+            • <b>Paciente:</b> {paciente.get('Edad')} años, {paciente.get('Sexo')}<br>
+            • <b>Signos:</b> FC {paciente.get('FC')} lpm | Temp {paciente.get('Temp')} °C | PA {paciente.get('PA')} mmHg | SatO₂ {paciente.get('SatO2')}%<br>
+            • <b>Síntomas:</b> {paciente.get('Sintomas')}<br>
+            • <b>Triaje ML:</b> <b>{paciente.get('Triaje')}</b> (Certeza: {paciente.get('Confianza')})
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col_ctx2:
+        with st.expander("Ver Evidencia Estructurada del Grafo de Conocimiento (Graph RAG)", expanded=False):
+            st.markdown(f"**Nivel de Acción Ontológica:** {graph_ctx['accion_triaje']}")
+            st.markdown(f"**Precauciones Validadas:** {', '.join(graph_ctx['precauciones_validadas'])}")
+            st.markdown(f"**Fármacos Asociados en el Grafo:** {', '.join(graph_ctx['farmacos_ontologia'])}")
+            st.markdown(f"**Dietas y Cuidados:** {', '.join(graph_ctx['dietas_ontologia'])}")
+            st.caption(f"Grafo de referencia: {graph_ctx['resumen_grafo']['total_nodos']} nodos y {graph_ctx['resumen_grafo']['total_aristas']} aristas ontológicas.")
+
+    st.divider()
+
+    # 3. Sugerencias Rápidas de Preguntas
+    col_q1, col_q2, col_q3 = st.columns(3)
+    pregunta_sugerida = None
+    with col_q1:
+        if st.button("¿Cuáles son los signos de alarma para urgencias?", use_container_width=True):
+            pregunta_sugerida = "¿Cuáles son los signos de alarma que requieren atención médica urgente para este paciente?"
+    with col_q2:
+        if st.button("¿Qué precauciones indica el grafo médico?", use_container_width=True):
+            pregunta_sugerida = "¿Qué precauciones y cuidados específicos recomienda la ontología médica según el triaje?"
+    with col_q3:
+        if st.button("¿Qué manejo farmacológico y dieta sugiere el grafo?", use_container_width=True):
+            pregunta_sugerida = "¿Qué medicamentos y pautas de hidratación están registrados en el grafo para esta severidad?"
+
+    # 4. Historial del Chat
+    for msg in st.session_state.chat_messages:
+        with st.chat_message(msg['role']):
+            st.markdown(msg['content'])
+
+    # Entrada del Chat
+    chat_input = st.chat_input("Escribe una consulta sobre el paciente, su severidad o precauciones...")
+    prompt_usuario = pregunta_sugerida if pregunta_sugerida else chat_input
+
+    if prompt_usuario:
+        # Registrar y mostrar mensaje de usuario
+        st.session_state.chat_messages.append({'role': 'user', 'content': prompt_usuario})
+        with st.chat_message('user'):
+            st.markdown(prompt_usuario)
+
+        # Construir System Prompt con Graph RAG
+        system_prompt = construir_prompt_sistema_graph_rag(graph_ctx, paciente)
+
+        with st.chat_message('assistant'):
+            # Si el servidor Ollama está conectado, generar con streaming
+            if is_connected:
+                historial_para_ollama = [
+                    m for m in st.session_state.chat_messages if m['role'] in ['user', 'assistant']
+                ]
+                stream_generator = stream_chat_ollama(
+                    mensajes=historial_para_ollama,
+                    model=st.session_state.ollama_model,
+                    base_url=st.session_state.ollama_server_url,
+                    system_prompt=system_prompt
+                )
+                respuesta_completa = st.write_stream(stream_generator)
+            else:
+                # Modo de respaldo directo desde el grafo de conocimiento
+                respuesta_completa = generar_respuesta_fallback_grafo(graph_ctx, paciente, prompt_usuario)
+                st.markdown(respuesta_completa)
+
+        st.session_state.chat_messages.append({'role': 'assistant', 'content': respuesta_completa})
+
+    if len(st.session_state.chat_messages) > 2:
+        if st.button("Limpiar Conversación"):
+            st.session_state.chat_messages = [st.session_state.chat_messages[0]]
+            st.rerun()
+
+# ==============================================================================
+# PESTAÑA 3: ANÁLISIS ESTADÍSTICO, AUDITORÍA DE OUTLIERS Y MODELOS
+# ==============================================================================
 with tab_analitica:
     st.header("Análisis Bioestadístico, Auditoría de Outliers y Evaluación de Modelos")
     st.markdown("""
