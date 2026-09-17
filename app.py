@@ -459,27 +459,13 @@ with tab_chatbot:
         symptoms=[s.strip() for s in paciente.get('Sintomas', '').split(',') if s.strip()]
     )
 
-    col_ctx1, col_ctx2 = st.columns([1.1, 1.3])
-    with col_ctx1:
-        st.markdown(f"""
-        <div style="background-color:#f1f5f9; padding:0.9rem; border-radius:8px; border:1px solid #cbd5e1; font-size:0.88rem;">
-            <b>Caso Clínico Vinculado al Chat:</b><br>
-            • <b>Paciente:</b> {paciente.get('Edad')} años, {paciente.get('Sexo')}<br>
-            • <b>Signos:</b> FC {paciente.get('FC')} lpm | Temp {paciente.get('Temp')} °C | PA {paciente.get('PA')} mmHg | SatO₂ {paciente.get('SatO2')}%<br>
-            • <b>Síntomas:</b> {paciente.get('Sintomas')}<br>
-            • <b>Triaje ML:</b> <b>{paciente.get('Triaje')}</b> (Certeza: {paciente.get('Confianza')})
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col_ctx2:
-        with st.expander("Ver Evidencia Estructurada del Grafo de Conocimiento (Graph RAG)", expanded=False):
-            st.markdown(f"**Nivel de Acción Ontológica:** {graph_ctx['accion_triaje']}")
-            st.markdown(f"**Precauciones Validadas:** {', '.join(graph_ctx['precauciones_validadas'])}")
-            st.markdown(f"**Fármacos Asociados en el Grafo:** {', '.join(graph_ctx['farmacos_ontologia'])}")
-            st.markdown(f"**Dietas y Cuidados:** {', '.join(graph_ctx['dietas_ontologia'])}")
-            st.caption(f"Grafo de referencia: {graph_ctx['resumen_grafo']['total_nodos']} nodos y {graph_ctx['resumen_grafo']['total_aristas']} aristas ontológicas.")
-
-    st.divider()
+    st.markdown(f"""
+    <div style="background-color:#f1f5f9; padding:0.9rem 1.2rem; border-radius:8px; border:1px solid #cbd5e1; font-size:0.9rem; margin-bottom:1rem;">
+        <b>Caso Clínico Vinculado al Asistente:</b><br>
+        • <b>Paciente:</b> {paciente.get('Edad')} años, {paciente.get('Sexo')} | <b>Constantes:</b> FC {paciente.get('FC')} lpm, Temp {paciente.get('Temp')} °C, PA {paciente.get('PA')} mmHg, SatO₂ {paciente.get('SatO2')}%<br>
+        • <b>Síntomas Referidos:</b> {paciente.get('Sintomas')} | <b>Severidad de Triaje:</b> <b>{paciente.get('Triaje')}</b> (Certeza: {paciente.get('Confianza')})
+    </div>
+    """, unsafe_allow_html=True)
 
     # 3. Sugerencias Rápidas de Preguntas
     col_q1, col_q2, col_q3 = st.columns(3)
