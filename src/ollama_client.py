@@ -5,35 +5,44 @@ Permite conectar tanto a Ollama local (localhost:11434) como a un servidor remot
 (computador expuesto vía túnel Ngrok / Cloudflare / IP pública).
 """
 
+import os
 import json
 import requests
 from typing import Dict, List, Any, Generator, Tuple
 
-DEFAULT_OLLAMA_URL = "http://localhost:11434"
+# URL primaria configurada por el usuario (túnel para despliegue remoto)
+DEFAULT_OLLAMA_URL = os.getenv("OLLAMA_SERVER_URL", "https://icy-dogs-sin.loca.lt")
+FALLBACK_LOCAL_URL = "http://localhost:11434"
 DEFAULT_MODEL = "qwen3.5:9b"
+
+TUNNEL_HEADERS = {
+    "Bypass-Tunnel-Reminder": "true",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+}
 
 def verificar_conexion_ollama(base_url: str = DEFAULT_OLLAMA_URL, timeout: float = 3.5) -> Tuple[bool, List[str], str]:
     """
     Comprueba si el servidor de Ollama responde en la URL indicada y recupera
-    la lista de modelos instalados en la máquina.
+    la lista de modelos instalados en la máquina. Si la URL de túnel no responde
+    o está protegida, intenta automáticamente conectar al host local.
     """
-    url_limpia = base_url.rstrip('/')
-    endpoint = f"{url_limpia}/api/tags"
-    
-    try:
-        r = requests.get(endpoint, timeout=timeout)
-        if r.status_code == 200:
-            data = r.json()
-            modelos = [m['name'] for m in data.get('models', [])]
-            return True, modelos, "Conexión exitosa con el servidor Ollama."
-        else:
-            return False, [], f"Servidor respondió con código HTTP {r.status_code}."
-    except requests.exceptions.ConnectionError:
-        return False, [], f"No se pudo conectar a {base_url}. Verifique que Ollama esté ejecutándose ('ollama serve')."
-    except requests.exceptions.Timeout:
-        return False, [], f"Tiempo de espera agotado al conectar a {base_url}."
-    except Exception as e:
-        return False, [], f"Error de conexión: {str(e)}"
+    urls_to_try = [base_url]
+    if base_url != FALLBACK_LOCAL_URL:
+        urls_to_try.append(FALLBACK_LOCAL_URL)
+        
+    for target_url in urls_to_try:
+        url_limpia = target_url.rstrip('/')
+        endpoint = f"{url_limpia}/api/tags"
+        try:
+            r = requests.get(endpoint, headers=TUNNEL_HEADERS, timeout=timeout)
+            if r.status_code == 200:
+                data = r.json()
+                modelos = [m['name'] for m in data.get('models', [])]
+                return True, modelos, f"Conexión exitosa con el servidor Ollama ({target_url})."
+        except Exception:
+            continue
+            
+    return False, [], f"No se pudo conectar al servidor Ollama en {base_url}."
 
 def construir_prompt_sistema_graph_rag(graph_context: Dict[str, Any], patient_summary: Dict[str, Any]) -> str:
     """
@@ -101,7 +110,7 @@ def stream_chat_ollama(
     }
     
     try:
-        response = requests.post(endpoint, json=payload, stream=True, timeout=90)
+        response = requests.post(endpoint, json=payload, headers=TUNNEL_HEADERS, stream=True, timeout=90)
         response.raise_for_status()
         
         for line in response.iter_lines(decode_unicode=True):
@@ -115,6 +124,21 @@ def stream_chat_ollama(
                     continue
                     
     except requests.exceptions.RequestException as e:
+        # Si falló la URL remota y estamos en local, intentar con FALLBACK_LOCAL_URL
+        if base_url != FALLBACK_LOCAL_URL:
+            try:
+                local_endpoint = f"{FALLBACK_LOCAL_URL}/api/chat"
+                local_resp = requests.post(local_endpoint, json=payload, stream=True, timeout=90)
+                local_resp.raise_for_status()
+                for line in local_resp.iter_lines(decode_unicode=True):
+                    if line:
+                        chunk = json.loads(line)
+                        content = chunk.get('message', {}).get('content', '')
+                        if content:
+                            yield content
+                return
+            except Exception:
+                pass
         yield f"\n\n[Error de comunicación con el servidor Ollama ({base_url})]: {str(e)}"
 
 def generar_respuesta_fallback_grafo(graph_context: Dict[str, Any], patient_summary: Dict[str, Any], query: str) -> str:
