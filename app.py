@@ -513,6 +513,31 @@ with tab_chatbot:
             st.markdown(f"**Fármacos Asociados en el Grafo:** {', '.join(graph_ctx['farmacos_ontologia'])}")
             st.markdown(f"**Dietas y Cuidados:** {', '.join(graph_ctx['dietas_ontologia'])}")
             st.caption(f"Grafo de referencia: {graph_ctx['resumen_grafo']['total_nodos']} nodos y {graph_ctx['resumen_grafo']['total_aristas']} aristas ontológicas.")
+            
+            st.markdown("---")
+            st.markdown("<b>Exportar Grafo de Conocimiento a Disco:</b>", unsafe_allow_html=True)
+            cg1, cg2 = st.columns(2)
+            graphml_file = os.path.join(BASE_DIR, 'data', 'knowledge_graph', 'medical_knowledge_graph.graphml')
+            json_file = os.path.join(BASE_DIR, 'data', 'knowledge_graph', 'medical_knowledge_graph.json')
+            
+            if os.path.exists(graphml_file):
+                with open(graphml_file, 'rb') as f:
+                    cg1.download_button(
+                        label="Descargar GraphML (Gephi)",
+                        data=f.read(),
+                        file_name="medical_knowledge_graph.graphml",
+                        mime="application/xml",
+                        use_container_width=True
+                    )
+            if os.path.exists(json_file):
+                with open(json_file, 'rb') as f:
+                    cg2.download_button(
+                        label="Descargar JSON (D3.js)",
+                        data=f.read(),
+                        file_name="medical_knowledge_graph.json",
+                        mime="application/json",
+                        use_container_width=True
+                    )
 
     st.divider()
 

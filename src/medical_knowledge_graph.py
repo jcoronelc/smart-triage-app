@@ -7,12 +7,15 @@ a hechos médicos verificados (descripciones, precauciones, fármacos y dietas).
 
 import os
 import ast
+import json
+import pickle
 import pandas as pd
 import networkx as nx
 from typing import Dict, List, Any, Optional
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, 'data', 'kaggle_dataset')
+GRAPH_EXPORT_DIR = os.path.join(BASE_DIR, 'data', 'knowledge_graph')
 
 # Mapeo de enfermedades del modelo de triaje con las del grafo de conocimiento
 MAPEO_ENFERMEDADES = {
@@ -34,10 +37,23 @@ class MedicalKnowledgeGraph:
     - Diet (Dieta/Nutrición)
     - Severity (Nivel de Severidad de Triaje)
     """
-    def __init__(self, data_dir: str = DATA_DIR):
+    def __init__(self, data_dir: str = DATA_DIR, export_dir: str = GRAPH_EXPORT_DIR):
         self.data_dir = data_dir
+        self.export_dir = export_dir
         self.graph = nx.DiGraph()
+        self._cargar_o_construir_grafo()
+
+    def _cargar_o_construir_grafo(self):
+        pkl_path = os.path.join(self.export_dir, 'medical_knowledge_graph.pkl')
+        if os.path.exists(pkl_path):
+            try:
+                with open(pkl_path, 'rb') as f:
+                    self.graph = pickle.load(f)
+                return
+            except Exception:
+                pass
         self._construir_grafo()
+        self.exportar_a_disco()
 
     def _safe_parse_list(self, val: Any) -> List[str]:
         if pd.isna(val):
@@ -197,6 +213,38 @@ class MedicalKnowledgeGraph:
                 'total_nodos': self.graph.number_of_nodes(),
                 'total_aristas': self.graph.number_of_edges()
             }
+        }
+
+    def exportar_a_disco(self, target_dir: Optional[str] = None) -> Dict[str, str]:
+        """
+        Exporta el grafo de conocimiento a disco en 3 formatos estándar:
+        1. GraphML (.graphml) -> Para Gephi, Cytoscape y análisis de redes complejas.
+        2. JSON Node-Link (.json) -> Para D3.js, visualizadores web y APIs REST.
+        3. Pickle (.pkl) -> Para carga instantánea en memoria en Python.
+        """
+        out_dir = target_dir or self.export_dir
+        os.makedirs(out_dir, exist_ok=True)
+        
+        graphml_path = os.path.join(out_dir, 'medical_knowledge_graph.graphml')
+        json_path = os.path.join(out_dir, 'medical_knowledge_graph.json')
+        pkl_path = os.path.join(out_dir, 'medical_knowledge_graph.pkl')
+        
+        # 1. GraphML (Gephi / Cytoscape)
+        nx.write_graphml(self.graph, graphml_path)
+        
+        # 2. JSON Node-Link
+        data_json = nx.node_link_data(self.graph)
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(data_json, f, ensure_ascii=False, indent=2)
+            
+        # 3. Pickle binario
+        with open(pkl_path, 'wb') as f:
+            pickle.dump(self.graph, f)
+            
+        return {
+            'graphml': graphml_path,
+            'json': json_path,
+            'pickle': pkl_path
         }
 
 # Instancia global del grafo

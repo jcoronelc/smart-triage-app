@@ -1,0 +1,4622 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "Disease",
+      "description": "Fungal infection is a common skin condition caused by fungi.",
+      "id": "Fungal infection"
+    },
+    {
+      "type": "Disease",
+      "description": "Allergy is an immune system reaction to a substance in the environment.",
+      "id": "Allergy"
+    },
+    {
+      "type": "Disease",
+      "description": "GERD (Gastroesophageal Reflux Disease) is a digestive disorder that affects the lower esophageal sphincter.",
+      "id": "GERD"
+    },
+    {
+      "type": "Disease",
+      "description": "Chronic cholestasis is a condition where bile flow from the liver is reduced for a prolonged period.",
+      "id": "Chronic cholestasis"
+    },
+    {
+      "type": "Disease",
+      "description": "Drug Reaction occurs when the body reacts adversely to a medication.",
+      "id": "Drug Reaction"
+    },
+    {
+      "type": "Disease",
+      "description": "Peptic ulcer disease involves sores that develop on the inner lining of the stomach and small intestine.",
+      "id": "Peptic ulcer disease"
+    },
+    {
+      "type": "Disease",
+      "description": "AIDS (Acquired Immunodeficiency Syndrome) is a disease caused by HIV that weakens the immune system.",
+      "id": "AIDS"
+    },
+    {
+      "type": "Disease",
+      "description": "Diabetes is a chronic condition that affects how the body processes blood sugar.",
+      "id": "Diabetes"
+    },
+    {
+      "type": "Disease",
+      "description": "Gastroenteritis is an inflammation of the stomach and intestines, typically caused by a virus or bacteria.",
+      "id": "Gastroenteritis"
+    },
+    {
+      "type": "Disease",
+      "description": "Bronchial Asthma is a respiratory condition characterized by inflammation of the airways.",
+      "id": "Bronchial Asthma"
+    },
+    {
+      "type": "Disease",
+      "description": "Hypertension, or high blood pressure, is a common cardiovascular condition.",
+      "id": "Hypertension"
+    },
+    {
+      "type": "Disease",
+      "description": "Migraine is a type of headache that often involves severe pain and sensitivity to light and sound.",
+      "id": "Migraine"
+    },
+    {
+      "type": "Disease",
+      "description": "Cervical spondylosis is a degenerative condition of the cervical spine.",
+      "id": "Cervical spondylosis"
+    },
+    {
+      "type": "Disease",
+      "description": "Paralysis (brain hemorrhage) refers to the loss of muscle function due to bleeding in the brain.",
+      "id": "Paralysis (brain hemorrhage)"
+    },
+    {
+      "type": "Disease",
+      "description": "Jaundice is a yellow discoloration of the skin and eyes, often indicating liver problems.",
+      "id": "Jaundice"
+    },
+    {
+      "type": "Disease",
+      "description": "Malaria is a mosquito-borne infectious disease affecting humans and other animals.",
+      "id": "Malaria"
+    },
+    {
+      "type": "Disease",
+      "description": "Chicken pox is a highly contagious viral infection causing an itchy rash.",
+      "id": "Chicken pox"
+    },
+    {
+      "type": "Disease",
+      "description": "Dengue is a mosquito-borne viral infection causing flu-like symptoms.",
+      "id": "Dengue"
+    },
+    {
+      "type": "Disease",
+      "description": "Typhoid is a bacterial infection that can lead to a high fever and gastrointestinal symptoms.",
+      "id": "Typhoid"
+    },
+    {
+      "type": "Disease",
+      "description": "hepatitis A is a viral liver disease.",
+      "id": "hepatitis A"
+    },
+    {
+      "type": "Disease",
+      "description": "Hepatitis B is a viral infection that attacks the liver.",
+      "id": "Hepatitis B"
+    },
+    {
+      "type": "Disease",
+      "description": "Hepatitis C is a viral infection that causes liver inflammation.",
+      "id": "Hepatitis C"
+    },
+    {
+      "type": "Disease",
+      "description": "Hepatitis D is a serious liver disease caused by the hepatitis D virus.",
+      "id": "Hepatitis D"
+    },
+    {
+      "type": "Disease",
+      "description": "Hepatitis E is a viral infection that causes liver inflammation.",
+      "id": "Hepatitis E"
+    },
+    {
+      "type": "Disease",
+      "description": "Alcoholic hepatitis is inflammation of the liver due to alcohol consumption.",
+      "id": "Alcoholic hepatitis"
+    },
+    {
+      "type": "Disease",
+      "description": "Tuberculosis is a bacterial infection that primarily affects the lungs.",
+      "id": "Tuberculosis"
+    },
+    {
+      "type": "Disease",
+      "description": "Common Cold is a viral infection of the upper respiratory tract.",
+      "id": "Common Cold"
+    },
+    {
+      "type": "Disease",
+      "description": "Pneumonia is an inflammatory condition affecting the air sacs in the lungs.",
+      "id": "Pneumonia"
+    },
+    {
+      "type": "Disease",
+      "description": "Dimorphic hemmorhoids(piles) is a condition characterized by swollen blood vessels in the rectum.",
+      "id": "Dimorphic hemmorhoids(piles)"
+    },
+    {
+      "type": "Disease",
+      "description": "Heart attack is a sudden and severe reduction in blood flow to the heart muscle.",
+      "id": "Heart attack"
+    },
+    {
+      "type": "Disease",
+      "description": "Varicose veins are enlarged, twisted veins that usually appear on the legs.",
+      "id": "Varicose veins"
+    },
+    {
+      "type": "Disease",
+      "description": "Hypothyroidism is a condition where the thyroid gland doesn't produce enough thyroid hormone.",
+      "id": "Hypothyroidism"
+    },
+    {
+      "type": "Disease",
+      "description": "Hyperthyroidism is a condition where the thyroid gland produces too much thyroid hormone.",
+      "id": "Hyperthyroidism"
+    },
+    {
+      "type": "Disease",
+      "description": "Hypoglycemia is a condition characterized by abnormally low blood sugar levels.",
+      "id": "Hypoglycemia"
+    },
+    {
+      "type": "Disease",
+      "description": "Osteoarthristis is a degenerative joint disease that affects the cartilage in joints.",
+      "id": "Osteoarthristis"
+    },
+    {
+      "type": "Disease",
+      "description": "Arthritis is inflammation of one or more joints, causing pain and stiffness.",
+      "id": "Arthritis"
+    },
+    {
+      "type": "Disease",
+      "description": "(Vertigo) Paroxysmal Positional Vertigo is a type of dizziness caused by specific head movements.",
+      "id": "(vertigo) Paroymsal Positional Vertigo"
+    },
+    {
+      "type": "Disease",
+      "description": "Acne is a skin condition that occurs when hair follicles become clogged with oil and dead skin cells.",
+      "id": "Acne"
+    },
+    {
+      "type": "Disease",
+      "description": "Urinary tract infection is an infection in any part of the urinary system.",
+      "id": "Urinary tract infection"
+    },
+    {
+      "type": "Disease",
+      "description": "Psoriasis is a chronic skin condition characterized by red, itchy, and scaly patches.",
+      "id": "Psoriasis"
+    },
+    {
+      "type": "Disease",
+      "description": "Impetigo is a highly contagious skin infection causing red sores that can break open.",
+      "id": "Impetigo"
+    },
+    {
+      "type": "Precaution",
+      "text": "Stop irritation",
+      "id": "Precaucion: Stop irritation"
+    },
+    {
+      "type": "Precaution",
+      "text": "Consult nearest hospital",
+      "id": "Precaucion: Consult nearest hospital"
+    },
+    {
+      "type": "Precaution",
+      "text": "Stop taking drug",
+      "id": "Precaucion: Stop taking drug"
+    },
+    {
+      "type": "Precaution",
+      "text": "Follow up",
+      "id": "Precaucion: Follow up"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid oily food",
+      "id": "Precaucion: Avoid oily food"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid non veg food",
+      "id": "Precaucion: Avoid non veg food"
+    },
+    {
+      "type": "Precaution",
+      "text": "Keep mosquitos out",
+      "id": "Precaucion: Keep mosquitos out"
+    },
+    {
+      "type": "Precaution",
+      "text": "Apply calamine",
+      "id": "Precaucion: Apply calamine"
+    },
+    {
+      "type": "Precaution",
+      "text": "Cover area with bandage",
+      "id": "Precaucion: Cover area with bandage"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use ice to compress itching",
+      "id": "Precaucion: Use ice to compress itching"
+    },
+    {
+      "type": "Precaution",
+      "text": "Reduce stress",
+      "id": "Precaucion: Reduce stress"
+    },
+    {
+      "type": "Precaution",
+      "text": "Exercise",
+      "id": "Precaucion: Exercise"
+    },
+    {
+      "type": "Precaution",
+      "text": "Eat healthy",
+      "id": "Precaucion: Eat healthy"
+    },
+    {
+      "type": "Precaution",
+      "text": "Get proper sleep",
+      "id": "Precaucion: Get proper sleep"
+    },
+    {
+      "type": "Precaution",
+      "text": "Wash hands with warm soapy water",
+      "id": "Precaucion: Wash hands with warm soapy water"
+    },
+    {
+      "type": "Precaution",
+      "text": "Stop bleeding using pressure",
+      "id": "Precaucion: Stop bleeding using pressure"
+    },
+    {
+      "type": "Precaution",
+      "text": "Consult doctor",
+      "id": "Precaucion: Consult doctor"
+    },
+    {
+      "type": "Precaution",
+      "text": "Salt baths",
+      "id": "Precaucion: Salt baths"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid fatty spicy food",
+      "id": "Precaucion: Avoid fatty spicy food"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid lying down after eating",
+      "id": "Precaucion: Avoid lying down after eating"
+    },
+    {
+      "type": "Precaution",
+      "text": "Maintain healthy weight",
+      "id": "Precaucion: Maintain healthy weight"
+    },
+    {
+      "type": "Precaution",
+      "text": "Cold baths",
+      "id": "Precaucion: Cold baths"
+    },
+    {
+      "type": "Precaution",
+      "text": "Anti itch medicine",
+      "id": "Precaucion: Anti itch medicine"
+    },
+    {
+      "type": "Precaution",
+      "text": "Wash hands through",
+      "id": "Precaucion: Wash hands through"
+    },
+    {
+      "type": "Precaution",
+      "text": "Medication",
+      "id": "Precaucion: Medication"
+    },
+    {
+      "type": "Precaution",
+      "text": "Acetaminophen",
+      "id": "Precaucion: Acetaminophen"
+    },
+    {
+      "type": "Disease",
+      "description": "Condición respiratoria / clínica.",
+      "id": "(vertigo) Paroymsal  Positional Vertigo"
+    },
+    {
+      "type": "Precaution",
+      "text": "Lie down",
+      "id": "Precaucion: Lie down"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid sudden change in body",
+      "id": "Precaucion: Avoid sudden change in body"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid abrupt head movment",
+      "id": "Precaucion: Avoid abrupt head movment"
+    },
+    {
+      "type": "Precaution",
+      "text": "Relax",
+      "id": "Precaucion: Relax"
+    },
+    {
+      "type": "Precaution",
+      "text": "Lie down on side",
+      "id": "Precaucion: Lie down on side"
+    },
+    {
+      "type": "Precaution",
+      "text": "Check in pulse",
+      "id": "Precaucion: Check in pulse"
+    },
+    {
+      "type": "Precaution",
+      "text": "Drink sugary drinks",
+      "id": "Precaucion: Drink sugary drinks"
+    },
+    {
+      "type": "Precaution",
+      "text": "Bath twice",
+      "id": "Precaucion: Bath twice"
+    },
+    {
+      "type": "Precaution",
+      "text": "Drink plenty of water",
+      "id": "Precaucion: Drink plenty of water"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid too many products",
+      "id": "Precaucion: Avoid too many products"
+    },
+    {
+      "type": "Precaution",
+      "text": "Have balanced diet",
+      "id": "Precaucion: Have balanced diet"
+    },
+    {
+      "type": "Precaution",
+      "text": "Soak affected area in warm water",
+      "id": "Precaucion: Soak affected area in warm water"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use antibiotics",
+      "id": "Precaucion: Use antibiotics"
+    },
+    {
+      "type": "Precaution",
+      "text": "Remove scabs with wet compressed cloth",
+      "id": "Precaucion: Remove scabs with wet compressed cloth"
+    },
+    {
+      "type": "Precaution",
+      "text": "Meditation",
+      "id": "Precaucion: Meditation"
+    },
+    {
+      "type": "Disease",
+      "description": "Condición respiratoria / clínica.",
+      "id": "Peptic ulcer diseae"
+    },
+    {
+      "type": "Precaution",
+      "text": "Consume probiotic food",
+      "id": "Precaucion: Consume probiotic food"
+    },
+    {
+      "type": "Precaution",
+      "text": "Eliminate milk",
+      "id": "Precaucion: Eliminate milk"
+    },
+    {
+      "type": "Precaution",
+      "text": "Limit alcohol",
+      "id": "Precaucion: Limit alcohol"
+    },
+    {
+      "type": "Precaution",
+      "text": "Consume witch hazel",
+      "id": "Precaucion: Consume witch hazel"
+    },
+    {
+      "type": "Precaution",
+      "text": "Warm bath with epsom salt",
+      "id": "Precaucion: Warm bath with epsom salt"
+    },
+    {
+      "type": "Precaution",
+      "text": "Consume alovera juice",
+      "id": "Precaucion: Consume alovera juice"
+    },
+    {
+      "type": "Precaution",
+      "text": "Drink vitamin c rich drinks",
+      "id": "Precaucion: Drink vitamin c rich drinks"
+    },
+    {
+      "type": "Precaution",
+      "text": "Take vapour",
+      "id": "Precaucion: Take vapour"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid cold food",
+      "id": "Precaucion: Avoid cold food"
+    },
+    {
+      "type": "Precaution",
+      "text": "Keep fever in check",
+      "id": "Precaucion: Keep fever in check"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use neem in bathing",
+      "id": "Precaucion: Use neem in bathing"
+    },
+    {
+      "type": "Precaution",
+      "text": "Consume neem leaves",
+      "id": "Precaucion: Consume neem leaves"
+    },
+    {
+      "type": "Precaution",
+      "text": "Take vaccine",
+      "id": "Precaucion: Take vaccine"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid public places",
+      "id": "Precaucion: Avoid public places"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use heating pad or cold pack",
+      "id": "Precaucion: Use heating pad or cold pack"
+    },
+    {
+      "type": "Precaution",
+      "text": "Take otc pain reliver",
+      "id": "Precaucion: Take otc pain reliver"
+    },
+    {
+      "type": "Precaution",
+      "text": "Massage",
+      "id": "Precaucion: Massage"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use lemon balm",
+      "id": "Precaucion: Use lemon balm"
+    },
+    {
+      "type": "Precaution",
+      "text": "Take radioactive iodine treatment",
+      "id": "Precaucion: Take radioactive iodine treatment"
+    },
+    {
+      "type": "Precaution",
+      "text": "Increase vitamin c intake",
+      "id": "Precaucion: Increase vitamin c intake"
+    },
+    {
+      "type": "Precaution",
+      "text": "Drink cranberry juice",
+      "id": "Precaucion: Drink cranberry juice"
+    },
+    {
+      "type": "Precaution",
+      "text": "Take probiotics",
+      "id": "Precaucion: Take probiotics"
+    },
+    {
+      "type": "Precaution",
+      "text": "Lie down flat and raise the leg high",
+      "id": "Precaucion: Lie down flat and raise the leg high"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use oinments",
+      "id": "Precaucion: Use oinments"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use vein compression",
+      "id": "Precaucion: Use vein compression"
+    },
+    {
+      "type": "Precaution",
+      "text": "Dont stand still for long",
+      "id": "Precaucion: Dont stand still for long"
+    },
+    {
+      "type": "Precaution",
+      "text": "Avoid open cuts",
+      "id": "Precaucion: Avoid open cuts"
+    },
+    {
+      "type": "Precaution",
+      "text": "Wear ppe if possible",
+      "id": "Precaucion: Wear ppe if possible"
+    },
+    {
+      "type": "Precaution",
+      "text": "Eat high calorie vegitables",
+      "id": "Precaucion: Eat high calorie vegitables"
+    },
+    {
+      "type": "Precaution",
+      "text": "Antiboitic therapy",
+      "id": "Precaucion: Antiboitic therapy"
+    },
+    {
+      "type": "Precaution",
+      "text": "Vaccination",
+      "id": "Precaucion: Vaccination"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use detol or neem in bathing water",
+      "id": "Precaucion: Use detol or neem in bathing water"
+    },
+    {
+      "type": "Precaution",
+      "text": "Keep infected area dry",
+      "id": "Precaucion: Keep infected area dry"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use clean cloths",
+      "id": "Precaucion: Use clean cloths"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use poloroid glasses in sun",
+      "id": "Precaucion: Use poloroid glasses in sun"
+    },
+    {
+      "type": "Precaution",
+      "text": "Switch to loose cloothing",
+      "id": "Precaucion: Switch to loose cloothing"
+    },
+    {
+      "type": "Precaution",
+      "text": "Take deep breaths",
+      "id": "Precaucion: Take deep breaths"
+    },
+    {
+      "type": "Precaution",
+      "text": "Get away from trigger",
+      "id": "Precaucion: Get away from trigger"
+    },
+    {
+      "type": "Precaution",
+      "text": "Seek help",
+      "id": "Precaucion: Seek help"
+    },
+    {
+      "type": "Precaution",
+      "text": "Stop alcohol consumption",
+      "id": "Precaucion: Stop alcohol consumption"
+    },
+    {
+      "type": "Precaution",
+      "text": "Consume milk thistle",
+      "id": "Precaucion: Consume milk thistle"
+    },
+    {
+      "type": "Precaution",
+      "text": "Eat fruits and high fiberous food",
+      "id": "Precaucion: Eat fruits and high fiberous food"
+    },
+    {
+      "type": "Precaution",
+      "text": "Rest",
+      "id": "Precaucion: Rest"
+    },
+    {
+      "type": "Precaution",
+      "text": "Drink papaya leaf juice",
+      "id": "Precaucion: Drink papaya leaf juice"
+    },
+    {
+      "type": "Precaution",
+      "text": "Keep mosquitos away",
+      "id": "Precaucion: Keep mosquitos away"
+    },
+    {
+      "type": "Precaution",
+      "text": "Keep hydrated",
+      "id": "Precaucion: Keep hydrated"
+    },
+    {
+      "type": "Precaution",
+      "text": "Call ambulance",
+      "id": "Precaucion: Call ambulance"
+    },
+    {
+      "type": "Precaution",
+      "text": "Chew or swallow asprin",
+      "id": "Precaucion: Chew or swallow asprin"
+    },
+    {
+      "type": "Precaution",
+      "text": "Keep calm",
+      "id": "Precaucion: Keep calm"
+    },
+    {
+      "type": "Precaution",
+      "text": "Use hot and cold therapy",
+      "id": "Precaucion: Use hot and cold therapy"
+    },
+    {
+      "type": "Precaution",
+      "text": "Try acupuncture",
+      "id": "Precaucion: Try acupuncture"
+    },
+    {
+      "type": "Precaution",
+      "text": "Stop eating solid food for while",
+      "id": "Precaucion: Stop eating solid food for while"
+    },
+    {
+      "type": "Precaution",
+      "text": "Try taking small sips of water",
+      "id": "Precaucion: Try taking small sips of water"
+    },
+    {
+      "type": "Precaution",
+      "text": "Ease back into eating",
+      "id": "Precaucion: Ease back into eating"
+    },
+    {
+      "type": "Precaution",
+      "text": "Cover mouth",
+      "id": "Precaucion: Cover mouth"
+    },
+    {
+      "type": "Medication",
+      "name": "Antifungal Cream",
+      "id": "Farmaco: Antifungal Cream"
+    },
+    {
+      "type": "Medication",
+      "name": "Fluconazole",
+      "id": "Farmaco: Fluconazole"
+    },
+    {
+      "type": "Medication",
+      "name": "Terbinafine",
+      "id": "Farmaco: Terbinafine"
+    },
+    {
+      "type": "Medication",
+      "name": "Clotrimazole",
+      "id": "Farmaco: Clotrimazole"
+    },
+    {
+      "type": "Medication",
+      "name": "Ketoconazole",
+      "id": "Farmaco: Ketoconazole"
+    },
+    {
+      "type": "Medication",
+      "name": "Antihistamines",
+      "id": "Farmaco: Antihistamines"
+    },
+    {
+      "type": "Medication",
+      "name": "Decongestants",
+      "id": "Farmaco: Decongestants"
+    },
+    {
+      "type": "Medication",
+      "name": "Epinephrine",
+      "id": "Farmaco: Epinephrine"
+    },
+    {
+      "type": "Medication",
+      "name": "Corticosteroids",
+      "id": "Farmaco: Corticosteroids"
+    },
+    {
+      "type": "Medication",
+      "name": "Immunotherapy",
+      "id": "Farmaco: Immunotherapy"
+    },
+    {
+      "type": "Medication",
+      "name": "Proton Pump Inhibitors (PPIs)",
+      "id": "Farmaco: Proton Pump Inhibitors (PPIs)"
+    },
+    {
+      "type": "Medication",
+      "name": "H2 Blockers",
+      "id": "Farmaco: H2 Blockers"
+    },
+    {
+      "type": "Medication",
+      "name": "Antacids",
+      "id": "Farmaco: Antacids"
+    },
+    {
+      "type": "Medication",
+      "name": "Prokinetics",
+      "id": "Farmaco: Prokinetics"
+    },
+    {
+      "type": "Medication",
+      "name": "Antibiotics",
+      "id": "Farmaco: Antibiotics"
+    },
+    {
+      "type": "Medication",
+      "name": "Ursodeoxycholic acid",
+      "id": "Farmaco: Ursodeoxycholic acid"
+    },
+    {
+      "type": "Medication",
+      "name": "Cholestyramine",
+      "id": "Farmaco: Cholestyramine"
+    },
+    {
+      "type": "Medication",
+      "name": "Methotrexate",
+      "id": "Farmaco: Methotrexate"
+    },
+    {
+      "type": "Medication",
+      "name": "Liver transplant",
+      "id": "Farmaco: Liver transplant"
+    },
+    {
+      "type": "Medication",
+      "name": "Cytoprotective agents",
+      "id": "Farmaco: Cytoprotective agents"
+    },
+    {
+      "type": "Medication",
+      "name": "Antiretroviral drugs",
+      "id": "Farmaco: Antiretroviral drugs"
+    },
+    {
+      "type": "Medication",
+      "name": "Protease inhibitors",
+      "id": "Farmaco: Protease inhibitors"
+    },
+    {
+      "type": "Medication",
+      "name": "Integrase inhibitors",
+      "id": "Farmaco: Integrase inhibitors"
+    },
+    {
+      "type": "Medication",
+      "name": "Entry inhibitors",
+      "id": "Farmaco: Entry inhibitors"
+    },
+    {
+      "type": "Medication",
+      "name": "Fusion inhibitors",
+      "id": "Farmaco: Fusion inhibitors"
+    },
+    {
+      "type": "Medication",
+      "name": "Insulin",
+      "id": "Farmaco: Insulin"
+    },
+    {
+      "type": "Medication",
+      "name": "Metformin",
+      "id": "Farmaco: Metformin"
+    },
+    {
+      "type": "Medication",
+      "name": "Sulfonylureas",
+      "id": "Farmaco: Sulfonylureas"
+    },
+    {
+      "type": "Medication",
+      "name": "DPP-4 inhibitors",
+      "id": "Farmaco: DPP-4 inhibitors"
+    },
+    {
+      "type": "Medication",
+      "name": "GLP-1 receptor agonists",
+      "id": "Farmaco: GLP-1 receptor agonists"
+    },
+    {
+      "type": "Medication",
+      "name": "Antiemetic drugs",
+      "id": "Farmaco: Antiemetic drugs"
+    },
+    {
+      "type": "Medication",
+      "name": "Antidiarrheal drugs",
+      "id": "Farmaco: Antidiarrheal drugs"
+    },
+    {
+      "type": "Medication",
+      "name": "IV fluids",
+      "id": "Farmaco: IV fluids"
+    },
+    {
+      "type": "Medication",
+      "name": "Probiotics",
+      "id": "Farmaco: Probiotics"
+    },
+    {
+      "type": "Medication",
+      "name": "Bronchodilators",
+      "id": "Farmaco: Bronchodilators"
+    },
+    {
+      "type": "Medication",
+      "name": "Inhaled corticosteroids",
+      "id": "Farmaco: Inhaled corticosteroids"
+    },
+    {
+      "type": "Medication",
+      "name": "Leukotriene modifiers",
+      "id": "Farmaco: Leukotriene modifiers"
+    },
+    {
+      "type": "Medication",
+      "name": "Mast cell stabilizers",
+      "id": "Farmaco: Mast cell stabilizers"
+    },
+    {
+      "type": "Medication",
+      "name": "Anticholinergics",
+      "id": "Farmaco: Anticholinergics"
+    },
+    {
+      "type": "Medication",
+      "name": "Antihypertensive medications",
+      "id": "Farmaco: Antihypertensive medications"
+    },
+    {
+      "type": "Medication",
+      "name": "Diuretics",
+      "id": "Farmaco: Diuretics"
+    },
+    {
+      "type": "Medication",
+      "name": "Beta-blockers",
+      "id": "Farmaco: Beta-blockers"
+    },
+    {
+      "type": "Medication",
+      "name": "ACE inhibitors",
+      "id": "Farmaco: ACE inhibitors"
+    },
+    {
+      "type": "Medication",
+      "name": "Calcium channel blockers",
+      "id": "Farmaco: Calcium channel blockers"
+    },
+    {
+      "type": "Medication",
+      "name": "Analgesics",
+      "id": "Farmaco: Analgesics"
+    },
+    {
+      "type": "Medication",
+      "name": "Triptans",
+      "id": "Farmaco: Triptans"
+    },
+    {
+      "type": "Medication",
+      "name": "Ergotamine derivatives",
+      "id": "Farmaco: Ergotamine derivatives"
+    },
+    {
+      "type": "Medication",
+      "name": "Preventive medications",
+      "id": "Farmaco: Preventive medications"
+    },
+    {
+      "type": "Medication",
+      "name": "Biofeedback",
+      "id": "Farmaco: Biofeedback"
+    },
+    {
+      "type": "Medication",
+      "name": "Pain relievers",
+      "id": "Farmaco: Pain relievers"
+    },
+    {
+      "type": "Medication",
+      "name": "Muscle relaxants",
+      "id": "Farmaco: Muscle relaxants"
+    },
+    {
+      "type": "Medication",
+      "name": "Physical therapy",
+      "id": "Farmaco: Physical therapy"
+    },
+    {
+      "type": "Medication",
+      "name": "Neck braces",
+      "id": "Farmaco: Neck braces"
+    },
+    {
+      "type": "Medication",
+      "name": "Blood thinners",
+      "id": "Farmaco: Blood thinners"
+    },
+    {
+      "type": "Medication",
+      "name": "Clot-dissolving medications",
+      "id": "Farmaco: Clot-dissolving medications"
+    },
+    {
+      "type": "Medication",
+      "name": "Anticonvulsants",
+      "id": "Farmaco: Anticonvulsants"
+    },
+    {
+      "type": "Medication",
+      "name": "Occupational therapy",
+      "id": "Farmaco: Occupational therapy"
+    },
+    {
+      "type": "Medication",
+      "name": "Blood transfusions",
+      "id": "Farmaco: Blood transfusions"
+    },
+    {
+      "type": "Medication",
+      "name": "Medications for itching",
+      "id": "Farmaco: Medications for itching"
+    },
+    {
+      "type": "Medication",
+      "name": "Antiviral medications",
+      "id": "Farmaco: Antiviral medications"
+    },
+    {
+      "type": "Medication",
+      "name": "Antimalarial drugs",
+      "id": "Farmaco: Antimalarial drugs"
+    },
+    {
+      "type": "Medication",
+      "name": "Antipyretics",
+      "id": "Farmaco: Antipyretics"
+    },
+    {
+      "type": "Medication",
+      "name": "Antiviral drugs",
+      "id": "Farmaco: Antiviral drugs"
+    },
+    {
+      "type": "Medication",
+      "name": "Platelet transfusions",
+      "id": "Farmaco: Platelet transfusions"
+    },
+    {
+      "type": "Medication",
+      "name": "Vaccination",
+      "id": "Farmaco: Vaccination"
+    },
+    {
+      "type": "Medication",
+      "name": "Alcohol cessation",
+      "id": "Farmaco: Alcohol cessation"
+    },
+    {
+      "type": "Medication",
+      "name": "Nutritional support",
+      "id": "Farmaco: Nutritional support"
+    },
+    {
+      "type": "Medication",
+      "name": "Isoniazid",
+      "id": "Farmaco: Isoniazid"
+    },
+    {
+      "type": "Medication",
+      "name": "Rifampin",
+      "id": "Farmaco: Rifampin"
+    },
+    {
+      "type": "Medication",
+      "name": "Ethambutol",
+      "id": "Farmaco: Ethambutol"
+    },
+    {
+      "type": "Medication",
+      "name": "Pyrazinamide",
+      "id": "Farmaco: Pyrazinamide"
+    },
+    {
+      "type": "Medication",
+      "name": "Cough suppressants",
+      "id": "Farmaco: Cough suppressants"
+    },
+    {
+      "type": "Medication",
+      "name": "Antifungal drugs",
+      "id": "Farmaco: Antifungal drugs"
+    },
+    {
+      "type": "Medication",
+      "name": "Oxygen therapy",
+      "id": "Farmaco: Oxygen therapy"
+    },
+    {
+      "type": "Medication",
+      "name": "Laxatives",
+      "id": "Farmaco: Laxatives"
+    },
+    {
+      "type": "Medication",
+      "name": "Warm baths",
+      "id": "Farmaco: Warm baths"
+    },
+    {
+      "type": "Medication",
+      "name": "Cold compresses",
+      "id": "Farmaco: Cold compresses"
+    },
+    {
+      "type": "Medication",
+      "name": "High-fiber diet",
+      "id": "Farmaco: High-fiber diet"
+    },
+    {
+      "type": "Medication",
+      "name": "Nitroglycerin",
+      "id": "Farmaco: Nitroglycerin"
+    },
+    {
+      "type": "Medication",
+      "name": "Aspirin",
+      "id": "Farmaco: Aspirin"
+    },
+    {
+      "type": "Medication",
+      "name": "Thrombolytic drugs",
+      "id": "Farmaco: Thrombolytic drugs"
+    },
+    {
+      "type": "Medication",
+      "name": "Compression stockings",
+      "id": "Farmaco: Compression stockings"
+    },
+    {
+      "type": "Medication",
+      "name": "Exercise",
+      "id": "Farmaco: Exercise"
+    },
+    {
+      "type": "Medication",
+      "name": "Elevating the legs",
+      "id": "Farmaco: Elevating the legs"
+    },
+    {
+      "type": "Medication",
+      "name": "Sclerotherapy",
+      "id": "Farmaco: Sclerotherapy"
+    },
+    {
+      "type": "Medication",
+      "name": "Laser treatments",
+      "id": "Farmaco: Laser treatments"
+    },
+    {
+      "type": "Medication",
+      "name": "Levothyroxine",
+      "id": "Farmaco: Levothyroxine"
+    },
+    {
+      "type": "Medication",
+      "name": "Antithyroid medications",
+      "id": "Farmaco: Antithyroid medications"
+    },
+    {
+      "type": "Medication",
+      "name": "Radioactive iodine",
+      "id": "Farmaco: Radioactive iodine"
+    },
+    {
+      "type": "Medication",
+      "name": "Thyroid surgery",
+      "id": "Farmaco: Thyroid surgery"
+    },
+    {
+      "type": "Medication",
+      "name": "Glucose tablets",
+      "id": "Farmaco: Glucose tablets"
+    },
+    {
+      "type": "Medication",
+      "name": "Candy or juice",
+      "id": "Farmaco: Candy or juice"
+    },
+    {
+      "type": "Medication",
+      "name": "Glucagon injection",
+      "id": "Farmaco: Glucagon injection"
+    },
+    {
+      "type": "Medication",
+      "name": "IV dextrose",
+      "id": "Farmaco: IV dextrose"
+    },
+    {
+      "type": "Medication",
+      "name": "Diazoxide",
+      "id": "Farmaco: Diazoxide"
+    },
+    {
+      "type": "Medication",
+      "name": "Hot and cold packs",
+      "id": "Farmaco: Hot and cold packs"
+    },
+    {
+      "type": "Medication",
+      "name": "Joint protection",
+      "id": "Farmaco: Joint protection"
+    },
+    {
+      "type": "Medication",
+      "name": "NSAIDs",
+      "id": "Farmaco: NSAIDs"
+    },
+    {
+      "type": "Medication",
+      "name": "Disease-modifying antirheumatic drugs (DMARDs)",
+      "id": "Farmaco: Disease-modifying antirheumatic drugs (DMARDs)"
+    },
+    {
+      "type": "Medication",
+      "name": "Biologics",
+      "id": "Farmaco: Biologics"
+    },
+    {
+      "type": "Medication",
+      "name": "Joint replacement surgery",
+      "id": "Farmaco: Joint replacement surgery"
+    },
+    {
+      "type": "Medication",
+      "name": "Vestibular rehabilitation",
+      "id": "Farmaco: Vestibular rehabilitation"
+    },
+    {
+      "type": "Medication",
+      "name": "Canalith repositioning",
+      "id": "Farmaco: Canalith repositioning"
+    },
+    {
+      "type": "Medication",
+      "name": "Medications for nausea",
+      "id": "Farmaco: Medications for nausea"
+    },
+    {
+      "type": "Medication",
+      "name": "Surgery",
+      "id": "Farmaco: Surgery"
+    },
+    {
+      "type": "Medication",
+      "name": "Home exercises",
+      "id": "Farmaco: Home exercises"
+    },
+    {
+      "type": "Medication",
+      "name": "Topical treatments",
+      "id": "Farmaco: Topical treatments"
+    },
+    {
+      "type": "Medication",
+      "name": "Oral medications",
+      "id": "Farmaco: Oral medications"
+    },
+    {
+      "type": "Medication",
+      "name": "Hormonal treatments",
+      "id": "Farmaco: Hormonal treatments"
+    },
+    {
+      "type": "Medication",
+      "name": "Isotretinoin",
+      "id": "Farmaco: Isotretinoin"
+    },
+    {
+      "type": "Medication",
+      "name": "Urinary analgesics",
+      "id": "Farmaco: Urinary analgesics"
+    },
+    {
+      "type": "Medication",
+      "name": "Phenazopyridine",
+      "id": "Farmaco: Phenazopyridine"
+    },
+    {
+      "type": "Medication",
+      "name": "Antispasmodics",
+      "id": "Farmaco: Antispasmodics"
+    },
+    {
+      "type": "Medication",
+      "name": "Phototherapy",
+      "id": "Farmaco: Phototherapy"
+    },
+    {
+      "type": "Medication",
+      "name": "Systemic medications",
+      "id": "Farmaco: Systemic medications"
+    },
+    {
+      "type": "Medication",
+      "name": "Coal tar",
+      "id": "Farmaco: Coal tar"
+    },
+    {
+      "type": "Medication",
+      "name": "Topical antibiotics",
+      "id": "Farmaco: Topical antibiotics"
+    },
+    {
+      "type": "Medication",
+      "name": "Oral antibiotics",
+      "id": "Farmaco: Oral antibiotics"
+    },
+    {
+      "type": "Medication",
+      "name": "Antiseptics",
+      "id": "Farmaco: Antiseptics"
+    },
+    {
+      "type": "Medication",
+      "name": "Ointments",
+      "id": "Farmaco: Ointments"
+    },
+    {
+      "type": "Medication",
+      "name": "Warm compresses",
+      "id": "Farmaco: Warm compresses"
+    },
+    {
+      "type": "Diet",
+      "name": "Antifungal Diet",
+      "id": "Dieta: Antifungal Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Probiotics",
+      "id": "Dieta: Probiotics"
+    },
+    {
+      "type": "Diet",
+      "name": "Garlic",
+      "id": "Dieta: Garlic"
+    },
+    {
+      "type": "Diet",
+      "name": "Coconut oil",
+      "id": "Dieta: Coconut oil"
+    },
+    {
+      "type": "Diet",
+      "name": "Turmeric",
+      "id": "Dieta: Turmeric"
+    },
+    {
+      "type": "Diet",
+      "name": "Elimination Diet",
+      "id": "Dieta: Elimination Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Omega-3-rich foods",
+      "id": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Vitamin C-rich foods",
+      "id": "Dieta: Vitamin C-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Quercetin-rich foods",
+      "id": "Dieta: Quercetin-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-Acid Diet",
+      "id": "Dieta: Low-Acid Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Fiber-rich foods",
+      "id": "Dieta: Fiber-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Ginger",
+      "id": "Dieta: Ginger"
+    },
+    {
+      "type": "Diet",
+      "name": "Licorice",
+      "id": "Dieta: Licorice"
+    },
+    {
+      "type": "Diet",
+      "name": "Aloe vera juice",
+      "id": "Dieta: Aloe vera juice"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-Fat Diet",
+      "id": "Dieta: Low-Fat Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "High-Fiber Diet",
+      "id": "Dieta: High-Fiber Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Lean proteins",
+      "id": "Dieta: Lean proteins"
+    },
+    {
+      "type": "Diet",
+      "name": "Whole grains",
+      "id": "Dieta: Whole grains"
+    },
+    {
+      "type": "Diet",
+      "name": "Fresh fruits and vegetables",
+      "id": "Dieta: Fresh fruits and vegetables"
+    },
+    {
+      "type": "Diet",
+      "name": "Antihistamine Diet",
+      "id": "Dieta: Antihistamine Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Balanced Diet",
+      "id": "Dieta: Balanced Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Protein-rich foods",
+      "id": "Dieta: Protein-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Fruits and vegetables",
+      "id": "Dieta: Fruits and vegetables"
+    },
+    {
+      "type": "Diet",
+      "name": "Healthy fats",
+      "id": "Dieta: Healthy fats"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-Glycemic Diet",
+      "id": "Dieta: Low-Glycemic Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-fat dairy",
+      "id": "Dieta: Low-fat dairy"
+    },
+    {
+      "type": "Diet",
+      "name": "Bland Diet",
+      "id": "Dieta: Bland Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Bananas",
+      "id": "Dieta: Bananas"
+    },
+    {
+      "type": "Diet",
+      "name": "Rice",
+      "id": "Dieta: Rice"
+    },
+    {
+      "type": "Diet",
+      "name": "Applesauce",
+      "id": "Dieta: Applesauce"
+    },
+    {
+      "type": "Diet",
+      "name": "Toast",
+      "id": "Dieta: Toast"
+    },
+    {
+      "type": "Diet",
+      "name": "Anti-Inflammatory Diet",
+      "id": "Dieta: Anti-Inflammatory Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "DASH Diet",
+      "id": "Dieta: DASH Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-sodium foods",
+      "id": "Dieta: Low-sodium foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Migraine Diet",
+      "id": "Dieta: Migraine Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-Tyramine Diet",
+      "id": "Dieta: Low-Tyramine Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Caffeine withdrawal",
+      "id": "Dieta: Caffeine withdrawal"
+    },
+    {
+      "type": "Diet",
+      "name": "Hydration",
+      "id": "Dieta: Hydration"
+    },
+    {
+      "type": "Diet",
+      "name": "Magnesium-rich foods",
+      "id": "Dieta: Magnesium-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Arthritis Diet",
+      "id": "Dieta: Arthritis Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Heart-Healthy Diet",
+      "id": "Dieta: Heart-Healthy Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Liver-Healthy Diet",
+      "id": "Dieta: Liver-Healthy Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-fat Diet",
+      "id": "Dieta: Low-fat Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Malaria Diet",
+      "id": "Dieta: Malaria Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "High-Calorie Diet",
+      "id": "Dieta: High-Calorie Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Soft and bland foods",
+      "id": "Dieta: Soft and bland foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Oral rehydration solutions",
+      "id": "Dieta: Oral rehydration solutions"
+    },
+    {
+      "type": "Diet",
+      "name": "Chicken Pox Diet",
+      "id": "Dieta: Chicken Pox Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Dengue Diet",
+      "id": "Dieta: Dengue Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Typhoid Diet",
+      "id": "Dieta: Typhoid Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Hepatitis A Diet",
+      "id": "Dieta: Hepatitis A Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Hepatitis B Diet",
+      "id": "Dieta: Hepatitis B Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Hepatitis C Diet",
+      "id": "Dieta: Hepatitis C Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Hepatitis D Diet",
+      "id": "Dieta: Hepatitis D Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Hepatitis E Diet",
+      "id": "Dieta: Hepatitis E Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "TB Diet",
+      "id": "Dieta: TB Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Cold Diet",
+      "id": "Dieta: Cold Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Warm fluids",
+      "id": "Dieta: Warm fluids"
+    },
+    {
+      "type": "Diet",
+      "name": "Rest",
+      "id": "Dieta: Rest"
+    },
+    {
+      "type": "Diet",
+      "name": "Honey and lemon tea",
+      "id": "Dieta: Honey and lemon tea"
+    },
+    {
+      "type": "Diet",
+      "name": "Pneumonia Diet",
+      "id": "Dieta: Pneumonia Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Hemorrhoids Diet",
+      "id": "Dieta: Hemorrhoids Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Warm baths",
+      "id": "Dieta: Warm baths"
+    },
+    {
+      "type": "Diet",
+      "name": "Stool softeners",
+      "id": "Dieta: Stool softeners"
+    },
+    {
+      "type": "Diet",
+      "name": "Varicose Veins Diet",
+      "id": "Dieta: Varicose Veins Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Hypothyroidism Diet",
+      "id": "Dieta: Hypothyroidism Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Iodine-rich foods",
+      "id": "Dieta: Iodine-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Selenium-rich foods",
+      "id": "Dieta: Selenium-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Hyperthyroidism Diet",
+      "id": "Dieta: Hyperthyroidism Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-Iodine Diet",
+      "id": "Dieta: Low-Iodine Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Calcium-rich foods",
+      "id": "Dieta: Calcium-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Hypoglycemia Diet",
+      "id": "Dieta: Hypoglycemia Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Complex carbohydrates",
+      "id": "Dieta: Complex carbohydrates"
+    },
+    {
+      "type": "Diet",
+      "name": "Protein-rich snacks",
+      "id": "Dieta: Protein-rich snacks"
+    },
+    {
+      "type": "Diet",
+      "name": "Vertigo Diet",
+      "id": "Dieta: Vertigo Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Low-Salt Diet",
+      "id": "Dieta: Low-Salt Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Ginger tea",
+      "id": "Dieta: Ginger tea"
+    },
+    {
+      "type": "Diet",
+      "name": "Vitamin D-rich foods",
+      "id": "Dieta: Vitamin D-rich foods"
+    },
+    {
+      "type": "Diet",
+      "name": "Acne Diet",
+      "id": "Dieta: Acne Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "UTI Diet",
+      "id": "Dieta: UTI Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Cranberry juice",
+      "id": "Dieta: Cranberry juice"
+    },
+    {
+      "type": "Diet",
+      "name": "Psoriasis Diet",
+      "id": "Dieta: Psoriasis Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Impetigo Diet",
+      "id": "Dieta: Impetigo Diet"
+    },
+    {
+      "type": "Diet",
+      "name": "Antibiotic treatment",
+      "id": "Dieta: Antibiotic treatment"
+    },
+    {
+      "type": "Severity",
+      "level": "Severe",
+      "clinical_action": "Atención Médica Inmediata requerida en Box de Vitales / Reanimación",
+      "id": "Severidad_Severe"
+    },
+    {
+      "type": "Severity",
+      "level": "Moderate",
+      "clinical_action": "Atención Prioritaria en Sala de Observación (< 60 min)",
+      "id": "Severidad_Moderate"
+    },
+    {
+      "type": "Severity",
+      "level": "Mild",
+      "clinical_action": "Atención Ambulatoria Estándar / Sala de Espera General",
+      "id": "Severidad_Mild"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Fungal infection",
+      "target": "Precaucion: Bath twice"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Fungal infection",
+      "target": "Precaucion: Use detol or neem in bathing water"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Fungal infection",
+      "target": "Precaucion: Keep infected area dry"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Fungal infection",
+      "target": "Precaucion: Use clean cloths"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Fungal infection",
+      "target": "Farmaco: Antifungal Cream"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Fungal infection",
+      "target": "Farmaco: Fluconazole"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Fungal infection",
+      "target": "Farmaco: Terbinafine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Fungal infection",
+      "target": "Farmaco: Clotrimazole"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Fungal infection",
+      "target": "Farmaco: Ketoconazole"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Fungal infection",
+      "target": "Dieta: Antifungal Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Fungal infection",
+      "target": "Dieta: Probiotics"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Fungal infection",
+      "target": "Dieta: Garlic"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Fungal infection",
+      "target": "Dieta: Coconut oil"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Fungal infection",
+      "target": "Dieta: Turmeric"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Allergy",
+      "target": "Precaucion: Apply calamine"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Allergy",
+      "target": "Precaucion: Cover area with bandage"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Allergy",
+      "target": "Precaucion: Use ice to compress itching"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Allergy",
+      "target": "Farmaco: Antihistamines"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Allergy",
+      "target": "Farmaco: Decongestants"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Allergy",
+      "target": "Farmaco: Epinephrine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Allergy",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Allergy",
+      "target": "Farmaco: Immunotherapy"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Allergy",
+      "target": "Dieta: Elimination Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Allergy",
+      "target": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Allergy",
+      "target": "Dieta: Vitamin C-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Allergy",
+      "target": "Dieta: Quercetin-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Allergy",
+      "target": "Dieta: Probiotics"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "GERD",
+      "target": "Precaucion: Avoid fatty spicy food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "GERD",
+      "target": "Precaucion: Avoid lying down after eating"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "GERD",
+      "target": "Precaucion: Maintain healthy weight"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "GERD",
+      "target": "Precaucion: Exercise"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "GERD",
+      "target": "Farmaco: Proton Pump Inhibitors (PPIs)"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "GERD",
+      "target": "Farmaco: H2 Blockers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "GERD",
+      "target": "Farmaco: Antacids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "GERD",
+      "target": "Farmaco: Prokinetics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "GERD",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "GERD",
+      "target": "Dieta: Low-Acid Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "GERD",
+      "target": "Dieta: Fiber-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "GERD",
+      "target": "Dieta: Ginger"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "GERD",
+      "target": "Dieta: Licorice"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "GERD",
+      "target": "Dieta: Aloe vera juice"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chronic cholestasis",
+      "target": "Precaucion: Cold baths"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chronic cholestasis",
+      "target": "Precaucion: Anti itch medicine"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chronic cholestasis",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chronic cholestasis",
+      "target": "Precaucion: Eat healthy"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chronic cholestasis",
+      "target": "Farmaco: Ursodeoxycholic acid"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chronic cholestasis",
+      "target": "Farmaco: Cholestyramine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chronic cholestasis",
+      "target": "Farmaco: Methotrexate"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chronic cholestasis",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chronic cholestasis",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chronic cholestasis",
+      "target": "Dieta: Low-Fat Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chronic cholestasis",
+      "target": "Dieta: High-Fiber Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chronic cholestasis",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chronic cholestasis",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chronic cholestasis",
+      "target": "Dieta: Fresh fruits and vegetables"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Drug Reaction",
+      "target": "Precaucion: Stop irritation"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Drug Reaction",
+      "target": "Precaucion: Consult nearest hospital"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Drug Reaction",
+      "target": "Precaucion: Stop taking drug"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Drug Reaction",
+      "target": "Precaucion: Follow up"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Drug Reaction",
+      "target": "Farmaco: Antihistamines"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Drug Reaction",
+      "target": "Farmaco: Epinephrine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Drug Reaction",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Drug Reaction",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Drug Reaction",
+      "target": "Farmaco: Antifungal Cream"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Drug Reaction",
+      "target": "Dieta: Antihistamine Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Drug Reaction",
+      "target": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Drug Reaction",
+      "target": "Dieta: Vitamin C-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Drug Reaction",
+      "target": "Dieta: Quercetin-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Drug Reaction",
+      "target": "Dieta: Probiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Peptic ulcer disease",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Peptic ulcer disease",
+      "target": "Farmaco: Proton Pump Inhibitors (PPIs)"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Peptic ulcer disease",
+      "target": "Farmaco: H2 Blockers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Peptic ulcer disease",
+      "target": "Farmaco: Antacids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Peptic ulcer disease",
+      "target": "Farmaco: Cytoprotective agents"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Peptic ulcer disease",
+      "target": "Dieta: Low-Acid Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Peptic ulcer disease",
+      "target": "Dieta: Fiber-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Peptic ulcer disease",
+      "target": "Dieta: Ginger"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Peptic ulcer disease",
+      "target": "Dieta: Licorice"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Peptic ulcer disease",
+      "target": "Dieta: Aloe vera juice"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "AIDS",
+      "target": "Precaucion: Avoid open cuts"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "AIDS",
+      "target": "Precaucion: Wear ppe if possible"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "AIDS",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "AIDS",
+      "target": "Precaucion: Follow up"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "AIDS",
+      "target": "Farmaco: Antiretroviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "AIDS",
+      "target": "Farmaco: Protease inhibitors"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "AIDS",
+      "target": "Farmaco: Integrase inhibitors"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "AIDS",
+      "target": "Farmaco: Entry inhibitors"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "AIDS",
+      "target": "Farmaco: Fusion inhibitors"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "AIDS",
+      "target": "Dieta: Balanced Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "AIDS",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "AIDS",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "AIDS",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "AIDS",
+      "target": "Dieta: Healthy fats"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Diabetes",
+      "target": "Precaucion: Have balanced diet"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Diabetes",
+      "target": "Precaucion: Exercise"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Diabetes",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Diabetes",
+      "target": "Precaucion: Follow up"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Diabetes",
+      "target": "Farmaco: Insulin"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Diabetes",
+      "target": "Farmaco: Metformin"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Diabetes",
+      "target": "Farmaco: Sulfonylureas"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Diabetes",
+      "target": "Farmaco: DPP-4 inhibitors"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Diabetes",
+      "target": "Farmaco: GLP-1 receptor agonists"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Diabetes",
+      "target": "Dieta: Low-Glycemic Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Diabetes",
+      "target": "Dieta: Fiber-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Diabetes",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Diabetes",
+      "target": "Dieta: Healthy fats"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Diabetes",
+      "target": "Dieta: Low-fat dairy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Gastroenteritis",
+      "target": "Precaucion: Stop eating solid food for while"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Gastroenteritis",
+      "target": "Precaucion: Try taking small sips of water"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Gastroenteritis",
+      "target": "Precaucion: Rest"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Gastroenteritis",
+      "target": "Precaucion: Ease back into eating"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Gastroenteritis",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Gastroenteritis",
+      "target": "Farmaco: Antiemetic drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Gastroenteritis",
+      "target": "Farmaco: Antidiarrheal drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Gastroenteritis",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Gastroenteritis",
+      "target": "Farmaco: Probiotics"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Gastroenteritis",
+      "target": "Dieta: Bland Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Gastroenteritis",
+      "target": "Dieta: Bananas"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Gastroenteritis",
+      "target": "Dieta: Rice"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Gastroenteritis",
+      "target": "Dieta: Applesauce"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Gastroenteritis",
+      "target": "Dieta: Toast"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Bronchial Asthma",
+      "target": "Precaucion: Switch to loose cloothing"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Bronchial Asthma",
+      "target": "Precaucion: Take deep breaths"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Bronchial Asthma",
+      "target": "Precaucion: Get away from trigger"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Bronchial Asthma",
+      "target": "Precaucion: Seek help"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Bronchial Asthma",
+      "target": "Farmaco: Bronchodilators"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Bronchial Asthma",
+      "target": "Farmaco: Inhaled corticosteroids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Bronchial Asthma",
+      "target": "Farmaco: Leukotriene modifiers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Bronchial Asthma",
+      "target": "Farmaco: Mast cell stabilizers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Bronchial Asthma",
+      "target": "Farmaco: Anticholinergics"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Bronchial Asthma",
+      "target": "Dieta: Anti-Inflammatory Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Bronchial Asthma",
+      "target": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Bronchial Asthma",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Bronchial Asthma",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Bronchial Asthma",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "HAS_TRIAGE_SEVERITY",
+      "source": "Bronchial Asthma",
+      "target": "Severidad_Severe"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypertension",
+      "target": "Precaucion: Meditation"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypertension",
+      "target": "Precaucion: Salt baths"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypertension",
+      "target": "Precaucion: Reduce stress"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypertension",
+      "target": "Precaucion: Get proper sleep"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypertension",
+      "target": "Farmaco: Antihypertensive medications"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypertension",
+      "target": "Farmaco: Diuretics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypertension",
+      "target": "Farmaco: Beta-blockers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypertension",
+      "target": "Farmaco: ACE inhibitors"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypertension",
+      "target": "Farmaco: Calcium channel blockers"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypertension",
+      "target": "Dieta: DASH Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypertension",
+      "target": "Dieta: Low-sodium foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypertension",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypertension",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypertension",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Migraine",
+      "target": "Precaucion: Meditation"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Migraine",
+      "target": "Precaucion: Reduce stress"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Migraine",
+      "target": "Precaucion: Use poloroid glasses in sun"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Migraine",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Migraine",
+      "target": "Farmaco: Analgesics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Migraine",
+      "target": "Farmaco: Triptans"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Migraine",
+      "target": "Farmaco: Ergotamine derivatives"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Migraine",
+      "target": "Farmaco: Preventive medications"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Migraine",
+      "target": "Farmaco: Biofeedback"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Migraine",
+      "target": "Dieta: Migraine Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Migraine",
+      "target": "Dieta: Low-Tyramine Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Migraine",
+      "target": "Dieta: Caffeine withdrawal"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Migraine",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Migraine",
+      "target": "Dieta: Magnesium-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Cervical spondylosis",
+      "target": "Precaucion: Use heating pad or cold pack"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Cervical spondylosis",
+      "target": "Precaucion: Exercise"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Cervical spondylosis",
+      "target": "Precaucion: Take otc pain reliver"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Cervical spondylosis",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Cervical spondylosis",
+      "target": "Farmaco: Pain relievers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Cervical spondylosis",
+      "target": "Farmaco: Muscle relaxants"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Cervical spondylosis",
+      "target": "Farmaco: Physical therapy"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Cervical spondylosis",
+      "target": "Farmaco: Neck braces"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Cervical spondylosis",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Cervical spondylosis",
+      "target": "Dieta: Arthritis Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Cervical spondylosis",
+      "target": "Dieta: Anti-Inflammatory Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Cervical spondylosis",
+      "target": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Cervical spondylosis",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Cervical spondylosis",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Precaucion: Massage"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Precaucion: Eat healthy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Precaucion: Exercise"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Farmaco: Blood thinners"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Farmaco: Clot-dissolving medications"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Farmaco: Anticonvulsants"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Farmaco: Physical therapy"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Farmaco: Occupational therapy"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Dieta: Heart-Healthy Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Dieta: Low-sodium foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Paralysis (brain hemorrhage)",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Jaundice",
+      "target": "Precaucion: Drink plenty of water"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Jaundice",
+      "target": "Precaucion: Consume milk thistle"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Jaundice",
+      "target": "Precaucion: Eat fruits and high fiberous food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Jaundice",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Jaundice",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Jaundice",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Jaundice",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Jaundice",
+      "target": "Farmaco: Medications for itching"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Jaundice",
+      "target": "Farmaco: Antiviral medications"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Jaundice",
+      "target": "Dieta: Liver-Healthy Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Jaundice",
+      "target": "Dieta: Low-fat Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Jaundice",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Jaundice",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Jaundice",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Malaria",
+      "target": "Precaucion: Consult nearest hospital"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Malaria",
+      "target": "Precaucion: Avoid oily food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Malaria",
+      "target": "Precaucion: Avoid non veg food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Malaria",
+      "target": "Precaucion: Keep mosquitos out"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Malaria",
+      "target": "Farmaco: Antimalarial drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Malaria",
+      "target": "Farmaco: Antipyretics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Malaria",
+      "target": "Farmaco: Antiemetic drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Malaria",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Malaria",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Malaria",
+      "target": "Dieta: Malaria Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Malaria",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Malaria",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Malaria",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Malaria",
+      "target": "Dieta: Oral rehydration solutions"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chicken pox",
+      "target": "Precaucion: Use neem in bathing"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chicken pox",
+      "target": "Precaucion: Consume neem leaves"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chicken pox",
+      "target": "Precaucion: Take vaccine"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Chicken pox",
+      "target": "Precaucion: Avoid public places"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chicken pox",
+      "target": "Farmaco: Antiviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chicken pox",
+      "target": "Farmaco: Pain relievers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chicken pox",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chicken pox",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Chicken pox",
+      "target": "Farmaco: Platelet transfusions"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chicken pox",
+      "target": "Dieta: Chicken Pox Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chicken pox",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chicken pox",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chicken pox",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Chicken pox",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dengue",
+      "target": "Precaucion: Drink papaya leaf juice"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dengue",
+      "target": "Precaucion: Avoid fatty spicy food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dengue",
+      "target": "Precaucion: Keep mosquitos away"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dengue",
+      "target": "Precaucion: Keep hydrated"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dengue",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dengue",
+      "target": "Farmaco: Antipyretics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dengue",
+      "target": "Farmaco: Analgesics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dengue",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dengue",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dengue",
+      "target": "Dieta: Dengue Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dengue",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dengue",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dengue",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dengue",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Typhoid",
+      "target": "Precaucion: Eat high calorie vegitables"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Typhoid",
+      "target": "Precaucion: Antiboitic therapy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Typhoid",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Typhoid",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Typhoid",
+      "target": "Farmaco: Vaccination"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Typhoid",
+      "target": "Farmaco: Antiviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Typhoid",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Typhoid",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Typhoid",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Typhoid",
+      "target": "Dieta: Typhoid Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Typhoid",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Typhoid",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Typhoid",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Typhoid",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "hepatitis A",
+      "target": "Precaucion: Consult nearest hospital"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "hepatitis A",
+      "target": "Precaucion: Wash hands through"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "hepatitis A",
+      "target": "Precaucion: Avoid fatty spicy food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "hepatitis A",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "hepatitis A",
+      "target": "Farmaco: Vaccination"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "hepatitis A",
+      "target": "Farmaco: Antiviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "hepatitis A",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "hepatitis A",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "hepatitis A",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "hepatitis A",
+      "target": "Dieta: Hepatitis A Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "hepatitis A",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "hepatitis A",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "hepatitis A",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "hepatitis A",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis B",
+      "target": "Precaucion: Consult nearest hospital"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis B",
+      "target": "Precaucion: Vaccination"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis B",
+      "target": "Precaucion: Eat healthy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis B",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis B",
+      "target": "Farmaco: Antiviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis B",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis B",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis B",
+      "target": "Farmaco: Platelet transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis B",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis B",
+      "target": "Dieta: Hepatitis B Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis B",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis B",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis B",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis B",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis C",
+      "target": "Precaucion: Consult nearest hospital"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis C",
+      "target": "Precaucion: Vaccination"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis C",
+      "target": "Precaucion: Eat healthy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis C",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis C",
+      "target": "Farmaco: Antiviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis C",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis C",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis C",
+      "target": "Farmaco: Platelet transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis C",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis C",
+      "target": "Dieta: Hepatitis C Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis C",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis C",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis C",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis C",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis D",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis D",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis D",
+      "target": "Precaucion: Eat healthy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis D",
+      "target": "Precaucion: Follow up"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis D",
+      "target": "Farmaco: Antiviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis D",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis D",
+      "target": "Farmaco: Blood transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis D",
+      "target": "Farmaco: Platelet transfusions"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis D",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis D",
+      "target": "Dieta: Hepatitis D Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis D",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis D",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis D",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis D",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis E",
+      "target": "Precaucion: Stop alcohol consumption"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis E",
+      "target": "Precaucion: Rest"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis E",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hepatitis E",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis E",
+      "target": "Farmaco: Alcohol cessation"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis E",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis E",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis E",
+      "target": "Farmaco: Liver transplant"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hepatitis E",
+      "target": "Farmaco: Nutritional support"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis E",
+      "target": "Dieta: Hepatitis E Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis E",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis E",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis E",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hepatitis E",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Alcoholic hepatitis",
+      "target": "Precaucion: Stop alcohol consumption"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Alcoholic hepatitis",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Alcoholic hepatitis",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Alcoholic hepatitis",
+      "target": "Precaucion: Follow up"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Alcoholic hepatitis",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Alcoholic hepatitis",
+      "target": "Farmaco: Isoniazid"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Alcoholic hepatitis",
+      "target": "Farmaco: Rifampin"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Alcoholic hepatitis",
+      "target": "Farmaco: Ethambutol"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Alcoholic hepatitis",
+      "target": "Farmaco: Pyrazinamide"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Alcoholic hepatitis",
+      "target": "Dieta: Liver-Healthy Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Alcoholic hepatitis",
+      "target": "Dieta: Low-fat Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Alcoholic hepatitis",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Alcoholic hepatitis",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Alcoholic hepatitis",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Tuberculosis",
+      "target": "Precaucion: Cover mouth"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Tuberculosis",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Tuberculosis",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Tuberculosis",
+      "target": "Precaucion: Rest"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Tuberculosis",
+      "target": "Farmaco: Antipyretics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Tuberculosis",
+      "target": "Farmaco: Decongestants"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Tuberculosis",
+      "target": "Farmaco: Cough suppressants"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Tuberculosis",
+      "target": "Farmaco: Antihistamines"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Tuberculosis",
+      "target": "Farmaco: Pain relievers"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Tuberculosis",
+      "target": "Dieta: TB Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Tuberculosis",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Tuberculosis",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Tuberculosis",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Tuberculosis",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Common Cold",
+      "target": "Precaucion: Drink vitamin c rich drinks"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Common Cold",
+      "target": "Precaucion: Take vapour"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Common Cold",
+      "target": "Precaucion: Avoid cold food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Common Cold",
+      "target": "Precaucion: Keep fever in check"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Common Cold",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Common Cold",
+      "target": "Farmaco: Antiviral drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Common Cold",
+      "target": "Farmaco: Antifungal drugs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Common Cold",
+      "target": "Farmaco: IV fluids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Common Cold",
+      "target": "Farmaco: Oxygen therapy"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Common Cold",
+      "target": "Dieta: Cold Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Common Cold",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Common Cold",
+      "target": "Dieta: Warm fluids"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Common Cold",
+      "target": "Dieta: Rest"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Common Cold",
+      "target": "Dieta: Honey and lemon tea"
+    },
+    {
+      "relation": "HAS_TRIAGE_SEVERITY",
+      "source": "Common Cold",
+      "target": "Severidad_Mild"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Pneumonia",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Pneumonia",
+      "target": "Precaucion: Medication"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Pneumonia",
+      "target": "Precaucion: Rest"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Pneumonia",
+      "target": "Precaucion: Follow up"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Pneumonia",
+      "target": "Farmaco: Laxatives"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Pneumonia",
+      "target": "Farmaco: Pain relievers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Pneumonia",
+      "target": "Farmaco: Warm baths"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Pneumonia",
+      "target": "Farmaco: Cold compresses"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Pneumonia",
+      "target": "Farmaco: High-fiber diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Pneumonia",
+      "target": "Dieta: Pneumonia Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Pneumonia",
+      "target": "Dieta: High-Calorie Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Pneumonia",
+      "target": "Dieta: Soft and bland foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Pneumonia",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Pneumonia",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "HAS_TRIAGE_SEVERITY",
+      "source": "Pneumonia",
+      "target": "Severidad_Severe"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Precaucion: Avoid fatty spicy food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Precaucion: Consume witch hazel"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Precaucion: Warm bath with epsom salt"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Precaucion: Consume alovera juice"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Farmaco: Nitroglycerin"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Farmaco: Aspirin"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Farmaco: Beta-blockers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Farmaco: Calcium channel blockers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Farmaco: Thrombolytic drugs"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Dieta: Hemorrhoids Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Dieta: High-Fiber Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Dieta: Warm baths"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Dimorphic hemmorhoids(piles)",
+      "target": "Dieta: Stool softeners"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Heart attack",
+      "target": "Precaucion: Call ambulance"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Heart attack",
+      "target": "Precaucion: Chew or swallow asprin"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Heart attack",
+      "target": "Precaucion: Keep calm"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Heart attack",
+      "target": "Farmaco: Compression stockings"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Heart attack",
+      "target": "Farmaco: Exercise"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Heart attack",
+      "target": "Farmaco: Elevating the legs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Heart attack",
+      "target": "Farmaco: Sclerotherapy"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Heart attack",
+      "target": "Farmaco: Laser treatments"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Heart attack",
+      "target": "Dieta: Heart-Healthy Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Heart attack",
+      "target": "Dieta: Low-sodium foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Heart attack",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Heart attack",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Heart attack",
+      "target": "Dieta: Lean proteins"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Varicose veins",
+      "target": "Precaucion: Lie down flat and raise the leg high"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Varicose veins",
+      "target": "Precaucion: Use oinments"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Varicose veins",
+      "target": "Precaucion: Use vein compression"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Varicose veins",
+      "target": "Precaucion: Dont stand still for long"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Varicose veins",
+      "target": "Farmaco: Levothyroxine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Varicose veins",
+      "target": "Farmaco: Antithyroid medications"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Varicose veins",
+      "target": "Farmaco: Beta-blockers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Varicose veins",
+      "target": "Farmaco: Radioactive iodine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Varicose veins",
+      "target": "Farmaco: Thyroid surgery"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Varicose veins",
+      "target": "Dieta: Varicose Veins Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Varicose veins",
+      "target": "Dieta: High-Fiber Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Varicose veins",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Varicose veins",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Varicose veins",
+      "target": "Dieta: Low-sodium foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypothyroidism",
+      "target": "Precaucion: Reduce stress"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypothyroidism",
+      "target": "Precaucion: Exercise"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypothyroidism",
+      "target": "Precaucion: Eat healthy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypothyroidism",
+      "target": "Precaucion: Get proper sleep"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypothyroidism",
+      "target": "Farmaco: Antithyroid medications"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypothyroidism",
+      "target": "Farmaco: Radioactive iodine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypothyroidism",
+      "target": "Farmaco: Thyroid surgery"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypothyroidism",
+      "target": "Farmaco: Beta-blockers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypothyroidism",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypothyroidism",
+      "target": "Dieta: Hypothyroidism Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypothyroidism",
+      "target": "Dieta: Iodine-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypothyroidism",
+      "target": "Dieta: Selenium-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypothyroidism",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypothyroidism",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hyperthyroidism",
+      "target": "Precaucion: Eat healthy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hyperthyroidism",
+      "target": "Precaucion: Massage"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hyperthyroidism",
+      "target": "Precaucion: Use lemon balm"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hyperthyroidism",
+      "target": "Precaucion: Take radioactive iodine treatment"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hyperthyroidism",
+      "target": "Farmaco: Glucose tablets"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hyperthyroidism",
+      "target": "Farmaco: Candy or juice"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hyperthyroidism",
+      "target": "Farmaco: Glucagon injection"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hyperthyroidism",
+      "target": "Farmaco: IV dextrose"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hyperthyroidism",
+      "target": "Farmaco: Diazoxide"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hyperthyroidism",
+      "target": "Dieta: Hyperthyroidism Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hyperthyroidism",
+      "target": "Dieta: Low-Iodine Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hyperthyroidism",
+      "target": "Dieta: Calcium-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hyperthyroidism",
+      "target": "Dieta: Selenium-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hyperthyroidism",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypoglycemia",
+      "target": "Precaucion: Lie down on side"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypoglycemia",
+      "target": "Precaucion: Check in pulse"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypoglycemia",
+      "target": "Precaucion: Drink sugary drinks"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Hypoglycemia",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypoglycemia",
+      "target": "Farmaco: Pain relievers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypoglycemia",
+      "target": "Farmaco: Exercise"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypoglycemia",
+      "target": "Farmaco: Hot and cold packs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypoglycemia",
+      "target": "Farmaco: Joint protection"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Hypoglycemia",
+      "target": "Farmaco: Physical therapy"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypoglycemia",
+      "target": "Dieta: Hypoglycemia Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypoglycemia",
+      "target": "Dieta: Complex carbohydrates"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypoglycemia",
+      "target": "Dieta: Protein-rich snacks"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypoglycemia",
+      "target": "Dieta: Fiber-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Hypoglycemia",
+      "target": "Dieta: Healthy fats"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Osteoarthristis",
+      "target": "Precaucion: Acetaminophen"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Osteoarthristis",
+      "target": "Precaucion: Consult nearest hospital"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Osteoarthristis",
+      "target": "Precaucion: Follow up"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Osteoarthristis",
+      "target": "Precaucion: Salt baths"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Osteoarthristis",
+      "target": "Farmaco: NSAIDs"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Osteoarthristis",
+      "target": "Farmaco: Disease-modifying antirheumatic drugs (DMARDs)"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Osteoarthristis",
+      "target": "Farmaco: Biologics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Osteoarthristis",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Osteoarthristis",
+      "target": "Farmaco: Joint replacement surgery"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Osteoarthristis",
+      "target": "Dieta: Arthritis Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Osteoarthristis",
+      "target": "Dieta: Anti-Inflammatory Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Osteoarthristis",
+      "target": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Osteoarthristis",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Osteoarthristis",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Arthritis",
+      "target": "Precaucion: Exercise"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Arthritis",
+      "target": "Precaucion: Use hot and cold therapy"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Arthritis",
+      "target": "Precaucion: Try acupuncture"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Arthritis",
+      "target": "Precaucion: Massage"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Arthritis",
+      "target": "Farmaco: Vestibular rehabilitation"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Arthritis",
+      "target": "Farmaco: Canalith repositioning"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Arthritis",
+      "target": "Farmaco: Medications for nausea"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Arthritis",
+      "target": "Farmaco: Surgery"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Arthritis",
+      "target": "Farmaco: Home exercises"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Arthritis",
+      "target": "Dieta: Arthritis Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Arthritis",
+      "target": "Dieta: Anti-Inflammatory Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Arthritis",
+      "target": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Arthritis",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Arthritis",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Farmaco: Topical treatments"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Farmaco: Oral medications"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Farmaco: Hormonal treatments"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Farmaco: Isotretinoin"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Dieta: Vertigo Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Dieta: Low-Salt Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Dieta: Ginger tea"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "(vertigo) Paroymsal Positional Vertigo",
+      "target": "Dieta: Vitamin D-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Acne",
+      "target": "Precaucion: Bath twice"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Acne",
+      "target": "Precaucion: Avoid fatty spicy food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Acne",
+      "target": "Precaucion: Drink plenty of water"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Acne",
+      "target": "Precaucion: Avoid too many products"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Acne",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Acne",
+      "target": "Farmaco: Pain relievers"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Acne",
+      "target": "Farmaco: Antihistamines"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Acne",
+      "target": "Farmaco: Corticosteroids"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Acne",
+      "target": "Farmaco: Topical treatments"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Acne",
+      "target": "Dieta: Acne Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Acne",
+      "target": "Dieta: Low-Glycemic Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Acne",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Acne",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Acne",
+      "target": "Dieta: Probiotics"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Urinary tract infection",
+      "target": "Precaucion: Drink plenty of water"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Urinary tract infection",
+      "target": "Precaucion: Increase vitamin c intake"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Urinary tract infection",
+      "target": "Precaucion: Drink cranberry juice"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Urinary tract infection",
+      "target": "Precaucion: Take probiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Urinary tract infection",
+      "target": "Farmaco: Antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Urinary tract infection",
+      "target": "Farmaco: Urinary analgesics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Urinary tract infection",
+      "target": "Farmaco: Phenazopyridine"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Urinary tract infection",
+      "target": "Farmaco: Antispasmodics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Urinary tract infection",
+      "target": "Farmaco: Probiotics"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Urinary tract infection",
+      "target": "Dieta: UTI Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Urinary tract infection",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Urinary tract infection",
+      "target": "Dieta: Cranberry juice"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Urinary tract infection",
+      "target": "Dieta: Probiotics"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Urinary tract infection",
+      "target": "Dieta: Vitamin C-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Psoriasis",
+      "target": "Precaucion: Wash hands with warm soapy water"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Psoriasis",
+      "target": "Precaucion: Stop bleeding using pressure"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Psoriasis",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Psoriasis",
+      "target": "Precaucion: Salt baths"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Psoriasis",
+      "target": "Farmaco: Topical treatments"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Psoriasis",
+      "target": "Farmaco: Phototherapy"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Psoriasis",
+      "target": "Farmaco: Systemic medications"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Psoriasis",
+      "target": "Farmaco: Biologics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Psoriasis",
+      "target": "Farmaco: Coal tar"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Psoriasis",
+      "target": "Dieta: Psoriasis Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Psoriasis",
+      "target": "Dieta: Anti-Inflammatory Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Psoriasis",
+      "target": "Dieta: Omega-3-rich foods"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Psoriasis",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Psoriasis",
+      "target": "Dieta: Whole grains"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Impetigo",
+      "target": "Precaucion: Soak affected area in warm water"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Impetigo",
+      "target": "Precaucion: Use antibiotics"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Impetigo",
+      "target": "Precaucion: Remove scabs with wet compressed cloth"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Impetigo",
+      "target": "Precaucion: Consult doctor"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Impetigo",
+      "target": "Farmaco: Topical antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Impetigo",
+      "target": "Farmaco: Oral antibiotics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Impetigo",
+      "target": "Farmaco: Antiseptics"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Impetigo",
+      "target": "Farmaco: Ointments"
+    },
+    {
+      "relation": "RECOMMENDS_MEDICATION",
+      "source": "Impetigo",
+      "target": "Farmaco: Warm compresses"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Impetigo",
+      "target": "Dieta: Impetigo Diet"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Impetigo",
+      "target": "Dieta: Antibiotic treatment"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Impetigo",
+      "target": "Dieta: Fruits and vegetables"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Impetigo",
+      "target": "Dieta: Hydration"
+    },
+    {
+      "relation": "SUGGESTS_DIET",
+      "source": "Impetigo",
+      "target": "Dieta: Protein-rich foods"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "(vertigo) Paroymsal  Positional Vertigo",
+      "target": "Precaucion: Lie down"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "(vertigo) Paroymsal  Positional Vertigo",
+      "target": "Precaucion: Avoid sudden change in body"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "(vertigo) Paroymsal  Positional Vertigo",
+      "target": "Precaucion: Avoid abrupt head movment"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "(vertigo) Paroymsal  Positional Vertigo",
+      "target": "Precaucion: Relax"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Peptic ulcer diseae",
+      "target": "Precaucion: Avoid fatty spicy food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Peptic ulcer diseae",
+      "target": "Precaucion: Consume probiotic food"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Peptic ulcer diseae",
+      "target": "Precaucion: Eliminate milk"
+    },
+    {
+      "relation": "REQUIRES_PRECAUTION",
+      "source": "Peptic ulcer diseae",
+      "target": "Precaucion: Limit alcohol"
+    }
+  ]
+}

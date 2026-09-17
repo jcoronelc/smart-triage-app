@@ -1,0 +1,3128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d5" for="node" attr.name="clinical_action" attr.type="string" />
+  <key id="d4" for="node" attr.name="level" attr.type="string" />
+  <key id="d3" for="node" attr.name="name" attr.type="string" />
+  <key id="d2" for="node" attr.name="text" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="Fungal infection">
+      <data key="d0">Disease</data>
+      <data key="d1">Fungal infection is a common skin condition caused by fungi.</data>
+    </node>
+    <node id="Allergy">
+      <data key="d0">Disease</data>
+      <data key="d1">Allergy is an immune system reaction to a substance in the environment.</data>
+    </node>
+    <node id="GERD">
+      <data key="d0">Disease</data>
+      <data key="d1">GERD (Gastroesophageal Reflux Disease) is a digestive disorder that affects the lower esophageal sphincter.</data>
+    </node>
+    <node id="Chronic cholestasis">
+      <data key="d0">Disease</data>
+      <data key="d1">Chronic cholestasis is a condition where bile flow from the liver is reduced for a prolonged period.</data>
+    </node>
+    <node id="Drug Reaction">
+      <data key="d0">Disease</data>
+      <data key="d1">Drug Reaction occurs when the body reacts adversely to a medication.</data>
+    </node>
+    <node id="Peptic ulcer disease">
+      <data key="d0">Disease</data>
+      <data key="d1">Peptic ulcer disease involves sores that develop on the inner lining of the stomach and small intestine.</data>
+    </node>
+    <node id="AIDS">
+      <data key="d0">Disease</data>
+      <data key="d1">AIDS (Acquired Immunodeficiency Syndrome) is a disease caused by HIV that weakens the immune system.</data>
+    </node>
+    <node id="Diabetes">
+      <data key="d0">Disease</data>
+      <data key="d1">Diabetes is a chronic condition that affects how the body processes blood sugar.</data>
+    </node>
+    <node id="Gastroenteritis">
+      <data key="d0">Disease</data>
+      <data key="d1">Gastroenteritis is an inflammation of the stomach and intestines, typically caused by a virus or bacteria.</data>
+    </node>
+    <node id="Bronchial Asthma">
+      <data key="d0">Disease</data>
+      <data key="d1">Bronchial Asthma is a respiratory condition characterized by inflammation of the airways.</data>
+    </node>
+    <node id="Hypertension">
+      <data key="d0">Disease</data>
+      <data key="d1">Hypertension, or high blood pressure, is a common cardiovascular condition.</data>
+    </node>
+    <node id="Migraine">
+      <data key="d0">Disease</data>
+      <data key="d1">Migraine is a type of headache that often involves severe pain and sensitivity to light and sound.</data>
+    </node>
+    <node id="Cervical spondylosis">
+      <data key="d0">Disease</data>
+      <data key="d1">Cervical spondylosis is a degenerative condition of the cervical spine.</data>
+    </node>
+    <node id="Paralysis (brain hemorrhage)">
+      <data key="d0">Disease</data>
+      <data key="d1">Paralysis (brain hemorrhage) refers to the loss of muscle function due to bleeding in the brain.</data>
+    </node>
+    <node id="Jaundice">
+      <data key="d0">Disease</data>
+      <data key="d1">Jaundice is a yellow discoloration of the skin and eyes, often indicating liver problems.</data>
+    </node>
+    <node id="Malaria">
+      <data key="d0">Disease</data>
+      <data key="d1">Malaria is a mosquito-borne infectious disease affecting humans and other animals.</data>
+    </node>
+    <node id="Chicken pox">
+      <data key="d0">Disease</data>
+      <data key="d1">Chicken pox is a highly contagious viral infection causing an itchy rash.</data>
+    </node>
+    <node id="Dengue">
+      <data key="d0">Disease</data>
+      <data key="d1">Dengue is a mosquito-borne viral infection causing flu-like symptoms.</data>
+    </node>
+    <node id="Typhoid">
+      <data key="d0">Disease</data>
+      <data key="d1">Typhoid is a bacterial infection that can lead to a high fever and gastrointestinal symptoms.</data>
+    </node>
+    <node id="hepatitis A">
+      <data key="d0">Disease</data>
+      <data key="d1">hepatitis A is a viral liver disease.</data>
+    </node>
+    <node id="Hepatitis B">
+      <data key="d0">Disease</data>
+      <data key="d1">Hepatitis B is a viral infection that attacks the liver.</data>
+    </node>
+    <node id="Hepatitis C">
+      <data key="d0">Disease</data>
+      <data key="d1">Hepatitis C is a viral infection that causes liver inflammation.</data>
+    </node>
+    <node id="Hepatitis D">
+      <data key="d0">Disease</data>
+      <data key="d1">Hepatitis D is a serious liver disease caused by the hepatitis D virus.</data>
+    </node>
+    <node id="Hepatitis E">
+      <data key="d0">Disease</data>
+      <data key="d1">Hepatitis E is a viral infection that causes liver inflammation.</data>
+    </node>
+    <node id="Alcoholic hepatitis">
+      <data key="d0">Disease</data>
+      <data key="d1">Alcoholic hepatitis is inflammation of the liver due to alcohol consumption.</data>
+    </node>
+    <node id="Tuberculosis">
+      <data key="d0">Disease</data>
+      <data key="d1">Tuberculosis is a bacterial infection that primarily affects the lungs.</data>
+    </node>
+    <node id="Common Cold">
+      <data key="d0">Disease</data>
+      <data key="d1">Common Cold is a viral infection of the upper respiratory tract.</data>
+    </node>
+    <node id="Pneumonia">
+      <data key="d0">Disease</data>
+      <data key="d1">Pneumonia is an inflammatory condition affecting the air sacs in the lungs.</data>
+    </node>
+    <node id="Dimorphic hemmorhoids(piles)">
+      <data key="d0">Disease</data>
+      <data key="d1">Dimorphic hemmorhoids(piles) is a condition characterized by swollen blood vessels in the rectum.</data>
+    </node>
+    <node id="Heart attack">
+      <data key="d0">Disease</data>
+      <data key="d1">Heart attack is a sudden and severe reduction in blood flow to the heart muscle.</data>
+    </node>
+    <node id="Varicose veins">
+      <data key="d0">Disease</data>
+      <data key="d1">Varicose veins are enlarged, twisted veins that usually appear on the legs.</data>
+    </node>
+    <node id="Hypothyroidism">
+      <data key="d0">Disease</data>
+      <data key="d1">Hypothyroidism is a condition where the thyroid gland doesn't produce enough thyroid hormone.</data>
+    </node>
+    <node id="Hyperthyroidism">
+      <data key="d0">Disease</data>
+      <data key="d1">Hyperthyroidism is a condition where the thyroid gland produces too much thyroid hormone.</data>
+    </node>
+    <node id="Hypoglycemia">
+      <data key="d0">Disease</data>
+      <data key="d1">Hypoglycemia is a condition characterized by abnormally low blood sugar levels.</data>
+    </node>
+    <node id="Osteoarthristis">
+      <data key="d0">Disease</data>
+      <data key="d1">Osteoarthristis is a degenerative joint disease that affects the cartilage in joints.</data>
+    </node>
+    <node id="Arthritis">
+      <data key="d0">Disease</data>
+      <data key="d1">Arthritis is inflammation of one or more joints, causing pain and stiffness.</data>
+    </node>
+    <node id="(vertigo) Paroymsal Positional Vertigo">
+      <data key="d0">Disease</data>
+      <data key="d1">(Vertigo) Paroxysmal Positional Vertigo is a type of dizziness caused by specific head movements.</data>
+    </node>
+    <node id="Acne">
+      <data key="d0">Disease</data>
+      <data key="d1">Acne is a skin condition that occurs when hair follicles become clogged with oil and dead skin cells.</data>
+    </node>
+    <node id="Urinary tract infection">
+      <data key="d0">Disease</data>
+      <data key="d1">Urinary tract infection is an infection in any part of the urinary system.</data>
+    </node>
+    <node id="Psoriasis">
+      <data key="d0">Disease</data>
+      <data key="d1">Psoriasis is a chronic skin condition characterized by red, itchy, and scaly patches.</data>
+    </node>
+    <node id="Impetigo">
+      <data key="d0">Disease</data>
+      <data key="d1">Impetigo is a highly contagious skin infection causing red sores that can break open.</data>
+    </node>
+    <node id="Precaucion: Stop irritation">
+      <data key="d0">Precaution</data>
+      <data key="d2">Stop irritation</data>
+    </node>
+    <node id="Precaucion: Consult nearest hospital">
+      <data key="d0">Precaution</data>
+      <data key="d2">Consult nearest hospital</data>
+    </node>
+    <node id="Precaucion: Stop taking drug">
+      <data key="d0">Precaution</data>
+      <data key="d2">Stop taking drug</data>
+    </node>
+    <node id="Precaucion: Follow up">
+      <data key="d0">Precaution</data>
+      <data key="d2">Follow up</data>
+    </node>
+    <node id="Precaucion: Avoid oily food">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid oily food</data>
+    </node>
+    <node id="Precaucion: Avoid non veg food">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid non veg food</data>
+    </node>
+    <node id="Precaucion: Keep mosquitos out">
+      <data key="d0">Precaution</data>
+      <data key="d2">Keep mosquitos out</data>
+    </node>
+    <node id="Precaucion: Apply calamine">
+      <data key="d0">Precaution</data>
+      <data key="d2">Apply calamine</data>
+    </node>
+    <node id="Precaucion: Cover area with bandage">
+      <data key="d0">Precaution</data>
+      <data key="d2">Cover area with bandage</data>
+    </node>
+    <node id="Precaucion: Use ice to compress itching">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use ice to compress itching</data>
+    </node>
+    <node id="Precaucion: Reduce stress">
+      <data key="d0">Precaution</data>
+      <data key="d2">Reduce stress</data>
+    </node>
+    <node id="Precaucion: Exercise">
+      <data key="d0">Precaution</data>
+      <data key="d2">Exercise</data>
+    </node>
+    <node id="Precaucion: Eat healthy">
+      <data key="d0">Precaution</data>
+      <data key="d2">Eat healthy</data>
+    </node>
+    <node id="Precaucion: Get proper sleep">
+      <data key="d0">Precaution</data>
+      <data key="d2">Get proper sleep</data>
+    </node>
+    <node id="Precaucion: Wash hands with warm soapy water">
+      <data key="d0">Precaution</data>
+      <data key="d2">Wash hands with warm soapy water</data>
+    </node>
+    <node id="Precaucion: Stop bleeding using pressure">
+      <data key="d0">Precaution</data>
+      <data key="d2">Stop bleeding using pressure</data>
+    </node>
+    <node id="Precaucion: Consult doctor">
+      <data key="d0">Precaution</data>
+      <data key="d2">Consult doctor</data>
+    </node>
+    <node id="Precaucion: Salt baths">
+      <data key="d0">Precaution</data>
+      <data key="d2">Salt baths</data>
+    </node>
+    <node id="Precaucion: Avoid fatty spicy food">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid fatty spicy food</data>
+    </node>
+    <node id="Precaucion: Avoid lying down after eating">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid lying down after eating</data>
+    </node>
+    <node id="Precaucion: Maintain healthy weight">
+      <data key="d0">Precaution</data>
+      <data key="d2">Maintain healthy weight</data>
+    </node>
+    <node id="Precaucion: Cold baths">
+      <data key="d0">Precaution</data>
+      <data key="d2">Cold baths</data>
+    </node>
+    <node id="Precaucion: Anti itch medicine">
+      <data key="d0">Precaution</data>
+      <data key="d2">Anti itch medicine</data>
+    </node>
+    <node id="Precaucion: Wash hands through">
+      <data key="d0">Precaution</data>
+      <data key="d2">Wash hands through</data>
+    </node>
+    <node id="Precaucion: Medication">
+      <data key="d0">Precaution</data>
+      <data key="d2">Medication</data>
+    </node>
+    <node id="Precaucion: Acetaminophen">
+      <data key="d0">Precaution</data>
+      <data key="d2">Acetaminophen</data>
+    </node>
+    <node id="(vertigo) Paroymsal  Positional Vertigo">
+      <data key="d0">Disease</data>
+      <data key="d1">Condición respiratoria / clínica.</data>
+    </node>
+    <node id="Precaucion: Lie down">
+      <data key="d0">Precaution</data>
+      <data key="d2">Lie down</data>
+    </node>
+    <node id="Precaucion: Avoid sudden change in body">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid sudden change in body</data>
+    </node>
+    <node id="Precaucion: Avoid abrupt head movment">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid abrupt head movment</data>
+    </node>
+    <node id="Precaucion: Relax">
+      <data key="d0">Precaution</data>
+      <data key="d2">Relax</data>
+    </node>
+    <node id="Precaucion: Lie down on side">
+      <data key="d0">Precaution</data>
+      <data key="d2">Lie down on side</data>
+    </node>
+    <node id="Precaucion: Check in pulse">
+      <data key="d0">Precaution</data>
+      <data key="d2">Check in pulse</data>
+    </node>
+    <node id="Precaucion: Drink sugary drinks">
+      <data key="d0">Precaution</data>
+      <data key="d2">Drink sugary drinks</data>
+    </node>
+    <node id="Precaucion: Bath twice">
+      <data key="d0">Precaution</data>
+      <data key="d2">Bath twice</data>
+    </node>
+    <node id="Precaucion: Drink plenty of water">
+      <data key="d0">Precaution</data>
+      <data key="d2">Drink plenty of water</data>
+    </node>
+    <node id="Precaucion: Avoid too many products">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid too many products</data>
+    </node>
+    <node id="Precaucion: Have balanced diet">
+      <data key="d0">Precaution</data>
+      <data key="d2">Have balanced diet</data>
+    </node>
+    <node id="Precaucion: Soak affected area in warm water">
+      <data key="d0">Precaution</data>
+      <data key="d2">Soak affected area in warm water</data>
+    </node>
+    <node id="Precaucion: Use antibiotics">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use antibiotics</data>
+    </node>
+    <node id="Precaucion: Remove scabs with wet compressed cloth">
+      <data key="d0">Precaution</data>
+      <data key="d2">Remove scabs with wet compressed cloth</data>
+    </node>
+    <node id="Precaucion: Meditation">
+      <data key="d0">Precaution</data>
+      <data key="d2">Meditation</data>
+    </node>
+    <node id="Peptic ulcer diseae">
+      <data key="d0">Disease</data>
+      <data key="d1">Condición respiratoria / clínica.</data>
+    </node>
+    <node id="Precaucion: Consume probiotic food">
+      <data key="d0">Precaution</data>
+      <data key="d2">Consume probiotic food</data>
+    </node>
+    <node id="Precaucion: Eliminate milk">
+      <data key="d0">Precaution</data>
+      <data key="d2">Eliminate milk</data>
+    </node>
+    <node id="Precaucion: Limit alcohol">
+      <data key="d0">Precaution</data>
+      <data key="d2">Limit alcohol</data>
+    </node>
+    <node id="Precaucion: Consume witch hazel">
+      <data key="d0">Precaution</data>
+      <data key="d2">Consume witch hazel</data>
+    </node>
+    <node id="Precaucion: Warm bath with epsom salt">
+      <data key="d0">Precaution</data>
+      <data key="d2">Warm bath with epsom salt</data>
+    </node>
+    <node id="Precaucion: Consume alovera juice">
+      <data key="d0">Precaution</data>
+      <data key="d2">Consume alovera juice</data>
+    </node>
+    <node id="Precaucion: Drink vitamin c rich drinks">
+      <data key="d0">Precaution</data>
+      <data key="d2">Drink vitamin c rich drinks</data>
+    </node>
+    <node id="Precaucion: Take vapour">
+      <data key="d0">Precaution</data>
+      <data key="d2">Take vapour</data>
+    </node>
+    <node id="Precaucion: Avoid cold food">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid cold food</data>
+    </node>
+    <node id="Precaucion: Keep fever in check">
+      <data key="d0">Precaution</data>
+      <data key="d2">Keep fever in check</data>
+    </node>
+    <node id="Precaucion: Use neem in bathing">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use neem in bathing</data>
+    </node>
+    <node id="Precaucion: Consume neem leaves">
+      <data key="d0">Precaution</data>
+      <data key="d2">Consume neem leaves</data>
+    </node>
+    <node id="Precaucion: Take vaccine">
+      <data key="d0">Precaution</data>
+      <data key="d2">Take vaccine</data>
+    </node>
+    <node id="Precaucion: Avoid public places">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid public places</data>
+    </node>
+    <node id="Precaucion: Use heating pad or cold pack">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use heating pad or cold pack</data>
+    </node>
+    <node id="Precaucion: Take otc pain reliver">
+      <data key="d0">Precaution</data>
+      <data key="d2">Take otc pain reliver</data>
+    </node>
+    <node id="Precaucion: Massage">
+      <data key="d0">Precaution</data>
+      <data key="d2">Massage</data>
+    </node>
+    <node id="Precaucion: Use lemon balm">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use lemon balm</data>
+    </node>
+    <node id="Precaucion: Take radioactive iodine treatment">
+      <data key="d0">Precaution</data>
+      <data key="d2">Take radioactive iodine treatment</data>
+    </node>
+    <node id="Precaucion: Increase vitamin c intake">
+      <data key="d0">Precaution</data>
+      <data key="d2">Increase vitamin c intake</data>
+    </node>
+    <node id="Precaucion: Drink cranberry juice">
+      <data key="d0">Precaution</data>
+      <data key="d2">Drink cranberry juice</data>
+    </node>
+    <node id="Precaucion: Take probiotics">
+      <data key="d0">Precaution</data>
+      <data key="d2">Take probiotics</data>
+    </node>
+    <node id="Precaucion: Lie down flat and raise the leg high">
+      <data key="d0">Precaution</data>
+      <data key="d2">Lie down flat and raise the leg high</data>
+    </node>
+    <node id="Precaucion: Use oinments">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use oinments</data>
+    </node>
+    <node id="Precaucion: Use vein compression">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use vein compression</data>
+    </node>
+    <node id="Precaucion: Dont stand still for long">
+      <data key="d0">Precaution</data>
+      <data key="d2">Dont stand still for long</data>
+    </node>
+    <node id="Precaucion: Avoid open cuts">
+      <data key="d0">Precaution</data>
+      <data key="d2">Avoid open cuts</data>
+    </node>
+    <node id="Precaucion: Wear ppe if possible">
+      <data key="d0">Precaution</data>
+      <data key="d2">Wear ppe if possible</data>
+    </node>
+    <node id="Precaucion: Eat high calorie vegitables">
+      <data key="d0">Precaution</data>
+      <data key="d2">Eat high calorie vegitables</data>
+    </node>
+    <node id="Precaucion: Antiboitic therapy">
+      <data key="d0">Precaution</data>
+      <data key="d2">Antiboitic therapy</data>
+    </node>
+    <node id="Precaucion: Vaccination">
+      <data key="d0">Precaution</data>
+      <data key="d2">Vaccination</data>
+    </node>
+    <node id="Precaucion: Use detol or neem in bathing water">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use detol or neem in bathing water</data>
+    </node>
+    <node id="Precaucion: Keep infected area dry">
+      <data key="d0">Precaution</data>
+      <data key="d2">Keep infected area dry</data>
+    </node>
+    <node id="Precaucion: Use clean cloths">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use clean cloths</data>
+    </node>
+    <node id="Precaucion: Use poloroid glasses in sun">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use poloroid glasses in sun</data>
+    </node>
+    <node id="Precaucion: Switch to loose cloothing">
+      <data key="d0">Precaution</data>
+      <data key="d2">Switch to loose cloothing</data>
+    </node>
+    <node id="Precaucion: Take deep breaths">
+      <data key="d0">Precaution</data>
+      <data key="d2">Take deep breaths</data>
+    </node>
+    <node id="Precaucion: Get away from trigger">
+      <data key="d0">Precaution</data>
+      <data key="d2">Get away from trigger</data>
+    </node>
+    <node id="Precaucion: Seek help">
+      <data key="d0">Precaution</data>
+      <data key="d2">Seek help</data>
+    </node>
+    <node id="Precaucion: Stop alcohol consumption">
+      <data key="d0">Precaution</data>
+      <data key="d2">Stop alcohol consumption</data>
+    </node>
+    <node id="Precaucion: Consume milk thistle">
+      <data key="d0">Precaution</data>
+      <data key="d2">Consume milk thistle</data>
+    </node>
+    <node id="Precaucion: Eat fruits and high fiberous food">
+      <data key="d0">Precaution</data>
+      <data key="d2">Eat fruits and high fiberous food</data>
+    </node>
+    <node id="Precaucion: Rest">
+      <data key="d0">Precaution</data>
+      <data key="d2">Rest</data>
+    </node>
+    <node id="Precaucion: Drink papaya leaf juice">
+      <data key="d0">Precaution</data>
+      <data key="d2">Drink papaya leaf juice</data>
+    </node>
+    <node id="Precaucion: Keep mosquitos away">
+      <data key="d0">Precaution</data>
+      <data key="d2">Keep mosquitos away</data>
+    </node>
+    <node id="Precaucion: Keep hydrated">
+      <data key="d0">Precaution</data>
+      <data key="d2">Keep hydrated</data>
+    </node>
+    <node id="Precaucion: Call ambulance">
+      <data key="d0">Precaution</data>
+      <data key="d2">Call ambulance</data>
+    </node>
+    <node id="Precaucion: Chew or swallow asprin">
+      <data key="d0">Precaution</data>
+      <data key="d2">Chew or swallow asprin</data>
+    </node>
+    <node id="Precaucion: Keep calm">
+      <data key="d0">Precaution</data>
+      <data key="d2">Keep calm</data>
+    </node>
+    <node id="Precaucion: Use hot and cold therapy">
+      <data key="d0">Precaution</data>
+      <data key="d2">Use hot and cold therapy</data>
+    </node>
+    <node id="Precaucion: Try acupuncture">
+      <data key="d0">Precaution</data>
+      <data key="d2">Try acupuncture</data>
+    </node>
+    <node id="Precaucion: Stop eating solid food for while">
+      <data key="d0">Precaution</data>
+      <data key="d2">Stop eating solid food for while</data>
+    </node>
+    <node id="Precaucion: Try taking small sips of water">
+      <data key="d0">Precaution</data>
+      <data key="d2">Try taking small sips of water</data>
+    </node>
+    <node id="Precaucion: Ease back into eating">
+      <data key="d0">Precaution</data>
+      <data key="d2">Ease back into eating</data>
+    </node>
+    <node id="Precaucion: Cover mouth">
+      <data key="d0">Precaution</data>
+      <data key="d2">Cover mouth</data>
+    </node>
+    <node id="Farmaco: Antifungal Cream">
+      <data key="d0">Medication</data>
+      <data key="d3">Antifungal Cream</data>
+    </node>
+    <node id="Farmaco: Fluconazole">
+      <data key="d0">Medication</data>
+      <data key="d3">Fluconazole</data>
+    </node>
+    <node id="Farmaco: Terbinafine">
+      <data key="d0">Medication</data>
+      <data key="d3">Terbinafine</data>
+    </node>
+    <node id="Farmaco: Clotrimazole">
+      <data key="d0">Medication</data>
+      <data key="d3">Clotrimazole</data>
+    </node>
+    <node id="Farmaco: Ketoconazole">
+      <data key="d0">Medication</data>
+      <data key="d3">Ketoconazole</data>
+    </node>
+    <node id="Farmaco: Antihistamines">
+      <data key="d0">Medication</data>
+      <data key="d3">Antihistamines</data>
+    </node>
+    <node id="Farmaco: Decongestants">
+      <data key="d0">Medication</data>
+      <data key="d3">Decongestants</data>
+    </node>
+    <node id="Farmaco: Epinephrine">
+      <data key="d0">Medication</data>
+      <data key="d3">Epinephrine</data>
+    </node>
+    <node id="Farmaco: Corticosteroids">
+      <data key="d0">Medication</data>
+      <data key="d3">Corticosteroids</data>
+    </node>
+    <node id="Farmaco: Immunotherapy">
+      <data key="d0">Medication</data>
+      <data key="d3">Immunotherapy</data>
+    </node>
+    <node id="Farmaco: Proton Pump Inhibitors (PPIs)">
+      <data key="d0">Medication</data>
+      <data key="d3">Proton Pump Inhibitors (PPIs)</data>
+    </node>
+    <node id="Farmaco: H2 Blockers">
+      <data key="d0">Medication</data>
+      <data key="d3">H2 Blockers</data>
+    </node>
+    <node id="Farmaco: Antacids">
+      <data key="d0">Medication</data>
+      <data key="d3">Antacids</data>
+    </node>
+    <node id="Farmaco: Prokinetics">
+      <data key="d0">Medication</data>
+      <data key="d3">Prokinetics</data>
+    </node>
+    <node id="Farmaco: Antibiotics">
+      <data key="d0">Medication</data>
+      <data key="d3">Antibiotics</data>
+    </node>
+    <node id="Farmaco: Ursodeoxycholic acid">
+      <data key="d0">Medication</data>
+      <data key="d3">Ursodeoxycholic acid</data>
+    </node>
+    <node id="Farmaco: Cholestyramine">
+      <data key="d0">Medication</data>
+      <data key="d3">Cholestyramine</data>
+    </node>
+    <node id="Farmaco: Methotrexate">
+      <data key="d0">Medication</data>
+      <data key="d3">Methotrexate</data>
+    </node>
+    <node id="Farmaco: Liver transplant">
+      <data key="d0">Medication</data>
+      <data key="d3">Liver transplant</data>
+    </node>
+    <node id="Farmaco: Cytoprotective agents">
+      <data key="d0">Medication</data>
+      <data key="d3">Cytoprotective agents</data>
+    </node>
+    <node id="Farmaco: Antiretroviral drugs">
+      <data key="d0">Medication</data>
+      <data key="d3">Antiretroviral drugs</data>
+    </node>
+    <node id="Farmaco: Protease inhibitors">
+      <data key="d0">Medication</data>
+      <data key="d3">Protease inhibitors</data>
+    </node>
+    <node id="Farmaco: Integrase inhibitors">
+      <data key="d0">Medication</data>
+      <data key="d3">Integrase inhibitors</data>
+    </node>
+    <node id="Farmaco: Entry inhibitors">
+      <data key="d0">Medication</data>
+      <data key="d3">Entry inhibitors</data>
+    </node>
+    <node id="Farmaco: Fusion inhibitors">
+      <data key="d0">Medication</data>
+      <data key="d3">Fusion inhibitors</data>
+    </node>
+    <node id="Farmaco: Insulin">
+      <data key="d0">Medication</data>
+      <data key="d3">Insulin</data>
+    </node>
+    <node id="Farmaco: Metformin">
+      <data key="d0">Medication</data>
+      <data key="d3">Metformin</data>
+    </node>
+    <node id="Farmaco: Sulfonylureas">
+      <data key="d0">Medication</data>
+      <data key="d3">Sulfonylureas</data>
+    </node>
+    <node id="Farmaco: DPP-4 inhibitors">
+      <data key="d0">Medication</data>
+      <data key="d3">DPP-4 inhibitors</data>
+    </node>
+    <node id="Farmaco: GLP-1 receptor agonists">
+      <data key="d0">Medication</data>
+      <data key="d3">GLP-1 receptor agonists</data>
+    </node>
+    <node id="Farmaco: Antiemetic drugs">
+      <data key="d0">Medication</data>
+      <data key="d3">Antiemetic drugs</data>
+    </node>
+    <node id="Farmaco: Antidiarrheal drugs">
+      <data key="d0">Medication</data>
+      <data key="d3">Antidiarrheal drugs</data>
+    </node>
+    <node id="Farmaco: IV fluids">
+      <data key="d0">Medication</data>
+      <data key="d3">IV fluids</data>
+    </node>
+    <node id="Farmaco: Probiotics">
+      <data key="d0">Medication</data>
+      <data key="d3">Probiotics</data>
+    </node>
+    <node id="Farmaco: Bronchodilators">
+      <data key="d0">Medication</data>
+      <data key="d3">Bronchodilators</data>
+    </node>
+    <node id="Farmaco: Inhaled corticosteroids">
+      <data key="d0">Medication</data>
+      <data key="d3">Inhaled corticosteroids</data>
+    </node>
+    <node id="Farmaco: Leukotriene modifiers">
+      <data key="d0">Medication</data>
+      <data key="d3">Leukotriene modifiers</data>
+    </node>
+    <node id="Farmaco: Mast cell stabilizers">
+      <data key="d0">Medication</data>
+      <data key="d3">Mast cell stabilizers</data>
+    </node>
+    <node id="Farmaco: Anticholinergics">
+      <data key="d0">Medication</data>
+      <data key="d3">Anticholinergics</data>
+    </node>
+    <node id="Farmaco: Antihypertensive medications">
+      <data key="d0">Medication</data>
+      <data key="d3">Antihypertensive medications</data>
+    </node>
+    <node id="Farmaco: Diuretics">
+      <data key="d0">Medication</data>
+      <data key="d3">Diuretics</data>
+    </node>
+    <node id="Farmaco: Beta-blockers">
+      <data key="d0">Medication</data>
+      <data key="d3">Beta-blockers</data>
+    </node>
+    <node id="Farmaco: ACE inhibitors">
+      <data key="d0">Medication</data>
+      <data key="d3">ACE inhibitors</data>
+    </node>
+    <node id="Farmaco: Calcium channel blockers">
+      <data key="d0">Medication</data>
+      <data key="d3">Calcium channel blockers</data>
+    </node>
+    <node id="Farmaco: Analgesics">
+      <data key="d0">Medication</data>
+      <data key="d3">Analgesics</data>
+    </node>
+    <node id="Farmaco: Triptans">
+      <data key="d0">Medication</data>
+      <data key="d3">Triptans</data>
+    </node>
+    <node id="Farmaco: Ergotamine derivatives">
+      <data key="d0">Medication</data>
+      <data key="d3">Ergotamine derivatives</data>
+    </node>
+    <node id="Farmaco: Preventive medications">
+      <data key="d0">Medication</data>
+      <data key="d3">Preventive medications</data>
+    </node>
+    <node id="Farmaco: Biofeedback">
+      <data key="d0">Medication</data>
+      <data key="d3">Biofeedback</data>
+    </node>
+    <node id="Farmaco: Pain relievers">
+      <data key="d0">Medication</data>
+      <data key="d3">Pain relievers</data>
+    </node>
+    <node id="Farmaco: Muscle relaxants">
+      <data key="d0">Medication</data>
+      <data key="d3">Muscle relaxants</data>
+    </node>
+    <node id="Farmaco: Physical therapy">
+      <data key="d0">Medication</data>
+      <data key="d3">Physical therapy</data>
+    </node>
+    <node id="Farmaco: Neck braces">
+      <data key="d0">Medication</data>
+      <data key="d3">Neck braces</data>
+    </node>
+    <node id="Farmaco: Blood thinners">
+      <data key="d0">Medication</data>
+      <data key="d3">Blood thinners</data>
+    </node>
+    <node id="Farmaco: Clot-dissolving medications">
+      <data key="d0">Medication</data>
+      <data key="d3">Clot-dissolving medications</data>
+    </node>
+    <node id="Farmaco: Anticonvulsants">
+      <data key="d0">Medication</data>
+      <data key="d3">Anticonvulsants</data>
+    </node>
+    <node id="Farmaco: Occupational therapy">
+      <data key="d0">Medication</data>
+      <data key="d3">Occupational therapy</data>
+    </node>
+    <node id="Farmaco: Blood transfusions">
+      <data key="d0">Medication</data>
+      <data key="d3">Blood transfusions</data>
+    </node>
+    <node id="Farmaco: Medications for itching">
+      <data key="d0">Medication</data>
+      <data key="d3">Medications for itching</data>
+    </node>
+    <node id="Farmaco: Antiviral medications">
+      <data key="d0">Medication</data>
+      <data key="d3">Antiviral medications</data>
+    </node>
+    <node id="Farmaco: Antimalarial drugs">
+      <data key="d0">Medication</data>
+      <data key="d3">Antimalarial drugs</data>
+    </node>
+    <node id="Farmaco: Antipyretics">
+      <data key="d0">Medication</data>
+      <data key="d3">Antipyretics</data>
+    </node>
+    <node id="Farmaco: Antiviral drugs">
+      <data key="d0">Medication</data>
+      <data key="d3">Antiviral drugs</data>
+    </node>
+    <node id="Farmaco: Platelet transfusions">
+      <data key="d0">Medication</data>
+      <data key="d3">Platelet transfusions</data>
+    </node>
+    <node id="Farmaco: Vaccination">
+      <data key="d0">Medication</data>
+      <data key="d3">Vaccination</data>
+    </node>
+    <node id="Farmaco: Alcohol cessation">
+      <data key="d0">Medication</data>
+      <data key="d3">Alcohol cessation</data>
+    </node>
+    <node id="Farmaco: Nutritional support">
+      <data key="d0">Medication</data>
+      <data key="d3">Nutritional support</data>
+    </node>
+    <node id="Farmaco: Isoniazid">
+      <data key="d0">Medication</data>
+      <data key="d3">Isoniazid</data>
+    </node>
+    <node id="Farmaco: Rifampin">
+      <data key="d0">Medication</data>
+      <data key="d3">Rifampin</data>
+    </node>
+    <node id="Farmaco: Ethambutol">
+      <data key="d0">Medication</data>
+      <data key="d3">Ethambutol</data>
+    </node>
+    <node id="Farmaco: Pyrazinamide">
+      <data key="d0">Medication</data>
+      <data key="d3">Pyrazinamide</data>
+    </node>
+    <node id="Farmaco: Cough suppressants">
+      <data key="d0">Medication</data>
+      <data key="d3">Cough suppressants</data>
+    </node>
+    <node id="Farmaco: Antifungal drugs">
+      <data key="d0">Medication</data>
+      <data key="d3">Antifungal drugs</data>
+    </node>
+    <node id="Farmaco: Oxygen therapy">
+      <data key="d0">Medication</data>
+      <data key="d3">Oxygen therapy</data>
+    </node>
+    <node id="Farmaco: Laxatives">
+      <data key="d0">Medication</data>
+      <data key="d3">Laxatives</data>
+    </node>
+    <node id="Farmaco: Warm baths">
+      <data key="d0">Medication</data>
+      <data key="d3">Warm baths</data>
+    </node>
+    <node id="Farmaco: Cold compresses">
+      <data key="d0">Medication</data>
+      <data key="d3">Cold compresses</data>
+    </node>
+    <node id="Farmaco: High-fiber diet">
+      <data key="d0">Medication</data>
+      <data key="d3">High-fiber diet</data>
+    </node>
+    <node id="Farmaco: Nitroglycerin">
+      <data key="d0">Medication</data>
+      <data key="d3">Nitroglycerin</data>
+    </node>
+    <node id="Farmaco: Aspirin">
+      <data key="d0">Medication</data>
+      <data key="d3">Aspirin</data>
+    </node>
+    <node id="Farmaco: Thrombolytic drugs">
+      <data key="d0">Medication</data>
+      <data key="d3">Thrombolytic drugs</data>
+    </node>
+    <node id="Farmaco: Compression stockings">
+      <data key="d0">Medication</data>
+      <data key="d3">Compression stockings</data>
+    </node>
+    <node id="Farmaco: Exercise">
+      <data key="d0">Medication</data>
+      <data key="d3">Exercise</data>
+    </node>
+    <node id="Farmaco: Elevating the legs">
+      <data key="d0">Medication</data>
+      <data key="d3">Elevating the legs</data>
+    </node>
+    <node id="Farmaco: Sclerotherapy">
+      <data key="d0">Medication</data>
+      <data key="d3">Sclerotherapy</data>
+    </node>
+    <node id="Farmaco: Laser treatments">
+      <data key="d0">Medication</data>
+      <data key="d3">Laser treatments</data>
+    </node>
+    <node id="Farmaco: Levothyroxine">
+      <data key="d0">Medication</data>
+      <data key="d3">Levothyroxine</data>
+    </node>
+    <node id="Farmaco: Antithyroid medications">
+      <data key="d0">Medication</data>
+      <data key="d3">Antithyroid medications</data>
+    </node>
+    <node id="Farmaco: Radioactive iodine">
+      <data key="d0">Medication</data>
+      <data key="d3">Radioactive iodine</data>
+    </node>
+    <node id="Farmaco: Thyroid surgery">
+      <data key="d0">Medication</data>
+      <data key="d3">Thyroid surgery</data>
+    </node>
+    <node id="Farmaco: Glucose tablets">
+      <data key="d0">Medication</data>
+      <data key="d3">Glucose tablets</data>
+    </node>
+    <node id="Farmaco: Candy or juice">
+      <data key="d0">Medication</data>
+      <data key="d3">Candy or juice</data>
+    </node>
+    <node id="Farmaco: Glucagon injection">
+      <data key="d0">Medication</data>
+      <data key="d3">Glucagon injection</data>
+    </node>
+    <node id="Farmaco: IV dextrose">
+      <data key="d0">Medication</data>
+      <data key="d3">IV dextrose</data>
+    </node>
+    <node id="Farmaco: Diazoxide">
+      <data key="d0">Medication</data>
+      <data key="d3">Diazoxide</data>
+    </node>
+    <node id="Farmaco: Hot and cold packs">
+      <data key="d0">Medication</data>
+      <data key="d3">Hot and cold packs</data>
+    </node>
+    <node id="Farmaco: Joint protection">
+      <data key="d0">Medication</data>
+      <data key="d3">Joint protection</data>
+    </node>
+    <node id="Farmaco: NSAIDs">
+      <data key="d0">Medication</data>
+      <data key="d3">NSAIDs</data>
+    </node>
+    <node id="Farmaco: Disease-modifying antirheumatic drugs (DMARDs)">
+      <data key="d0">Medication</data>
+      <data key="d3">Disease-modifying antirheumatic drugs (DMARDs)</data>
+    </node>
+    <node id="Farmaco: Biologics">
+      <data key="d0">Medication</data>
+      <data key="d3">Biologics</data>
+    </node>
+    <node id="Farmaco: Joint replacement surgery">
+      <data key="d0">Medication</data>
+      <data key="d3">Joint replacement surgery</data>
+    </node>
+    <node id="Farmaco: Vestibular rehabilitation">
+      <data key="d0">Medication</data>
+      <data key="d3">Vestibular rehabilitation</data>
+    </node>
+    <node id="Farmaco: Canalith repositioning">
+      <data key="d0">Medication</data>
+      <data key="d3">Canalith repositioning</data>
+    </node>
+    <node id="Farmaco: Medications for nausea">
+      <data key="d0">Medication</data>
+      <data key="d3">Medications for nausea</data>
+    </node>
+    <node id="Farmaco: Surgery">
+      <data key="d0">Medication</data>
+      <data key="d3">Surgery</data>
+    </node>
+    <node id="Farmaco: Home exercises">
+      <data key="d0">Medication</data>
+      <data key="d3">Home exercises</data>
+    </node>
+    <node id="Farmaco: Topical treatments">
+      <data key="d0">Medication</data>
+      <data key="d3">Topical treatments</data>
+    </node>
+    <node id="Farmaco: Oral medications">
+      <data key="d0">Medication</data>
+      <data key="d3">Oral medications</data>
+    </node>
+    <node id="Farmaco: Hormonal treatments">
+      <data key="d0">Medication</data>
+      <data key="d3">Hormonal treatments</data>
+    </node>
+    <node id="Farmaco: Isotretinoin">
+      <data key="d0">Medication</data>
+      <data key="d3">Isotretinoin</data>
+    </node>
+    <node id="Farmaco: Urinary analgesics">
+      <data key="d0">Medication</data>
+      <data key="d3">Urinary analgesics</data>
+    </node>
+    <node id="Farmaco: Phenazopyridine">
+      <data key="d0">Medication</data>
+      <data key="d3">Phenazopyridine</data>
+    </node>
+    <node id="Farmaco: Antispasmodics">
+      <data key="d0">Medication</data>
+      <data key="d3">Antispasmodics</data>
+    </node>
+    <node id="Farmaco: Phototherapy">
+      <data key="d0">Medication</data>
+      <data key="d3">Phototherapy</data>
+    </node>
+    <node id="Farmaco: Systemic medications">
+      <data key="d0">Medication</data>
+      <data key="d3">Systemic medications</data>
+    </node>
+    <node id="Farmaco: Coal tar">
+      <data key="d0">Medication</data>
+      <data key="d3">Coal tar</data>
+    </node>
+    <node id="Farmaco: Topical antibiotics">
+      <data key="d0">Medication</data>
+      <data key="d3">Topical antibiotics</data>
+    </node>
+    <node id="Farmaco: Oral antibiotics">
+      <data key="d0">Medication</data>
+      <data key="d3">Oral antibiotics</data>
+    </node>
+    <node id="Farmaco: Antiseptics">
+      <data key="d0">Medication</data>
+      <data key="d3">Antiseptics</data>
+    </node>
+    <node id="Farmaco: Ointments">
+      <data key="d0">Medication</data>
+      <data key="d3">Ointments</data>
+    </node>
+    <node id="Farmaco: Warm compresses">
+      <data key="d0">Medication</data>
+      <data key="d3">Warm compresses</data>
+    </node>
+    <node id="Dieta: Antifungal Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Antifungal Diet</data>
+    </node>
+    <node id="Dieta: Probiotics">
+      <data key="d0">Diet</data>
+      <data key="d3">Probiotics</data>
+    </node>
+    <node id="Dieta: Garlic">
+      <data key="d0">Diet</data>
+      <data key="d3">Garlic</data>
+    </node>
+    <node id="Dieta: Coconut oil">
+      <data key="d0">Diet</data>
+      <data key="d3">Coconut oil</data>
+    </node>
+    <node id="Dieta: Turmeric">
+      <data key="d0">Diet</data>
+      <data key="d3">Turmeric</data>
+    </node>
+    <node id="Dieta: Elimination Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Elimination Diet</data>
+    </node>
+    <node id="Dieta: Omega-3-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Omega-3-rich foods</data>
+    </node>
+    <node id="Dieta: Vitamin C-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Vitamin C-rich foods</data>
+    </node>
+    <node id="Dieta: Quercetin-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Quercetin-rich foods</data>
+    </node>
+    <node id="Dieta: Low-Acid Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-Acid Diet</data>
+    </node>
+    <node id="Dieta: Fiber-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Fiber-rich foods</data>
+    </node>
+    <node id="Dieta: Ginger">
+      <data key="d0">Diet</data>
+      <data key="d3">Ginger</data>
+    </node>
+    <node id="Dieta: Licorice">
+      <data key="d0">Diet</data>
+      <data key="d3">Licorice</data>
+    </node>
+    <node id="Dieta: Aloe vera juice">
+      <data key="d0">Diet</data>
+      <data key="d3">Aloe vera juice</data>
+    </node>
+    <node id="Dieta: Low-Fat Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-Fat Diet</data>
+    </node>
+    <node id="Dieta: High-Fiber Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">High-Fiber Diet</data>
+    </node>
+    <node id="Dieta: Lean proteins">
+      <data key="d0">Diet</data>
+      <data key="d3">Lean proteins</data>
+    </node>
+    <node id="Dieta: Whole grains">
+      <data key="d0">Diet</data>
+      <data key="d3">Whole grains</data>
+    </node>
+    <node id="Dieta: Fresh fruits and vegetables">
+      <data key="d0">Diet</data>
+      <data key="d3">Fresh fruits and vegetables</data>
+    </node>
+    <node id="Dieta: Antihistamine Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Antihistamine Diet</data>
+    </node>
+    <node id="Dieta: Balanced Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Balanced Diet</data>
+    </node>
+    <node id="Dieta: Protein-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Protein-rich foods</data>
+    </node>
+    <node id="Dieta: Fruits and vegetables">
+      <data key="d0">Diet</data>
+      <data key="d3">Fruits and vegetables</data>
+    </node>
+    <node id="Dieta: Healthy fats">
+      <data key="d0">Diet</data>
+      <data key="d3">Healthy fats</data>
+    </node>
+    <node id="Dieta: Low-Glycemic Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-Glycemic Diet</data>
+    </node>
+    <node id="Dieta: Low-fat dairy">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-fat dairy</data>
+    </node>
+    <node id="Dieta: Bland Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Bland Diet</data>
+    </node>
+    <node id="Dieta: Bananas">
+      <data key="d0">Diet</data>
+      <data key="d3">Bananas</data>
+    </node>
+    <node id="Dieta: Rice">
+      <data key="d0">Diet</data>
+      <data key="d3">Rice</data>
+    </node>
+    <node id="Dieta: Applesauce">
+      <data key="d0">Diet</data>
+      <data key="d3">Applesauce</data>
+    </node>
+    <node id="Dieta: Toast">
+      <data key="d0">Diet</data>
+      <data key="d3">Toast</data>
+    </node>
+    <node id="Dieta: Anti-Inflammatory Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Anti-Inflammatory Diet</data>
+    </node>
+    <node id="Dieta: DASH Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">DASH Diet</data>
+    </node>
+    <node id="Dieta: Low-sodium foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-sodium foods</data>
+    </node>
+    <node id="Dieta: Migraine Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Migraine Diet</data>
+    </node>
+    <node id="Dieta: Low-Tyramine Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-Tyramine Diet</data>
+    </node>
+    <node id="Dieta: Caffeine withdrawal">
+      <data key="d0">Diet</data>
+      <data key="d3">Caffeine withdrawal</data>
+    </node>
+    <node id="Dieta: Hydration">
+      <data key="d0">Diet</data>
+      <data key="d3">Hydration</data>
+    </node>
+    <node id="Dieta: Magnesium-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Magnesium-rich foods</data>
+    </node>
+    <node id="Dieta: Arthritis Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Arthritis Diet</data>
+    </node>
+    <node id="Dieta: Heart-Healthy Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Heart-Healthy Diet</data>
+    </node>
+    <node id="Dieta: Liver-Healthy Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Liver-Healthy Diet</data>
+    </node>
+    <node id="Dieta: Low-fat Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-fat Diet</data>
+    </node>
+    <node id="Dieta: Malaria Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Malaria Diet</data>
+    </node>
+    <node id="Dieta: High-Calorie Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">High-Calorie Diet</data>
+    </node>
+    <node id="Dieta: Soft and bland foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Soft and bland foods</data>
+    </node>
+    <node id="Dieta: Oral rehydration solutions">
+      <data key="d0">Diet</data>
+      <data key="d3">Oral rehydration solutions</data>
+    </node>
+    <node id="Dieta: Chicken Pox Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Chicken Pox Diet</data>
+    </node>
+    <node id="Dieta: Dengue Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Dengue Diet</data>
+    </node>
+    <node id="Dieta: Typhoid Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Typhoid Diet</data>
+    </node>
+    <node id="Dieta: Hepatitis A Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hepatitis A Diet</data>
+    </node>
+    <node id="Dieta: Hepatitis B Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hepatitis B Diet</data>
+    </node>
+    <node id="Dieta: Hepatitis C Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hepatitis C Diet</data>
+    </node>
+    <node id="Dieta: Hepatitis D Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hepatitis D Diet</data>
+    </node>
+    <node id="Dieta: Hepatitis E Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hepatitis E Diet</data>
+    </node>
+    <node id="Dieta: TB Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">TB Diet</data>
+    </node>
+    <node id="Dieta: Cold Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Cold Diet</data>
+    </node>
+    <node id="Dieta: Warm fluids">
+      <data key="d0">Diet</data>
+      <data key="d3">Warm fluids</data>
+    </node>
+    <node id="Dieta: Rest">
+      <data key="d0">Diet</data>
+      <data key="d3">Rest</data>
+    </node>
+    <node id="Dieta: Honey and lemon tea">
+      <data key="d0">Diet</data>
+      <data key="d3">Honey and lemon tea</data>
+    </node>
+    <node id="Dieta: Pneumonia Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Pneumonia Diet</data>
+    </node>
+    <node id="Dieta: Hemorrhoids Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hemorrhoids Diet</data>
+    </node>
+    <node id="Dieta: Warm baths">
+      <data key="d0">Diet</data>
+      <data key="d3">Warm baths</data>
+    </node>
+    <node id="Dieta: Stool softeners">
+      <data key="d0">Diet</data>
+      <data key="d3">Stool softeners</data>
+    </node>
+    <node id="Dieta: Varicose Veins Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Varicose Veins Diet</data>
+    </node>
+    <node id="Dieta: Hypothyroidism Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hypothyroidism Diet</data>
+    </node>
+    <node id="Dieta: Iodine-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Iodine-rich foods</data>
+    </node>
+    <node id="Dieta: Selenium-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Selenium-rich foods</data>
+    </node>
+    <node id="Dieta: Hyperthyroidism Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hyperthyroidism Diet</data>
+    </node>
+    <node id="Dieta: Low-Iodine Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-Iodine Diet</data>
+    </node>
+    <node id="Dieta: Calcium-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Calcium-rich foods</data>
+    </node>
+    <node id="Dieta: Hypoglycemia Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Hypoglycemia Diet</data>
+    </node>
+    <node id="Dieta: Complex carbohydrates">
+      <data key="d0">Diet</data>
+      <data key="d3">Complex carbohydrates</data>
+    </node>
+    <node id="Dieta: Protein-rich snacks">
+      <data key="d0">Diet</data>
+      <data key="d3">Protein-rich snacks</data>
+    </node>
+    <node id="Dieta: Vertigo Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Vertigo Diet</data>
+    </node>
+    <node id="Dieta: Low-Salt Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Low-Salt Diet</data>
+    </node>
+    <node id="Dieta: Ginger tea">
+      <data key="d0">Diet</data>
+      <data key="d3">Ginger tea</data>
+    </node>
+    <node id="Dieta: Vitamin D-rich foods">
+      <data key="d0">Diet</data>
+      <data key="d3">Vitamin D-rich foods</data>
+    </node>
+    <node id="Dieta: Acne Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Acne Diet</data>
+    </node>
+    <node id="Dieta: UTI Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">UTI Diet</data>
+    </node>
+    <node id="Dieta: Cranberry juice">
+      <data key="d0">Diet</data>
+      <data key="d3">Cranberry juice</data>
+    </node>
+    <node id="Dieta: Psoriasis Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Psoriasis Diet</data>
+    </node>
+    <node id="Dieta: Impetigo Diet">
+      <data key="d0">Diet</data>
+      <data key="d3">Impetigo Diet</data>
+    </node>
+    <node id="Dieta: Antibiotic treatment">
+      <data key="d0">Diet</data>
+      <data key="d3">Antibiotic treatment</data>
+    </node>
+    <node id="Severidad_Severe">
+      <data key="d0">Severity</data>
+      <data key="d4">Severe</data>
+      <data key="d5">Atención Médica Inmediata requerida en Box de Vitales / Reanimación</data>
+    </node>
+    <node id="Severidad_Moderate">
+      <data key="d0">Severity</data>
+      <data key="d4">Moderate</data>
+      <data key="d5">Atención Prioritaria en Sala de Observación (&lt; 60 min)</data>
+    </node>
+    <node id="Severidad_Mild">
+      <data key="d0">Severity</data>
+      <data key="d4">Mild</data>
+      <data key="d5">Atención Ambulatoria Estándar / Sala de Espera General</data>
+    </node>
+    <edge source="Fungal infection" target="Precaucion: Bath twice">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Fungal infection" target="Precaucion: Use detol or neem in bathing water">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Fungal infection" target="Precaucion: Keep infected area dry">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Fungal infection" target="Precaucion: Use clean cloths">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Fungal infection" target="Farmaco: Antifungal Cream">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Fungal infection" target="Farmaco: Fluconazole">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Fungal infection" target="Farmaco: Terbinafine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Fungal infection" target="Farmaco: Clotrimazole">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Fungal infection" target="Farmaco: Ketoconazole">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Fungal infection" target="Dieta: Antifungal Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Fungal infection" target="Dieta: Probiotics">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Fungal infection" target="Dieta: Garlic">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Fungal infection" target="Dieta: Coconut oil">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Fungal infection" target="Dieta: Turmeric">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Allergy" target="Precaucion: Apply calamine">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Allergy" target="Precaucion: Cover area with bandage">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Allergy" target="Precaucion: Use ice to compress itching">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Allergy" target="Farmaco: Antihistamines">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Allergy" target="Farmaco: Decongestants">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Allergy" target="Farmaco: Epinephrine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Allergy" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Allergy" target="Farmaco: Immunotherapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Allergy" target="Dieta: Elimination Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Allergy" target="Dieta: Omega-3-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Allergy" target="Dieta: Vitamin C-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Allergy" target="Dieta: Quercetin-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Allergy" target="Dieta: Probiotics">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="GERD" target="Precaucion: Avoid fatty spicy food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="GERD" target="Precaucion: Avoid lying down after eating">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="GERD" target="Precaucion: Maintain healthy weight">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="GERD" target="Precaucion: Exercise">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="GERD" target="Farmaco: Proton Pump Inhibitors (PPIs)">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="GERD" target="Farmaco: H2 Blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="GERD" target="Farmaco: Antacids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="GERD" target="Farmaco: Prokinetics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="GERD" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="GERD" target="Dieta: Low-Acid Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="GERD" target="Dieta: Fiber-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="GERD" target="Dieta: Ginger">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="GERD" target="Dieta: Licorice">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="GERD" target="Dieta: Aloe vera juice">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Precaucion: Cold baths">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Precaucion: Anti itch medicine">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Precaucion: Eat healthy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Farmaco: Ursodeoxycholic acid">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Farmaco: Cholestyramine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Farmaco: Methotrexate">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Dieta: Low-Fat Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Dieta: High-Fiber Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chronic cholestasis" target="Dieta: Fresh fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Drug Reaction" target="Precaucion: Stop irritation">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Precaucion: Consult nearest hospital">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Precaucion: Stop taking drug">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Precaucion: Follow up">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Farmaco: Antihistamines">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Farmaco: Epinephrine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Farmaco: Antifungal Cream">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Drug Reaction" target="Dieta: Antihistamine Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Drug Reaction" target="Dieta: Omega-3-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Drug Reaction" target="Dieta: Vitamin C-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Drug Reaction" target="Dieta: Quercetin-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Drug Reaction" target="Dieta: Probiotics">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Farmaco: Proton Pump Inhibitors (PPIs)">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Farmaco: H2 Blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Farmaco: Antacids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Farmaco: Cytoprotective agents">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Dieta: Low-Acid Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Dieta: Fiber-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Dieta: Ginger">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Dieta: Licorice">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Peptic ulcer disease" target="Dieta: Aloe vera juice">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="AIDS" target="Precaucion: Avoid open cuts">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="AIDS" target="Precaucion: Wear ppe if possible">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="AIDS" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="AIDS" target="Precaucion: Follow up">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="AIDS" target="Farmaco: Antiretroviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="AIDS" target="Farmaco: Protease inhibitors">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="AIDS" target="Farmaco: Integrase inhibitors">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="AIDS" target="Farmaco: Entry inhibitors">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="AIDS" target="Farmaco: Fusion inhibitors">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="AIDS" target="Dieta: Balanced Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="AIDS" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="AIDS" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="AIDS" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="AIDS" target="Dieta: Healthy fats">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Diabetes" target="Precaucion: Have balanced diet">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Diabetes" target="Precaucion: Exercise">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Diabetes" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Diabetes" target="Precaucion: Follow up">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Diabetes" target="Farmaco: Insulin">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Diabetes" target="Farmaco: Metformin">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Diabetes" target="Farmaco: Sulfonylureas">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Diabetes" target="Farmaco: DPP-4 inhibitors">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Diabetes" target="Farmaco: GLP-1 receptor agonists">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Diabetes" target="Dieta: Low-Glycemic Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Diabetes" target="Dieta: Fiber-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Diabetes" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Diabetes" target="Dieta: Healthy fats">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Diabetes" target="Dieta: Low-fat dairy">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Precaucion: Stop eating solid food for while">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Precaucion: Try taking small sips of water">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Precaucion: Rest">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Precaucion: Ease back into eating">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Farmaco: Antiemetic drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Farmaco: Antidiarrheal drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Farmaco: Probiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Dieta: Bland Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Dieta: Bananas">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Dieta: Rice">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Dieta: Applesauce">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Gastroenteritis" target="Dieta: Toast">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Precaucion: Switch to loose cloothing">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Precaucion: Take deep breaths">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Precaucion: Get away from trigger">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Precaucion: Seek help">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Farmaco: Bronchodilators">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Farmaco: Inhaled corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Farmaco: Leukotriene modifiers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Farmaco: Mast cell stabilizers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Farmaco: Anticholinergics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Dieta: Anti-Inflammatory Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Dieta: Omega-3-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Bronchial Asthma" target="Severidad_Severe">
+      <data key="d6">HAS_TRIAGE_SEVERITY</data>
+    </edge>
+    <edge source="Hypertension" target="Precaucion: Meditation">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypertension" target="Precaucion: Salt baths">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypertension" target="Precaucion: Reduce stress">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypertension" target="Precaucion: Get proper sleep">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypertension" target="Farmaco: Antihypertensive medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypertension" target="Farmaco: Diuretics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypertension" target="Farmaco: Beta-blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypertension" target="Farmaco: ACE inhibitors">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypertension" target="Farmaco: Calcium channel blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypertension" target="Dieta: DASH Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypertension" target="Dieta: Low-sodium foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypertension" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypertension" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypertension" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Migraine" target="Precaucion: Meditation">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Migraine" target="Precaucion: Reduce stress">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Migraine" target="Precaucion: Use poloroid glasses in sun">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Migraine" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Migraine" target="Farmaco: Analgesics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Migraine" target="Farmaco: Triptans">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Migraine" target="Farmaco: Ergotamine derivatives">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Migraine" target="Farmaco: Preventive medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Migraine" target="Farmaco: Biofeedback">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Migraine" target="Dieta: Migraine Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Migraine" target="Dieta: Low-Tyramine Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Migraine" target="Dieta: Caffeine withdrawal">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Migraine" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Migraine" target="Dieta: Magnesium-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Precaucion: Use heating pad or cold pack">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Precaucion: Exercise">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Precaucion: Take otc pain reliver">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Farmaco: Pain relievers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Farmaco: Muscle relaxants">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Farmaco: Physical therapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Farmaco: Neck braces">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Dieta: Arthritis Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Dieta: Anti-Inflammatory Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Dieta: Omega-3-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Cervical spondylosis" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Precaucion: Massage">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Precaucion: Eat healthy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Precaucion: Exercise">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Farmaco: Blood thinners">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Farmaco: Clot-dissolving medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Farmaco: Anticonvulsants">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Farmaco: Physical therapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Farmaco: Occupational therapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Dieta: Heart-Healthy Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Dieta: Low-sodium foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Paralysis (brain hemorrhage)" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Jaundice" target="Precaucion: Drink plenty of water">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Jaundice" target="Precaucion: Consume milk thistle">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Jaundice" target="Precaucion: Eat fruits and high fiberous food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Jaundice" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Jaundice" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Jaundice" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Jaundice" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Jaundice" target="Farmaco: Medications for itching">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Jaundice" target="Farmaco: Antiviral medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Jaundice" target="Dieta: Liver-Healthy Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Jaundice" target="Dieta: Low-fat Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Jaundice" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Jaundice" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Jaundice" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Malaria" target="Precaucion: Consult nearest hospital">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Malaria" target="Precaucion: Avoid oily food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Malaria" target="Precaucion: Avoid non veg food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Malaria" target="Precaucion: Keep mosquitos out">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Malaria" target="Farmaco: Antimalarial drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Malaria" target="Farmaco: Antipyretics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Malaria" target="Farmaco: Antiemetic drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Malaria" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Malaria" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Malaria" target="Dieta: Malaria Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Malaria" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Malaria" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Malaria" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Malaria" target="Dieta: Oral rehydration solutions">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chicken pox" target="Precaucion: Use neem in bathing">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chicken pox" target="Precaucion: Consume neem leaves">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chicken pox" target="Precaucion: Take vaccine">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chicken pox" target="Precaucion: Avoid public places">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Chicken pox" target="Farmaco: Antiviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chicken pox" target="Farmaco: Pain relievers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chicken pox" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chicken pox" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chicken pox" target="Farmaco: Platelet transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Chicken pox" target="Dieta: Chicken Pox Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chicken pox" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chicken pox" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chicken pox" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Chicken pox" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dengue" target="Precaucion: Drink papaya leaf juice">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dengue" target="Precaucion: Avoid fatty spicy food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dengue" target="Precaucion: Keep mosquitos away">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dengue" target="Precaucion: Keep hydrated">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dengue" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dengue" target="Farmaco: Antipyretics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dengue" target="Farmaco: Analgesics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dengue" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dengue" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dengue" target="Dieta: Dengue Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dengue" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dengue" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dengue" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dengue" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Typhoid" target="Precaucion: Eat high calorie vegitables">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Typhoid" target="Precaucion: Antiboitic therapy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Typhoid" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Typhoid" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Typhoid" target="Farmaco: Vaccination">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Typhoid" target="Farmaco: Antiviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Typhoid" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Typhoid" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Typhoid" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Typhoid" target="Dieta: Typhoid Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Typhoid" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Typhoid" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Typhoid" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Typhoid" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="hepatitis A" target="Precaucion: Consult nearest hospital">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="hepatitis A" target="Precaucion: Wash hands through">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="hepatitis A" target="Precaucion: Avoid fatty spicy food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="hepatitis A" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="hepatitis A" target="Farmaco: Vaccination">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="hepatitis A" target="Farmaco: Antiviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="hepatitis A" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="hepatitis A" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="hepatitis A" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="hepatitis A" target="Dieta: Hepatitis A Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="hepatitis A" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="hepatitis A" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="hepatitis A" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="hepatitis A" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis B" target="Precaucion: Consult nearest hospital">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Precaucion: Vaccination">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Precaucion: Eat healthy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Farmaco: Antiviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Farmaco: Platelet transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis B" target="Dieta: Hepatitis B Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis B" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis B" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis B" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis B" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis C" target="Precaucion: Consult nearest hospital">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Precaucion: Vaccination">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Precaucion: Eat healthy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Farmaco: Antiviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Farmaco: Platelet transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis C" target="Dieta: Hepatitis C Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis C" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis C" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis C" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis C" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis D" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Precaucion: Eat healthy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Precaucion: Follow up">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Farmaco: Antiviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Farmaco: Blood transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Farmaco: Platelet transfusions">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis D" target="Dieta: Hepatitis D Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis D" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis D" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis D" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis D" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis E" target="Precaucion: Stop alcohol consumption">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Precaucion: Rest">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Farmaco: Alcohol cessation">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Farmaco: Liver transplant">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Farmaco: Nutritional support">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hepatitis E" target="Dieta: Hepatitis E Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis E" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis E" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis E" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hepatitis E" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Precaucion: Stop alcohol consumption">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Precaucion: Follow up">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Farmaco: Isoniazid">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Farmaco: Rifampin">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Farmaco: Ethambutol">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Farmaco: Pyrazinamide">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Dieta: Liver-Healthy Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Dieta: Low-fat Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Alcoholic hepatitis" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Tuberculosis" target="Precaucion: Cover mouth">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Precaucion: Rest">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Farmaco: Antipyretics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Farmaco: Decongestants">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Farmaco: Cough suppressants">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Farmaco: Antihistamines">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Farmaco: Pain relievers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Tuberculosis" target="Dieta: TB Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Tuberculosis" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Tuberculosis" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Tuberculosis" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Tuberculosis" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Common Cold" target="Precaucion: Drink vitamin c rich drinks">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Common Cold" target="Precaucion: Take vapour">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Common Cold" target="Precaucion: Avoid cold food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Common Cold" target="Precaucion: Keep fever in check">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Common Cold" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Common Cold" target="Farmaco: Antiviral drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Common Cold" target="Farmaco: Antifungal drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Common Cold" target="Farmaco: IV fluids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Common Cold" target="Farmaco: Oxygen therapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Common Cold" target="Dieta: Cold Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Common Cold" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Common Cold" target="Dieta: Warm fluids">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Common Cold" target="Dieta: Rest">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Common Cold" target="Dieta: Honey and lemon tea">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Common Cold" target="Severidad_Mild">
+      <data key="d6">HAS_TRIAGE_SEVERITY</data>
+    </edge>
+    <edge source="Pneumonia" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Pneumonia" target="Precaucion: Medication">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Pneumonia" target="Precaucion: Rest">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Pneumonia" target="Precaucion: Follow up">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Pneumonia" target="Farmaco: Laxatives">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Pneumonia" target="Farmaco: Pain relievers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Pneumonia" target="Farmaco: Warm baths">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Pneumonia" target="Farmaco: Cold compresses">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Pneumonia" target="Farmaco: High-fiber diet">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Pneumonia" target="Dieta: Pneumonia Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Pneumonia" target="Dieta: High-Calorie Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Pneumonia" target="Dieta: Soft and bland foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Pneumonia" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Pneumonia" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Pneumonia" target="Severidad_Severe">
+      <data key="d6">HAS_TRIAGE_SEVERITY</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Precaucion: Avoid fatty spicy food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Precaucion: Consume witch hazel">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Precaucion: Warm bath with epsom salt">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Precaucion: Consume alovera juice">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Farmaco: Nitroglycerin">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Farmaco: Aspirin">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Farmaco: Beta-blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Farmaco: Calcium channel blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Farmaco: Thrombolytic drugs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Dieta: Hemorrhoids Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Dieta: High-Fiber Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Dieta: Warm baths">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Dimorphic hemmorhoids(piles)" target="Dieta: Stool softeners">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Heart attack" target="Precaucion: Call ambulance">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Heart attack" target="Precaucion: Chew or swallow asprin">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Heart attack" target="Precaucion: Keep calm">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Heart attack" target="Farmaco: Compression stockings">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Heart attack" target="Farmaco: Exercise">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Heart attack" target="Farmaco: Elevating the legs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Heart attack" target="Farmaco: Sclerotherapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Heart attack" target="Farmaco: Laser treatments">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Heart attack" target="Dieta: Heart-Healthy Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Heart attack" target="Dieta: Low-sodium foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Heart attack" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Heart attack" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Heart attack" target="Dieta: Lean proteins">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Varicose veins" target="Precaucion: Lie down flat and raise the leg high">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Varicose veins" target="Precaucion: Use oinments">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Varicose veins" target="Precaucion: Use vein compression">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Varicose veins" target="Precaucion: Dont stand still for long">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Varicose veins" target="Farmaco: Levothyroxine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Varicose veins" target="Farmaco: Antithyroid medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Varicose veins" target="Farmaco: Beta-blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Varicose veins" target="Farmaco: Radioactive iodine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Varicose veins" target="Farmaco: Thyroid surgery">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Varicose veins" target="Dieta: Varicose Veins Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Varicose veins" target="Dieta: High-Fiber Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Varicose veins" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Varicose veins" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Varicose veins" target="Dieta: Low-sodium foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Precaucion: Reduce stress">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Precaucion: Exercise">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Precaucion: Eat healthy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Precaucion: Get proper sleep">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Farmaco: Antithyroid medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Farmaco: Radioactive iodine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Farmaco: Thyroid surgery">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Farmaco: Beta-blockers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Dieta: Hypothyroidism Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Dieta: Iodine-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Dieta: Selenium-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypothyroidism" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Precaucion: Eat healthy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Precaucion: Massage">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Precaucion: Use lemon balm">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Precaucion: Take radioactive iodine treatment">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Farmaco: Glucose tablets">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Farmaco: Candy or juice">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Farmaco: Glucagon injection">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Farmaco: IV dextrose">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Farmaco: Diazoxide">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Dieta: Hyperthyroidism Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Dieta: Low-Iodine Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Dieta: Calcium-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Dieta: Selenium-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hyperthyroidism" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Precaucion: Lie down on side">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Precaucion: Check in pulse">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Precaucion: Drink sugary drinks">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Farmaco: Pain relievers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Farmaco: Exercise">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Farmaco: Hot and cold packs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Farmaco: Joint protection">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Farmaco: Physical therapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Dieta: Hypoglycemia Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Dieta: Complex carbohydrates">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Dieta: Protein-rich snacks">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Dieta: Fiber-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Hypoglycemia" target="Dieta: Healthy fats">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Precaucion: Acetaminophen">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Precaucion: Consult nearest hospital">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Precaucion: Follow up">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Precaucion: Salt baths">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Farmaco: NSAIDs">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Farmaco: Disease-modifying antirheumatic drugs (DMARDs)">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Farmaco: Biologics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Farmaco: Joint replacement surgery">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Dieta: Arthritis Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Dieta: Anti-Inflammatory Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Dieta: Omega-3-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Osteoarthristis" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Arthritis" target="Precaucion: Exercise">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Arthritis" target="Precaucion: Use hot and cold therapy">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Arthritis" target="Precaucion: Try acupuncture">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Arthritis" target="Precaucion: Massage">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Arthritis" target="Farmaco: Vestibular rehabilitation">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Arthritis" target="Farmaco: Canalith repositioning">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Arthritis" target="Farmaco: Medications for nausea">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Arthritis" target="Farmaco: Surgery">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Arthritis" target="Farmaco: Home exercises">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Arthritis" target="Dieta: Arthritis Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Arthritis" target="Dieta: Anti-Inflammatory Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Arthritis" target="Dieta: Omega-3-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Arthritis" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Arthritis" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Farmaco: Topical treatments">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Farmaco: Oral medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Farmaco: Hormonal treatments">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Farmaco: Isotretinoin">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Dieta: Vertigo Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Dieta: Low-Salt Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Dieta: Ginger tea">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal Positional Vertigo" target="Dieta: Vitamin D-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Acne" target="Precaucion: Bath twice">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Acne" target="Precaucion: Avoid fatty spicy food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Acne" target="Precaucion: Drink plenty of water">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Acne" target="Precaucion: Avoid too many products">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Acne" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Acne" target="Farmaco: Pain relievers">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Acne" target="Farmaco: Antihistamines">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Acne" target="Farmaco: Corticosteroids">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Acne" target="Farmaco: Topical treatments">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Acne" target="Dieta: Acne Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Acne" target="Dieta: Low-Glycemic Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Acne" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Acne" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Acne" target="Dieta: Probiotics">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Precaucion: Drink plenty of water">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Precaucion: Increase vitamin c intake">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Precaucion: Drink cranberry juice">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Precaucion: Take probiotics">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Farmaco: Antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Farmaco: Urinary analgesics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Farmaco: Phenazopyridine">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Farmaco: Antispasmodics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Farmaco: Probiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Dieta: UTI Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Dieta: Cranberry juice">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Dieta: Probiotics">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Urinary tract infection" target="Dieta: Vitamin C-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Psoriasis" target="Precaucion: Wash hands with warm soapy water">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Psoriasis" target="Precaucion: Stop bleeding using pressure">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Psoriasis" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Psoriasis" target="Precaucion: Salt baths">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Psoriasis" target="Farmaco: Topical treatments">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Psoriasis" target="Farmaco: Phototherapy">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Psoriasis" target="Farmaco: Systemic medications">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Psoriasis" target="Farmaco: Biologics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Psoriasis" target="Farmaco: Coal tar">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Psoriasis" target="Dieta: Psoriasis Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Psoriasis" target="Dieta: Anti-Inflammatory Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Psoriasis" target="Dieta: Omega-3-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Psoriasis" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Psoriasis" target="Dieta: Whole grains">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Impetigo" target="Precaucion: Soak affected area in warm water">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Impetigo" target="Precaucion: Use antibiotics">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Impetigo" target="Precaucion: Remove scabs with wet compressed cloth">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Impetigo" target="Precaucion: Consult doctor">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Impetigo" target="Farmaco: Topical antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Impetigo" target="Farmaco: Oral antibiotics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Impetigo" target="Farmaco: Antiseptics">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Impetigo" target="Farmaco: Ointments">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Impetigo" target="Farmaco: Warm compresses">
+      <data key="d6">RECOMMENDS_MEDICATION</data>
+    </edge>
+    <edge source="Impetigo" target="Dieta: Impetigo Diet">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Impetigo" target="Dieta: Antibiotic treatment">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Impetigo" target="Dieta: Fruits and vegetables">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Impetigo" target="Dieta: Hydration">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="Impetigo" target="Dieta: Protein-rich foods">
+      <data key="d6">SUGGESTS_DIET</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal  Positional Vertigo" target="Precaucion: Lie down">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal  Positional Vertigo" target="Precaucion: Avoid sudden change in body">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal  Positional Vertigo" target="Precaucion: Avoid abrupt head movment">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="(vertigo) Paroymsal  Positional Vertigo" target="Precaucion: Relax">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Peptic ulcer diseae" target="Precaucion: Avoid fatty spicy food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Peptic ulcer diseae" target="Precaucion: Consume probiotic food">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Peptic ulcer diseae" target="Precaucion: Eliminate milk">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+    <edge source="Peptic ulcer diseae" target="Precaucion: Limit alcohol">
+      <data key="d6">REQUIRES_PRECAUTION</data>
+    </edge>
+  </graph>
+</graphml>
