@@ -29,7 +29,8 @@ from src.ollama_client import (
     stream_fallback_grafo,
     construir_prompt_sistema_graph_rag,
     generar_respuesta_fallback_grafo,
-    DEFAULT_OLLAMA_URL,
+    DEFAULT_GATEWAY_URL,
+    DEFAULT_API_KEY,
     DEFAULT_MODEL
 )
 
@@ -127,7 +128,10 @@ if 'chat_messages' not in st.session_state:
     ]
 
 if 'ollama_server_url' not in st.session_state:
-    st.session_state.ollama_server_url = DEFAULT_OLLAMA_URL
+    st.session_state.ollama_server_url = DEFAULT_GATEWAY_URL
+
+if 'llm_api_key' not in st.session_state:
+    st.session_state.llm_api_key = DEFAULT_API_KEY
 
 if 'ollama_model' not in st.session_state:
     st.session_state.ollama_model = DEFAULT_MODEL
@@ -167,8 +171,31 @@ with st.sidebar:
     - **Clasificador:** Random Forest (200 estimadores)
     - **Validación ML:** 5-Fold Stratified CV (100% Macro F1)
     - **Grafo de Conocimiento:** {medical_graph.graph.number_of_nodes()} nodos, {medical_graph.graph.number_of_edges()} aristas
-    - **Motor de Razonamiento:** LLM Asistente Clínico (Graph RAG)
+    - **Motor de Razonamiento:** LLM UCuenca ({st.session_state.ollama_model}) + Graph RAG
     """)
+    
+    st.divider()
+    st.markdown("### 🏛️ Gateway LLM UCuenca")
+    is_conn_side, avail_side, _ = verificar_conexion_ollama(
+        base_url=st.session_state.ollama_server_url,
+        api_key=st.session_state.llm_api_key
+    )
+    if is_conn_side:
+        st.success("🟢 Conectado al Gateway")
+        if avail_side:
+            c_idx = avail_side.index(st.session_state.ollama_model) if st.session_state.ollama_model in avail_side else 0
+            st.session_state.ollama_model = st.selectbox(
+                "Modelo Activo:",
+                options=avail_side,
+                index=c_idx,
+                help="Modelos publicados en el gateway de la Universidad de Cuenca"
+            )
+    else:
+        st.warning("⚠️ Sin conexión con Gateway")
+
+    with st.expander("⚙️ Credenciales del Gateway"):
+        st.session_state.ollama_server_url = st.text_input("Gateway URL:", value=st.session_state.ollama_server_url)
+        st.session_state.llm_api_key = st.text_input("API Key:", value=st.session_state.llm_api_key, type="password")
     
     st.divider()
     st.markdown("### Clasificación de Severidad")
@@ -448,12 +475,18 @@ with tab_chatbot:
     Las respuestas no son inventadas: están respaldadas en la ontología estructurada de síntomas, precauciones y terapias.
     """)
 
-    # Verificación silenciosa de conexión en segundo plano
-    is_connected, available_models, active_url = verificar_conexion_ollama(st.session_state.ollama_server_url)
+    # Verificación de conexión con el Gateway UCuenca
+    is_connected, available_models, active_url = verificar_conexion_ollama(
+        base_url=st.session_state.ollama_server_url,
+        api_key=st.session_state.llm_api_key
+    )
     if is_connected:
         st.session_state.ollama_server_url = active_url
         if available_models and st.session_state.ollama_model not in available_models:
             st.session_state.ollama_model = available_models[0]
+        st.caption(f"🏛️ **Gateway UCuenca Activo** | Modelo: `{st.session_state.ollama_model}` | Graph RAG Conectado")
+    else:
+        st.caption("ℹ️ *Modo Respaldo Ontológico: El Grafo de Conocimiento responderá de forma determinista.*")
 
     # 2. Contexto de Triaje y Evidencia de Graph RAG
     paciente = st.session_state.ultimo_paciente_evaluado
@@ -512,6 +545,7 @@ with tab_chatbot:
                     mensajes=historial_para_ollama,
                     model=st.session_state.ollama_model,
                     base_url=st.session_state.ollama_server_url,
+                    api_key=st.session_state.llm_api_key,
                     system_prompt=system_prompt
                 )
                 respuesta_completa = st.write_stream(stream_generator)
